@@ -5,9 +5,8 @@ import me.hwiggy.whmjava.payload.Payload;
 /***
  * This class and its methods directly relate to the API documentation.
  * API documentation can be found at the following URL:
- * https://developers.whmcs.com/api-reference/addticketreply/
+ * https://developers.whmcs.com/api-reference/updateticket/
  */
-
 public class UpdateTicketPayload extends Payload {
 
     /***
@@ -86,7 +85,7 @@ public class UpdateTicketPayload extends Payload {
      *
      * @param priority The priority of the ticket (‘Low’, ‘Medium’, ‘High’)
      */
-    public UpdateTicketPayload withPioraty(String priority) {
+    public UpdateTicketPayload withPriority(String priority) {
         append("priority", priority);
         return this;
     }

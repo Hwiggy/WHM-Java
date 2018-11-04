@@ -5,27 +5,20 @@ import me.hwiggy.whmjava.payload.Payload;
 /***
  * This class and its methods directly relate to the API documentation.
  * API documentation can be found at the following URL:
- * https://developers.whmcs.com/api-reference/addticketreply/
+ * https://developers.whmcs.com/api-reference/validatelogin/
  */
 
 public class ValidateLoginPayload extends Payload {
 
-
     /***
     *
-    * @param email the email adderess to validate.
-    * @param password2 the password for the email to validate.
+    * @param email The email address to validate.
+    * @param password The password to validate for the $email.
     *
      */
-
-    public ValidateLoginPayload(String email, String password2) {
+    public ValidateLoginPayload(String email, String password) {
         super("ValidateLogin");
         append("email", email);
-        append("password2", password2);
+        append("password2", password);
     }
-
-
-    //todo javadocs
-
-
 }

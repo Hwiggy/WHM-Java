@@ -11,7 +11,8 @@ WHMCS whmcs = new WHMCS(
 );
 ```
 Using this WHMCS instance, you can now submit `Payload` objects using `WHMCS#submitPayload`
-Example, using `AddAnnouncementPayload` ([API Reference](https://developers.whmcs.com/api-reference/addannouncement/))
+
+Example, using `AddAnnouncementPayload` ([API Reference](https://developers.whmcs.com/api-reference/addannouncement/)):
 ```java
 Payload payload = new AddAnnouncementPayload(
     "2018-11-04 12:00:00",

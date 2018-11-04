@@ -4,7 +4,7 @@ import org.json.JSONObject;
 
 public abstract class Payload extends JSONObject{
 
-    protected Payload(String action){
+    public Payload(String action){
         super();
         append("action", action);
     }

@@ -1,5 +1,6 @@
-package me.hwiggy.whmjava.payload;
+package me.hwiggy.whmjava.payload.a;
 
+import me.hwiggy.whmjava.payload.Payload;
 import org.json.JSONObject;
 /***
  * This class and its methods directly relate to the API documentation.

@@ -62,7 +62,7 @@ public class WHMCS {
      *          See <a href="#securitychecks">security checks</a> for further
      *          information.
      */
-    public JSONObject post(Payload payload) throws IOException, InterruptedException {
+    public JSONObject submitPayload(Payload payload) throws IOException, InterruptedException {
         if (oldAuth){
             payload.append("username", identifier).append("password", secret);
         } else {

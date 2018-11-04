@@ -27,7 +27,7 @@ public class AddAnnouncementPayload extends Payload {
      * @param published Pass as true to publish
      * @return This Payload, for chaining
      */
-    public AddAnnouncementPayload isPublished(boolean published){
+    public AddAnnouncementPayload withPublished(boolean published){
         append("published", published);
         return this;
     }

@@ -63,7 +63,7 @@ public class AcceptOrderPayload extends Payload {
      * @param sendRegistrar Send the request to the registrar to register the domain.
      * @return This Payload, for chaining
      */
-    public AcceptOrderPayload toSendRegistrar(boolean sendRegistrar){
+    public AcceptOrderPayload withSendRegistrar(boolean sendRegistrar){
         append("sendregistrar", sendRegistrar);
         return this;
     }
@@ -73,7 +73,7 @@ public class AcceptOrderPayload extends Payload {
      * @param autoSetup Send the request to the product module to activate the service. This can override the product configuration.
      * @return This Payload, for chaining
      */
-    public AcceptOrderPayload toAutoSetup(boolean autoSetup){
+    public AcceptOrderPayload withAutoSetup(boolean autoSetup){
         append("autosetup", autoSetup);
         return this;
     }
@@ -83,7 +83,7 @@ public class AcceptOrderPayload extends Payload {
      * @param sendEmail Send any automatic emails. This can be Product Welcome, Domain Renewal, Domain Transfer etc.
      * @return This Payload, for chaining
      */
-    public AcceptOrderPayload toSendEmail(boolean sendEmail){
+    public AcceptOrderPayload withSendEmail(boolean sendEmail){
         append("sendemail", sendEmail);
         return this;
     }

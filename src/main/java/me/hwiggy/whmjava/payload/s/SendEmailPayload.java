@@ -15,7 +15,7 @@ public class SendEmailPayload extends Payload {
     }
 
     /***
-     * @param messageName    The name of the client email template to send	Optional
+     * @param messageName    The name of the client email template to send	
      */
     public SendEmailPayload withMessageName(String messageName) {
         append("messagename", messageName);
@@ -23,7 +23,7 @@ public class SendEmailPayload extends Payload {
     }
 
     /***
-     * @param id    The related id for the type of email template. Eg this should be the client id for a general type email	Optional
+     * @param id    The related id for the type of email template. Eg this should be the client id for a general type email	
      */
     public SendEmailPayload withID(int id) {
         append("id", id);
@@ -31,7 +31,7 @@ public class SendEmailPayload extends Payload {
     }
 
     /***
-     * @param customType    The type of custom email template to send (‘general’, ‘product’, ‘domain’, ‘invoice’, ‘support’, ‘affiliate’)	Optional
+     * @param customType    The type of custom email template to send (‘general’, ‘product’, ‘domain’, ‘invoice’, ‘support’, ‘affiliate’)	
      */
     public SendEmailPayload withCustomType(String customType) {
         append("customtype", customType);
@@ -39,7 +39,7 @@ public class SendEmailPayload extends Payload {
     }
 
     /***
-     * @param customMessage    The HTML message body to send for a custom email	Optional
+     * @param customMessage    The HTML message body to send for a custom email	
      */
     public SendEmailPayload withCustomMessage(String customMessage) {
         append("custommessage", customMessage);
@@ -47,7 +47,7 @@ public class SendEmailPayload extends Payload {
     }
 
     /***
-     * @param customSubject    The subject to send for a custom email	Optional
+     * @param customSubject    The subject to send for a custom email	
      */
     public SendEmailPayload withCustomSubject(String customSubject) {
         append("customsubject", customSubject);
@@ -55,7 +55,7 @@ public class SendEmailPayload extends Payload {
     }
 
     /***
-     * @param customVars    The custom variables to provide to the email template. Can be used for existing and custom emails.	Optional
+     * @param customVars    The custom variables to provide to the email template. Can be used for existing and custom emails.	
      */
     public SendEmailPayload withCustomVars(JSONObject customVars) {
         append("customvars", customVars);

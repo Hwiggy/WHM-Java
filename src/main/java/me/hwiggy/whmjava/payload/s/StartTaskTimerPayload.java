@@ -15,7 +15,7 @@ public class StartTaskTimerPayload extends Payload {
     }
 
     /***
-     * @param adminID    The admin ID to associate the timer with	Optional
+     * @param adminID    The admin ID to associate the timer with	
      */
     public StartTaskTimerPayload withAdminID(int adminID) {
         append("adminid", adminID);
@@ -23,7 +23,7 @@ public class StartTaskTimerPayload extends Payload {
     }
 
     /***
-     * @param start_time    The start time as a unix time stamp. Defaults to time() if not provIDed	Optional
+     * @param start_time    The start time as a unix time stamp. Defaults to time() if not provIDed	
      */
     public StartTaskTimerPayload withStart_time(int start_time) {
         append("start_time", start_time);
@@ -31,7 +31,7 @@ public class StartTaskTimerPayload extends Payload {
     }
 
     /***
-     * @param end_time    The start time as a unix time stamp.	Optional
+     * @param end_time    The start time as a unix time stamp.	
      */
     public StartTaskTimerPayload withEnd_time(int end_time) {
         append("end_time", end_time);

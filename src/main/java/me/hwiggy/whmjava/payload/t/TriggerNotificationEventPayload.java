@@ -15,7 +15,7 @@ public class TriggerNotificationEventPayload extends Payload {
     }
 
     /***
-     * @param notification_identifier    A unique identifier String, used as a condition when making a notification rule.	Optional
+     * @param notification_identifier    A unique identifier String, used as a condition when making a notification rule.	
      */
     public TriggerNotificationEventPayload withNotification_identifier(String notification_identifier) {
         append("notification_identifier", notification_identifier);
@@ -23,7 +23,7 @@ public class TriggerNotificationEventPayload extends Payload {
     }
 
     /***
-     * @param title    The title for the notification	Optional
+     * @param title    The title for the notification	
      */
     public TriggerNotificationEventPayload withTitle(String title) {
         append("title", title);
@@ -31,7 +31,7 @@ public class TriggerNotificationEventPayload extends Payload {
     }
 
     /***
-     * @param message    The message body for the notification	Optional
+     * @param message    The message body for the notification	
      */
     public TriggerNotificationEventPayload withMessage(String message) {
         append("message", message);
@@ -39,7 +39,7 @@ public class TriggerNotificationEventPayload extends Payload {
     }
 
     /***
-     * @param url    The follow up URL for the notification	Optional
+     * @param url    The follow up URL for the notification	
      */
     public TriggerNotificationEventPayload withUrl(String url) {
         append("url", url);
@@ -47,7 +47,7 @@ public class TriggerNotificationEventPayload extends Payload {
     }
 
     /***
-     * @param status    A status description for the notification	Optional
+     * @param status    A status description for the notification	
      */
     public TriggerNotificationEventPayload withStatus(String status) {
         append("status", status);
@@ -55,7 +55,7 @@ public class TriggerNotificationEventPayload extends Payload {
     }
 
     /***
-     * @param statusStyle    A formatting style for the status of the notification, currently supports “success”, “danger”, and “info”	Optional
+     * @param statusStyle    A formatting style for the status of the notification, currently supports “success”, “danger”, and “info”	
      */
     public TriggerNotificationEventPayload withStatusStyle(String statusStyle) {
         append("statusStyle", statusStyle);
@@ -63,7 +63,7 @@ public class TriggerNotificationEventPayload extends Payload {
     }
 
     /***
-     * @param attributes    An array of Attributes to include in the notification. Requires at least label and value parameters. Other parameters are optional. See WHMCS\Notification\NotificationAttribute.	Optional
+     * @param attributes    An array of Attributes to include in the notification. Requires at least label and value parameters. Other parameters are . See WHMCS\Notification\NotificationAttribute.	
      */
     public TriggerNotificationEventPayload withAttributes(JSONObject attributes) {
         append("attributes", attributes);

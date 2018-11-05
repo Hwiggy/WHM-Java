@@ -14,31 +14,31 @@ public class SendAdminEmailPayload extends Payload {
     }
 
     /***
-     * @param messagename    The name of the admin email template to send	Optional
+     * @param messageName    The name of the admin email template to send	
      */
-    public SendAdminEmailPayload withMessagename(String messagename) {
-        append("messagename", messagename);
+    public SendAdminEmailPayload withMessageName(String messageName) {
+        append("messagename", messageName);
         return this;
     }
 
     /***
-     * @param custommessage    The HTML message body to send for a custom email	Optional
+     * @param customMessage    The HTML message body to send for a custom email	
      */
-    public SendAdminEmailPayload withCustommessage(String custommessage) {
-        append("custommessage", custommessage);
+    public SendAdminEmailPayload withCustomMessage(String customMessage) {
+        append("custommessage", customMessage);
         return this;
     }
 
     /***
-     * @param customsubject    The subject to send for a custom email	Optional
+     * @param customSubject    The subject to send for a custom email	
      */
-    public SendAdminEmailPayload withCustomsubject(String customsubject) {
-        append("customsubject", customsubject);
+    public SendAdminEmailPayload withCustomSubject(String customSubject) {
+        append("customsubject", customSubject);
         return this;
     }
 
     /***
-     * @param type    Which type of admin notification will be send (‘system’, ‘account’, ‘support’)	Optional
+     * @param type    Which type of admin notification will be send (‘system’, ‘account’, ‘support’)	
      */
     public SendAdminEmailPayload withType(String type) {
         append("type", type);
@@ -46,18 +46,18 @@ public class SendAdminEmailPayload extends Payload {
     }
 
     /***
-     * @param deptid    The Id of the department the notification is for if ‘support’ $type	Optional
+     * @param deptID    The ID of the department the notification is for if ‘support’ $type	
      */
-    public SendAdminEmailPayload withDeptid(int deptid) {
-        append("deptid", deptid);
+    public SendAdminEmailPayload withDeptID(int deptID) {
+        append("deptid", deptID);
         return this;
     }
 
     /***
-     * @param mergefields    The merge fields to be used in the email template	Optional
+     * @param mergeFields    The merge fields to be used in the email template	
      */
-    public SendAdminEmailPayload withMergefields(JSONObject mergefields) {
-        append("mergefields", mergefields);
+    public SendAdminEmailPayload withMergeFields(JSONObject mergeFields) {
+        append("mergefields", mergeFields);
         return this;
     }
 }

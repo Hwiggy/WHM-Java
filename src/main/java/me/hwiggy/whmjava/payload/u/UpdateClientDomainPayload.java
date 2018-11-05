@@ -17,37 +17,37 @@ public class UpdateClientDomainPayload extends Payload {
 
     /***
      *
-     * @param dnsmanagement Enable/Disable DNS Management	
+     * @param dnsManagement Enable/Disable DNS Management
      */
-    public UpdateClientDomainPayload withdnsmanagement(boolean dnsmanagement) {
-        append("dnsmanagement", dnsmanagement);
+    public UpdateClientDomainPayload withDnsManagement(boolean dnsManagement) {
+        append("dnsmanagement", dnsManagement);
         return this;
     }
 
     /***
      *
-     * @param emailforwarding Enable/Disable Email Forwarding	
+     * @param emailForwarding Enable/Disable Email Forwarding
      */
-    public UpdateClientDomainPayload withemailforwarding(boolean emailforwarding) {
-        append("emailforwarding", emailforwarding);
+    public UpdateClientDomainPayload withEmailForwarding(boolean emailForwarding) {
+        append("emailforwarding", emailForwarding);
         return this;
     }
 
     /***
      *
-     * @param idprotection  Enable/Disable ID Protection	
+     * @param IDProtection  Enable/Disable ID Protection
      */
-    public UpdateClientDomainPayload withidprotection(boolean idprotection) {
-        append("idprotection", idprotection);
+    public UpdateClientDomainPayload withIDProtection(boolean IDProtection) {
+        append("idprotection", IDProtection);
         return this;
     }
 
     /***
      *
-     * @param donotrenew  Enable/Disable Do Not Renew	
+     * @param doNotRenew  Enable/Disable Do Not Renew
      */
-    public UpdateClientDomainPayload withdonotrenew(boolean donotrenew) {
-        append("donotrenew", donotrenew);
+    public UpdateClientDomainPayload withDoNotRenew(boolean doNotRenew) {
+        append("donotrenew", doNotRenew);
         return this;
     }
 
@@ -55,35 +55,35 @@ public class UpdateClientDomainPayload extends Payload {
      *
      * @param type  The type of domain order. (‘Register’, ‘Transfer’)	
      */
-    public UpdateClientDomainPayload withtype(String type) {
+    public UpdateClientDomainPayload withType(String type) {
         append("type", type);
         return this;
     }
 
     /***
      *
-     * @param regdate  The registration date of the domain (Y-m-d)	
+     * @param regDate  The registration date of the domain (Y-m-d)
      */
-    public UpdateClientDomainPayload withregdate(String regdate) {
-        append("regdate", regdate);
+    public UpdateClientDomainPayload withRegDate(String regDate) {
+        append("regdate", regDate);
         return this;
     }
 
     /***
      *
-     * @param nextduedate  The next due date of the domain (Y-m-d)	
+     * @param nextDueDate  The next due date of the domain (Y-m-d)
      */
-    public UpdateClientDomainPayload withnextduedate(String nextduedate) {
-        append("nextduedate", nextduedate);
+    public UpdateClientDomainPayload withNextDueDate(String nextDueDate) {
+        append("nextduedate", nextDueDate);
         return this;
     }
 
     /***
      *
-     * @param expirydate  The expiry date of the domain (Y-m-d)	
+     * @param expiryDate  The expiry date of the domain (Y-m-d)
      */
-    public UpdateClientDomainPayload withexpirydate(String expirydate) {
-        append("expirydate", expirydate);
+    public UpdateClientDomainPayload withExpiryDate(String expiryDate) {
+        append("expirydate", expiryDate);
         return this;
     }
 
@@ -91,26 +91,26 @@ public class UpdateClientDomainPayload extends Payload {
      *
      *@param domain  The domain name to be changed to	
      */
-    public UpdateClientDomainPayload withdomain(String domain) {
+    public UpdateClientDomainPayload withDomain(String domain) {
         append("domain", domain);
         return this;
     }
 
     /***
      *
-     *@param firstpaymentamount  The first payment amount on the domain	
+     *@param FirstPaymentAmount  The first payment amount on the domain
      */
-    public UpdateClientDomainPayload withfirstpaymentamount(float firstpaymentamount) {
-        append("firstpaymentamount", firstpaymentamount);
+    public UpdateClientDomainPayload withFirstPaymentAmount(float FirstPaymentAmount) {
+        append("firstpaymentamount", FirstPaymentAmount);
         return this;
     }
 
     /***
      *
-     *@param recurringamount  The recurring amount for automatic renewal invoices	
+     *@param recurringAmount  The recurring amount for automatic renewal invoices
      */
-    public UpdateClientDomainPayload withrecurringamount(float recurringamount) {
-        append("recurringamount", recurringamount);
+    public UpdateClientDomainPayload withRecurringAmount(float recurringAmount) {
+        append("recurringamount", recurringAmount);
         return this;
     }
 
@@ -118,35 +118,35 @@ public class UpdateClientDomainPayload extends Payload {
      *
      *@param registrar  The registrar to associate with the domain	
      */
-    public UpdateClientDomainPayload withregistrar(String registrar) {
+    public UpdateClientDomainPayload withRegistrar(String registrar) {
         append("registrar", registrar);
         return this;
     }
 
     /***
      *
-     *@param regperiod  The registration period of the domain	
+     *@param regPeriod  The registration period of the domain
      */
-    public UpdateClientDomainPayload withregperiod(int regperiod) {
-        append("regperiod", regperiod);
+    public UpdateClientDomainPayload withRegPeriod(int regPeriod) {
+        append("regperiod", regPeriod);
         return this;
     }
 
     /***
      *
-     *@param paymentmethod  The payment method to associate in system format (eg paypal)	
+     *@param paymentMethod  The payment method to associate in system format (eg paypal)
      */
-    public UpdateClientDomainPayload withpaymentmethod(String paymentmethod) {
-        append("paymentmethod", paymentmethod);
+    public UpdateClientDomainPayload withPaymentMethod(String paymentMethod) {
+        append("paymentmethod", paymentMethod);
         return this;
     }
 
     /***
      *
-     *@param subscriptionid  The subscription ID to associate with the domain	
+     *@param subscriptionID  The subscription ID to associate with the domain
      */
-    public UpdateClientDomainPayload withsubscriptionid(String subscriptionid) {
-        append("subscriptionid", subscriptionid);
+    public UpdateClientDomainPayload withSubscriptionID(String subscriptionID) {
+        append("subscriptionid", subscriptionID);
         return this;
     }
 
@@ -154,7 +154,7 @@ public class UpdateClientDomainPayload extends Payload {
      *
      *@param status  The status to change the domain to	
      */
-    public UpdateClientDomainPayload withstatus(String status) {
+    public UpdateClientDomainPayload withStatus(String status) {
         append("status", status);
         return this;
     }
@@ -170,28 +170,28 @@ public class UpdateClientDomainPayload extends Payload {
 
     /***
      *
-     *@param promoid  The promotion Id to associate	
+     *@param promoID  The promotion Id to associate
      */
-    public UpdateClientDomainPayload withpromoid(int promoid) {
-        append("promoid", promoid);
+    public UpdateClientDomainPayload withPromoID(int promoID) {
+        append("promoid", promoID);
         return this;
     }
 
     /***
      *
-     *@param autorecalc  Should the recurring amount of the domain be automatically recalculated (this will ignore any passed $recurringamount)	
+     *@param autoRecalc  Should the recurring amount of the domain be automatically recalculated (this will ignore any passed $recurringamount)
      */
-    public UpdateClientDomainPayload withautorecalc(boolean autorecalc) {
-        append("autorecalc", autorecalc);
+    public UpdateClientDomainPayload withAutoRecalc(boolean autoRecalc) {
+        append("autorecalc", autoRecalc);
         return this;
     }
 
     /***
      *
-     *@param updatens  Should the nameservers be updated at the registrar	
+     *@param updateNS  Should the nameservers be updated at the registrar
      */
-    public UpdateClientDomainPayload withupdatens(boolean updatens) {
-        append("updatens", updatens);
+    public UpdateClientDomainPayload withUpdateNS(boolean updateNS) {
+        append("updatens", updateNS);
         return this;
     }
 
@@ -199,7 +199,7 @@ public class UpdateClientDomainPayload extends Payload {
      *
      *@param ns1  The first nameserver to save	
      */
-    public UpdateClientDomainPayload withns1(String ns1) {
+    public UpdateClientDomainPayload withNS1(String ns1) {
         append("ns1", ns1);
         return this;
     }
@@ -208,7 +208,7 @@ public class UpdateClientDomainPayload extends Payload {
      *
      *@param ns2  The second nameserver to save	
      */
-    public UpdateClientDomainPayload withns2(String ns2) {
+    public UpdateClientDomainPayload withNS2(String ns2) {
         append("ns2", ns2);
         return this;
     }
@@ -217,7 +217,7 @@ public class UpdateClientDomainPayload extends Payload {
      *
      *@param ns3  The third nameserver to save	
      */
-    public UpdateClientDomainPayload withns3(String ns3) {
+    public UpdateClientDomainPayload withNS3(String ns3) {
         append("ns3", ns3);
         return this;
     }
@@ -226,7 +226,7 @@ public class UpdateClientDomainPayload extends Payload {
      *
      *@param ns4  The fourth nameserver to save	
      */
-    public UpdateClientDomainPayload withns4(String ns4) {
+    public UpdateClientDomainPayload withNS4(String ns4) {
         append("ns4", ns4);
         return this;
     }
@@ -235,7 +235,7 @@ public class UpdateClientDomainPayload extends Payload {
      *
      *@param ns5  The fifth nameserver to save	
      */
-    public UpdateClientDomainPayload withns5(String ns5) {
+    public UpdateClientDomainPayload withNS5(String ns5) {
         append("ns5", ns5);
         return this;
     }

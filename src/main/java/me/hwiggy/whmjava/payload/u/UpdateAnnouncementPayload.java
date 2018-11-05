@@ -11,11 +11,11 @@ public class UpdateAnnouncementPayload extends Payload {
 
     /***
      *
-     * @param announcementid The id of the announcement to update
+     * @param announcementID The id of the announcement to update
      */
-    public UpdateAnnouncementPayload(int announcementid) {
+    public UpdateAnnouncementPayload(int announcementID) {
         super("UpdateAnnouncement");
-        append("announcementid", announcementid);
+        append("announcementID", announcementID);
     }
 
     /***

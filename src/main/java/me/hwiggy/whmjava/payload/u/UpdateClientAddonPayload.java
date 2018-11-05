@@ -35,17 +35,17 @@ public class UpdateClientAddonPayload extends Payload {
     }
 
     /***
-     * @param addonid
+     * @param addonID
      */
-    public UpdateClientAddonPayload withaddonid(int addonid) {
-        append("addonid", addonid);
+    public UpdateClientAddonPayload withaddonID(int addonID) {
+        append("addonid", addonID);
         return this;
     }
 
     /***
      * @param name
      */
-    public UpdateClientAddonPayload withname(String name) {
+    public UpdateClientAddonPayload witName(String name) {
         append("name", name);
         return this;
     }
@@ -53,40 +53,40 @@ public class UpdateClientAddonPayload extends Payload {
     /***
      * @param setupfee
      */
-    public UpdateClientAddonPayload withsetupfee(float setupfee) {
-        append("setupfee", setupfee);
+    public UpdateClientAddonPayload withSetupFee(float setupFee) {
+        append("setupfee", setupFee);
         return this;
     }
 
     /***
      * @param recurring
      */
-    public UpdateClientAddonPayload withrecurring(float recurring) {
+    public UpdateClientAddonPayload withRecurring(float recurring) {
         append("recurring", recurring);
         return this;
     }
 
     /***
-     * @param billingcycle
+     * @param billingCycle
      */
-    public UpdateClientAddonPayload withbillingcycle(String billingcycle) {
-        append("billingcycle", billingcycle);
+    public UpdateClientAddonPayload withBillingCycle(String billingCycle) {
+        append("billingcycle", billingCycle);
         return this;
     }
 
     /***
-     * @param nextduedate
+     * @param nextDueDate
      */
-    public UpdateClientAddonPayload withnextduedate(String nextduedate) {
-        append("nextduedate", nextduedate);
+    public UpdateClientAddonPayload withNextDueDate(String nextDueDate) {
+        append("nextduedate", nextDueDate);
         return this;
     }
 
     /***
-     * @param nextinvoicedate
+     * @param nextInvoiceDate
      */
-    public UpdateClientAddonPayload withnextinvoicedate(String nextinvoicedate) {
-        append("nextinvoicedate", nextinvoicedate);
+    public UpdateClientAddonPayload withNextInvoiceDate(String nextInvoiceDate) {
+        append("nextinvoicedate", nextInvoiceDate);
         return this;
     }
 
@@ -94,7 +94,7 @@ public class UpdateClientAddonPayload extends Payload {
     /***
      * @param notes
      */
-    public UpdateClientAddonPayload withnotes(String notes) {
+    public UpdateClientAddonPayload withNotes(String notes) {
         append("notes", notes);
         return this;
     }

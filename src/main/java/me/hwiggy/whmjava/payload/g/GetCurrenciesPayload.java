@@ -1,4 +1,9 @@
 package me.hwiggy.whmjava.payload.g;
 
-public class GetCurrenciesPayload {
+import me.hwiggy.whmjava.payload.Payload;
+
+public class GetCurrenciesPayload extends Payload {
+    public GetCurrenciesPayload() {
+        super("GetCurrencies");
+    }
 }

@@ -15,6 +15,6 @@ public class DeleteClientPayload extends Payload {
      */
     public DeleteClientPayload(int clientID) {
         super("DeleteClient");
-        append("clientid", clientID);
+        put("clientid", clientID);
     }
 }

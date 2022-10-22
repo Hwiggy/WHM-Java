@@ -15,6 +15,6 @@ public class DeleteOAuthCredentialPayload extends Payload {
      */
     public DeleteOAuthCredentialPayload(int credentialID) {
         super("DeleteOAuthCredential");
-        append("credentialid", credentialID);
+        put("credentialid", credentialID);
     }
 }

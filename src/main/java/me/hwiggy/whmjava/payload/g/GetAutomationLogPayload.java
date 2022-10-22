@@ -13,17 +13,17 @@ public class GetAutomationLogPayload extends Payload {
     }
 
     public GetAutomationLogPayload withStartDate(String startDate) {
-        append("startdate", startDate);
+        put("startdate", startDate);
         return this;
     }
 
     public GetAutomationLogPayload withEndDate(String endDate) {
-        append("enddate", endDate);
+        put("enddate", endDate);
         return this;
     }
 
     public GetAutomationLogPayload withNameSpace(String nameSpace) {
-        append("namespace", nameSpace);
+        put("namespace", nameSpace);
         return this;
     }
 }

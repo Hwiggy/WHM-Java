@@ -25,7 +25,7 @@ public class GetProjectsPayload extends Payload {
      * @param limitstart The offset for the returned project data (default: 0)
      */
     public GetProjectsPayload withLimitstart(int limitstart) {
-        append("limitstart", limitstart);
+        put("limitstart", limitstart);
 
         return this;
     }
@@ -35,7 +35,7 @@ public class GetProjectsPayload extends Payload {
      * @param limitnum The number of records to return (default: 25)
      */
     public GetProjectsPayload withLimitnum(int limitnum) {
-        append("limitnum", limitnum);
+        put("limitnum", limitnum);
 
         return this;
     }
@@ -45,7 +45,7 @@ public class GetProjectsPayload extends Payload {
      * @param userid Find projects for a specific client id
      */
     public GetProjectsPayload withUserid(int userid) {
-        append("userid", userid);
+        put("userid", userid);
 
         return this;
     }
@@ -55,7 +55,7 @@ public class GetProjectsPayload extends Payload {
      * @param title Find projects with a specific title
      */
     public GetProjectsPayload withTitle(String title) {
-        append("title", title);
+        put("title", title);
 
         return this;
     }
@@ -65,7 +65,7 @@ public class GetProjectsPayload extends Payload {
      * @param ticketids Find projects with specific ticketids
      */
     public GetProjectsPayload withTicketids(String ticketids) {
-        append("ticketids", ticketids);
+        put("ticketids", ticketids);
 
         return this;
     }
@@ -75,7 +75,7 @@ public class GetProjectsPayload extends Payload {
      * @param invoiceids Find projects with specific invoiceids
      */
     public GetProjectsPayload withInvoiceids(String invoiceids) {
-        append("invoiceids", invoiceids);
+        put("invoiceids", invoiceids);
 
         return this;
     }
@@ -85,7 +85,7 @@ public class GetProjectsPayload extends Payload {
      * @param notes Find projects with specific notes
      */
     public GetProjectsPayload withNotes(String notes) {
-        append("notes", notes);
+        put("notes", notes);
 
         return this;
     }
@@ -95,7 +95,7 @@ public class GetProjectsPayload extends Payload {
      * @param adminid Find projects assigned to a specific admin id
      */
     public GetProjectsPayload withAdminid(int adminid) {
-        append("adminid", adminid);
+        put("adminid", adminid);
 
         return this;
     }
@@ -105,7 +105,7 @@ public class GetProjectsPayload extends Payload {
      * @param status Find projects with a specific status
      */
     public GetProjectsPayload withStatus(String status) {
-        append("status", status);
+        put("status", status);
 
         return this;
     }
@@ -115,7 +115,7 @@ public class GetProjectsPayload extends Payload {
      * @param created Find projects with a specific creation date
      */
     public GetProjectsPayload withCreated(String /* Carbon */ created) {
-        append("created", created);
+        put("created", created);
 
         return this;
     }
@@ -125,7 +125,7 @@ public class GetProjectsPayload extends Payload {
      * @param duedate Find projects with a specific due date
      */
     public GetProjectsPayload withDuedate(String /* Carbon */ duedate) {
-        append("duedate", duedate);
+        put("duedate", duedate);
 
         return this;
     }
@@ -135,7 +135,7 @@ public class GetProjectsPayload extends Payload {
      * @param completed Find projects that are/aren’t completed
      */
     public GetProjectsPayload withCompleted(boolean completed) {
-        append("completed", completed);
+        put("completed", completed);
 
         return this;
     }
@@ -145,7 +145,7 @@ public class GetProjectsPayload extends Payload {
      * @param lastmodified Find projects with a specific last modified date
      */
     public GetProjectsPayload withLastmodified(String /* Carbon */ lastmodified) {
-        append("lastmodified", lastmodified);
+        put("lastmodified", lastmodified);
 
         return this;
     }

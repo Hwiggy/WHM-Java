@@ -17,7 +17,7 @@ public class ListOAuthCredentialsPayload extends Payload {
      * @param grantType    Find credentials for a specific grant type	Optional
      */
     public ListOAuthCredentialsPayload withGrantType(String grantType) {
-        append("grantType", grantType);
+        put("grantType", grantType);
         return this;
     }
 
@@ -25,7 +25,7 @@ public class ListOAuthCredentialsPayload extends Payload {
      * @param sortField    Sort the response using the passed field	Optional
      */
     public ListOAuthCredentialsPayload withSortField(String sortField) {
-        append("sortField", sortField);
+        put("sortField", sortField);
         return this;
     }
 
@@ -33,7 +33,7 @@ public class ListOAuthCredentialsPayload extends Payload {
      * @param sortOrder    The direction of the sort order (‘ASC’, ‘DESC’)	Optional
      */
     public ListOAuthCredentialsPayload withSortOrder(String sortOrder) {
-        append("sortOrder", sortOrder);
+        put("sortOrder", sortOrder);
         return this;
     }
 
@@ -41,7 +41,7 @@ public class ListOAuthCredentialsPayload extends Payload {
      * @param limit    To limit the number of returned credentials	Optional
      */
     public ListOAuthCredentialsPayload withLimit(int limit) {
-        append("limit", limit);
+        put("limit", limit);
         return this;
     }
 }

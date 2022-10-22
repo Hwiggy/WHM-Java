@@ -16,8 +16,8 @@ public class CreateOAuthCredentialPayload extends Payload {
      */
     public CreateOAuthCredentialPayload(String grantType, String scope) {
         super("CreateOAuthCredential");
-        append("grantType", grantType);
-        append("scope", scope);
+        put("grantType", grantType);
+        put("scope", scope);
     }
 
     /***
@@ -26,7 +26,7 @@ public class CreateOAuthCredentialPayload extends Payload {
      * @return This Payload, for chaining
      */
     public CreateOAuthCredentialPayload withName(String name){
-        append("name", name);
+        put("name", name);
         return this;
     }
 
@@ -36,7 +36,7 @@ public class CreateOAuthCredentialPayload extends Payload {
      * @return This Payload, for chaining
      */
     public CreateOAuthCredentialPayload withServiceID(int serviceID){
-        append("serviceid", serviceID);
+        put("serviceid", serviceID);
         return this;
     }
 
@@ -46,7 +46,7 @@ public class CreateOAuthCredentialPayload extends Payload {
      * @return This Payload, for chaining
      */
     public CreateOAuthCredentialPayload withDescription(String description){
-        append("description", description);
+        put("description", description);
         return this;
     }
 
@@ -56,7 +56,7 @@ public class CreateOAuthCredentialPayload extends Payload {
      * @return This Payload, for chaining
      */
     public CreateOAuthCredentialPayload withLogoURI(String logoURI){
-        append("logoUri", logoURI);
+        put("logoUri", logoURI);
         return this;
     }
 
@@ -66,7 +66,7 @@ public class CreateOAuthCredentialPayload extends Payload {
      * @return This Payload, for chaining
      */
     public CreateOAuthCredentialPayload withRedirectURI(String redirectURI){
-        append("redirectUri", redirectURI);
+        put("redirectUri", redirectURI);
         return this;
     }
 

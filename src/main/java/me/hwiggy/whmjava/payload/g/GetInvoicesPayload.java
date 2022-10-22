@@ -24,7 +24,7 @@ public class GetInvoicesPayload extends Payload {
      * @param limitstart The offset for the returned invoice data (default: 0)
      */
     public GetInvoicesPayload withLimitstart(int limitstart) {
-        append("limitstart", limitstart);
+        put("limitstart", limitstart);
 
         return this;
     }
@@ -34,7 +34,7 @@ public class GetInvoicesPayload extends Payload {
      * @param limitnum The number of records to return (default: 25)
      */
     public GetInvoicesPayload withLimitnum(int limitnum) {
-        append("limitnum", limitnum);
+        put("limitnum", limitnum);
 
         return this;
     }
@@ -44,7 +44,7 @@ public class GetInvoicesPayload extends Payload {
      * @param userid Find invoices for a specific client id
      */
     public GetInvoicesPayload withUserid(int userid) {
-        append("userid", userid);
+        put("userid", userid);
 
         return this;
     }
@@ -54,7 +54,7 @@ public class GetInvoicesPayload extends Payload {
      * @param status Find invoices for a specific status. Standard Invoice statuses plus Overdue
      */
     public GetInvoicesPayload withStatus(String status) {
-        append("status", status);
+        put("status", status);
 
         return this;
     }

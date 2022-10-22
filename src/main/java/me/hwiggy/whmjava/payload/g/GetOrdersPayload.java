@@ -24,7 +24,7 @@ public class GetOrdersPayload extends Payload {
      * @param limitStart The offset for the returned order data (default: 0)
      */
     public GetOrdersPayload withLimitStart(int limitStart) {
-        append("limitstart", limitStart);
+        put("limitstart", limitStart);
 
         return this;
     }
@@ -34,7 +34,7 @@ public class GetOrdersPayload extends Payload {
      * @param limitNum The number of records to return (default: 25)
      */
     public GetOrdersPayload withLimitNum(int limitNum) {
-        append("limitnum", limitNum);
+        put("limitnum", limitNum);
 
         return this;
     }
@@ -44,7 +44,7 @@ public class GetOrdersPayload extends Payload {
      * @param id Find orders for a specific id
      */
     public GetOrdersPayload withId(int id) {
-        append("id", id);
+        put("id", id);
 
         return this;
     }
@@ -54,7 +54,7 @@ public class GetOrdersPayload extends Payload {
      * @param userID Find orders for a specific client id
      */
     public GetOrdersPayload withUserID(int userID) {
-        append("userid", userID);
+        put("userid", userID);
 
         return this;
     }
@@ -64,7 +64,7 @@ public class GetOrdersPayload extends Payload {
      * @param status Find orders for a specific status
      */
     public GetOrdersPayload withStatus(String status) {
-        append("status", status);
+        put("status", status);
 
         return this;
     }

@@ -11,7 +11,7 @@ public class GetEmailTemplatesPayload extends Payload {
      * @param type The type of email template to retrieve
      */
     public GetEmailTemplatesPayload withautype(String type) {
-        append("type", type);
+        put("type", type);
         return this;
     }
 
@@ -19,7 +19,7 @@ public class GetEmailTemplatesPayload extends Payload {
      * @param language The language of the email template to retrieve, if none provided will return default language templates.
      */
     public GetEmailTemplatesPayload withaulanguage(String language) {
-        append("language", language);
+        put("language", language);
         return this;
     }
 }

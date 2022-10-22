@@ -18,9 +18,9 @@ public class UpgradeProductPayload extends Payload {
      */
     public UpgradeProductPayload(int serviceID, String paymentMethod, String type) {
         super("UpgradeProduct");
-        append("serviceid", serviceID);
-        append("paymentmethod", paymentMethod);
-        append("type", type);
+        put("serviceid", serviceID);
+        put("paymentmethod", paymentMethod);
+        put("type", type);
     }
 
     /***
@@ -28,7 +28,7 @@ public class UpgradeProductPayload extends Payload {
      * @param calcOnly Only calculate the upgrade amount
      */
     public UpgradeProductPayload withCalcOnly(boolean calcOnly) {
-        append("calconly", calcOnly);
+        put("calconly", calcOnly);
         return this;
     }
 
@@ -38,7 +38,7 @@ public class UpgradeProductPayload extends Payload {
      * @param newProductID The Id of the new product
      */
     public UpgradeProductPayload withNewProductID(int newProductID) {
-        append("newproductid", newProductID);
+        put("newproductid", newProductID);
         return this;
     }
 
@@ -47,7 +47,7 @@ public class UpgradeProductPayload extends Payload {
      * @param newProductBillingCycle The new products billing cycle
      */
     public UpgradeProductPayload withNewProductBillingCycle(String newProductBillingCycle) {
-        append("newproductbillingcycle", newProductBillingCycle);
+        put("newproductbillingcycle", newProductBillingCycle);
         return this;
     }
 
@@ -56,7 +56,7 @@ public class UpgradeProductPayload extends Payload {
      * @param promoCode The promotion code to apply to the upgrade
      */
     public UpgradeProductPayload withPromoCode(String promoCode) {
-        append("promocode", promoCode);
+        put("promocode", promoCode);
         return this;
     }
 
@@ -69,7 +69,7 @@ public class UpgradeProductPayload extends Payload {
      *                      configoptions[selectedqty] int The config option quantity selected
      */
     public UpgradeProductPayload withConfigOptions(JSONObject configOptions) {
-        append("configoptions", configOptions);
+        put("configoptions", configOptions);
         return this;
     }
 }

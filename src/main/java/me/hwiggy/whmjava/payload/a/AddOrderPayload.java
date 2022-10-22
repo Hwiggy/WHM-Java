@@ -25,7 +25,7 @@ public class AddOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddOrderPayload withPIDs(int... pids){
-        append("pid", pids);
+        put("pid", pids);
         return this;
     }
 
@@ -35,7 +35,7 @@ public class AddOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddOrderPayload withDomains(String... domains){
-        append("domain", domains);
+        put("domain", domains);
         return this;
     }
 
@@ -45,7 +45,7 @@ public class AddOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddOrderPayload withBillingCycles(String... billingCycles){
-        append("billingcycle", billingCycles);
+        put("billingcycle", billingCycles);
         return this;
     }
 
@@ -55,7 +55,7 @@ public class AddOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddOrderPayload withDomainTypes(String... domainTypes){
-        append("domaintype", domainTypes);
+        put("domaintype", domainTypes);
         return this;
     }
 
@@ -65,7 +65,7 @@ public class AddOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddOrderPayload withRegPeriods(int... regPeriods){
-        append("regperiod", regPeriods);
+        put("regperiod", regPeriods);
         return this;
     }
 
@@ -75,7 +75,7 @@ public class AddOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddOrderPayload withEppCodes(String... eppCodes){
-        append("eppcode", eppCodes);
+        put("eppcode", eppCodes);
         return this;
     }
 
@@ -85,7 +85,7 @@ public class AddOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddOrderPayload withNameserverOne(String nameserverOne){
-        append("nameserver1", nameserverOne);
+        put("nameserver1", nameserverOne);
         return this;
     }
 
@@ -95,7 +95,7 @@ public class AddOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddOrderPayload withNameserverTwo(String nameserverTwo){
-        append("nameserver2", nameserverTwo);
+        put("nameserver2", nameserverTwo);
         return this;
     }
 
@@ -105,7 +105,7 @@ public class AddOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddOrderPayload withNameserverThree(String nameserverThree){
-        append("nameserver3", nameserverThree);
+        put("nameserver3", nameserverThree);
         return this;
     }
 
@@ -115,7 +115,7 @@ public class AddOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddOrderPayload withNameserverFour(String nameserverFour){
-        append("nameserver4", nameserverFour);
+        put("nameserver4", nameserverFour);
         return this;
     }
 
@@ -125,7 +125,7 @@ public class AddOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddOrderPayload withNameserverFive(String nameserverFive){
-        append("nameserver5", nameserverFive);
+        put("nameserver5", nameserverFive);
         return this;
     }
 
@@ -135,7 +135,7 @@ public class AddOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddOrderPayload withCustomFields(String... customFields){
-        append("customfields", customFields);
+        put("customfields", customFields);
         return this;
     }
 
@@ -145,7 +145,7 @@ public class AddOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddOrderPayload withConfigOptions(String... configOptions){
-        append("configoptions", configOptions);
+        put("configoptions", configOptions);
         return this;
     }
 
@@ -155,7 +155,7 @@ public class AddOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddOrderPayload withPriceOverrides(float... priceOverrides){
-        append("priceoverrides", priceOverrides);
+        put("priceoverrides", priceOverrides);
         return this;
     }
 
@@ -165,7 +165,7 @@ public class AddOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddOrderPayload withPromoCode(String promoCode){
-        append("promocode", promoCode);
+        put("promocode", promoCode);
         return this;
     }
 
@@ -175,7 +175,7 @@ public class AddOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddOrderPayload withPromoOverride(boolean promoOverride){
-        append("promooverride", promoOverride);
+        put("promooverride", promoOverride);
         return this;
     }
 
@@ -185,7 +185,7 @@ public class AddOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddOrderPayload withAffID(int affID){
-        append("affid", affID);
+        put("affid", affID);
         return this;
     }
 
@@ -195,7 +195,7 @@ public class AddOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddOrderPayload withNoInvoice(boolean noInvoice){
-        append("noinvoice", noInvoice);
+        put("noinvoice", noInvoice);
         return this;
     }
 
@@ -205,7 +205,7 @@ public class AddOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddOrderPayload withNoInvoiceEmail(boolean noInvoiceEmail){
-        append("noinvoiceemail", noInvoiceEmail);
+        put("noinvoiceemail", noInvoiceEmail);
         return this;
     }
 
@@ -215,7 +215,7 @@ public class AddOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddOrderPayload withNoEmail(boolean noEmail){
-        append("noemail", noEmail);
+        put("noemail", noEmail);
         return this;
     }
 
@@ -225,7 +225,7 @@ public class AddOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddOrderPayload withAddons(String... addons){
-        append("addons", addons);
+        put("addons", addons);
         return this;
     }
 
@@ -235,7 +235,7 @@ public class AddOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddOrderPayload withHostnames(String... hostnames){
-        append("hostname", hostnames);
+        put("hostname", hostnames);
         return this;
     }
 
@@ -245,7 +245,7 @@ public class AddOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddOrderPayload withNS1Prefixes(String... ns1Prefixes){
-        append("ns1prefix", ns1Prefixes);
+        put("ns1prefix", ns1Prefixes);
         return this;
     }
 
@@ -255,7 +255,7 @@ public class AddOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddOrderPayload withNS2Prefixes(String... ns2Prefixes){
-        append("ns2prefix", ns2Prefixes);
+        put("ns2prefix", ns2Prefixes);
         return this;
     }
 
@@ -265,7 +265,7 @@ public class AddOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddOrderPayload withRootPw(String rootPw){
-        append("rootps", rootPw);
+        put("rootps", rootPw);
         return this;
     }
 
@@ -275,7 +275,7 @@ public class AddOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddOrderPayload withContactID(int contactID){
-        append("contactid", contactID);
+        put("contactid", contactID);
         return this;
     }
 
@@ -285,7 +285,7 @@ public class AddOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddOrderPayload withDNSManagement(boolean... dnsManagement){
-        append("dnsmanagement", dnsManagement);
+        put("dnsmanagement", dnsManagement);
         return this;
     }
 
@@ -295,7 +295,7 @@ public class AddOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddOrderPayload withDomainFields(String... domainFields){
-        append("domainfields", domainFields);
+        put("domainfields", domainFields);
         return this;
     }
 
@@ -305,7 +305,7 @@ public class AddOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddOrderPayload withEmailForwardings(boolean... emailForwarding){
-        append("emailforwarding", emailForwarding);
+        put("emailforwarding", emailForwarding);
         return this;
     }
 
@@ -315,7 +315,7 @@ public class AddOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddOrderPayload withIDProtections(boolean... idProtections){
-        append("idprotection", idProtections);
+        put("idprotection", idProtections);
         return this;
     }
 
@@ -325,7 +325,7 @@ public class AddOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddOrderPayload withDomainPriceOverrides(float... domainPriceOverrides){
-        append("domainpriceoverride", domainPriceOverrides);
+        put("domainpriceoverride", domainPriceOverrides);
         return this;
     }
 
@@ -335,7 +335,7 @@ public class AddOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddOrderPayload withDomainRenewOverrides(float... domainRenewOverrides){
-        append("domainrenewoverride", domainRenewOverrides);
+        put("domainrenewoverride", domainRenewOverrides);
         return this;
     }
 
@@ -345,7 +345,7 @@ public class AddOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddOrderPayload withDomainRenewals(JSONObject domainRenewals){
-        append("domainrenewals", domainRenewals);
+        put("domainrenewals", domainRenewals);
         return this;
     }
 
@@ -355,7 +355,7 @@ public class AddOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddOrderPayload withClientIP(String clientIP){
-        append("clientip", clientIP);
+        put("clientip", clientIP);
         return this;
     }
 
@@ -365,7 +365,7 @@ public class AddOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddOrderPayload withAddonID(int addonID){
-        append("addonid", addonID);
+        put("addonid", addonID);
         return this;
     }
 
@@ -375,7 +375,7 @@ public class AddOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddOrderPayload withServiceID(int serviceID){
-        append("serviceid", serviceID);
+        put("serviceid", serviceID);
         return this;
     }
 
@@ -385,7 +385,7 @@ public class AddOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddOrderPayload withAddonIDs(int... addonIDs){
-        append("addonids", addonIDs);
+        put("addonids", addonIDs);
         return this;
     }
 
@@ -395,7 +395,7 @@ public class AddOrderPayload extends Payload {
      * @return  This Payload, for chaining
      */
     public AddOrderPayload withServiceIDs(int... serviceIDs){
-        append("serviceids", serviceIDs);
+        put("serviceids", serviceIDs);
         return this;
     }
 }

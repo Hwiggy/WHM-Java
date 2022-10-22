@@ -24,7 +24,7 @@ public class GetClientsPayload extends Payload {
      * @param limitStart  The offset for the returned log data (default: 0)
      */
     public GetClientsPayload withLimitStart(int limitStart) {
-        append("limitstart", limitStart);
+        put("limitstart", limitStart);
 
         return this;
     }
@@ -34,7 +34,7 @@ public class GetClientsPayload extends Payload {
      * @param limitNum The number of records to return (default: 25)
      */
     public GetClientsPayload withLimitnum(int limitNum) {
-        append("limitnum", limitNum);
+        put("limitnum", limitNum);
 
         return this;
     }
@@ -44,7 +44,7 @@ public class GetClientsPayload extends Payload {
      * @param sorting The direction to sort the results. ASC or DESC. Default: ASC
      */
     public GetClientsPayload withSorting(String sorting) {
-        append("sorting", sorting);
+        put("sorting", sorting);
 
         return this;
     }
@@ -54,7 +54,7 @@ public class GetClientsPayload extends Payload {
      * @param search The search term to look for at the start of email, firstname, lastname, fullname or companyname
      */
     public GetClientsPayload withSearch(String search) {
-        append("search", search);
+        put("search", search);
 
         return this;
     }

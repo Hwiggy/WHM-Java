@@ -18,6 +18,6 @@ public class DomainGetLockingStatusPayload extends Payload {
      */
     public DomainGetLockingStatusPayload(int domainID) {
         super ("DomainGetLockingStatus");
-        append("domainid", domainID);
+        put("domainid", domainID);
     }
 }

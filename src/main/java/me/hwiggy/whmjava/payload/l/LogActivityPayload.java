@@ -13,7 +13,7 @@ public class LogActivityPayload extends Payload {
      */
     public LogActivityPayload(String description) {
         super ("LogActivity");
-        append("description", description);
+        put("description", description);
     }
 
     /***
@@ -21,7 +21,7 @@ public class LogActivityPayload extends Payload {
      * @param userid The id to log.
      */
     public LogActivityPayload withUserid(int userid) {
-        append("userid", userid);
+        put("userid", userid);
         return this;
     }
 }

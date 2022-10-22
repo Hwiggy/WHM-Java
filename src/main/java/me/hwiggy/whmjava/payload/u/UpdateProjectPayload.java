@@ -17,7 +17,7 @@ public class UpdateProjectPayload extends Payload {
 
     public UpdateProjectPayload(int projectID) {
         super("UpdateProject");
-        append("projectid", projectID);
+        put("projectid", projectID);
     }
 
     /***
@@ -25,7 +25,7 @@ public class UpdateProjectPayload extends Payload {
      * @param adminID The adminId the project will be associated with
      */
     public UpdateProjectPayload withAdminID(int adminID) {
-        append("adminid", adminID);
+        put("adminid", adminID);
         return this;
     }
 
@@ -34,7 +34,7 @@ public class UpdateProjectPayload extends Payload {
      * @param userID The user that the project is for
      */
     public UpdateProjectPayload withUserID(int userID) {
-        append("userid", userID);
+        put("userid", userID);
         return this;
     }
 
@@ -43,7 +43,7 @@ public class UpdateProjectPayload extends Payload {
      * @param status The status of the project as defined in Project Management Settings
      */
     public UpdateProjectPayload withStatus(String  status) {
-        append("status",status);
+        put("status",status);
         return this;
     }
 
@@ -52,7 +52,7 @@ public class UpdateProjectPayload extends Payload {
      * @param created The created date of the project in Y-m-d format
      */
     public UpdateProjectPayload withCreated(String created) {
-        append("created", created);
+        put("created", created);
         return this;
     }
 
@@ -61,7 +61,7 @@ public class UpdateProjectPayload extends Payload {
      * @param duedate The due date of the project in Y-m-d format
      */
     public UpdateProjectPayload withDueDate(String duedate) {
-        append("duedate", duedate);
+        put("duedate", duedate);
         return this;
     }
 
@@ -70,7 +70,7 @@ public class UpdateProjectPayload extends Payload {
      * @param completed Is the project completed
      */
     public UpdateProjectPayload withCompleted(boolean completed) {
-        append("completed", completed);
+        put("completed", completed);
         return this;
     }
 
@@ -79,7 +79,7 @@ public class UpdateProjectPayload extends Payload {
      * @param title The title of the project
      */
     public UpdateProjectPayload withTitle(String title) {
-        append("title", title);
+        put("title", title);
         return this;
     }
 
@@ -88,7 +88,7 @@ public class UpdateProjectPayload extends Payload {
      * @param tickeIDs A comma separated list of ticket IDs to associate with the project
      */
     public UpdateProjectPayload withtickeIDs(String tickeIDs) {
-        append("ticketids", tickeIDs);
+        put("ticketids", tickeIDs);
         return this;
     }
 
@@ -97,7 +97,7 @@ public class UpdateProjectPayload extends Payload {
      * @param invoiceids A comma separated list of invoice IDs to associate with the project
      */
     public UpdateProjectPayload withInvoiceIDs(String invoiceids) {
-        append("invoiceids", invoiceids);
+        put("invoiceids", invoiceids);
         return this;
     }
 
@@ -106,7 +106,7 @@ public class UpdateProjectPayload extends Payload {
      * @param notes The notes to associate with the project
      */
     public UpdateProjectPayload withNotes(String notes) {
-        append("notes", notes);
+        put("notes", notes);
         return this;
     }
 }

@@ -24,7 +24,7 @@ public class GetClientsProductsPayload extends Payload {
      * @param limitStart  The offset for the returned log data (default: 0)
      */
     public GetClientsProductsPayload withLimitStart(int limitStart) {
-        append("limitstart", limitStart);
+        put("limitstart", limitStart);
 
         return this;
     }
@@ -34,7 +34,7 @@ public class GetClientsProductsPayload extends Payload {
      * @param limitNum  The number of records to return (default: 25)
      */
     public GetClientsProductsPayload withLimitNum(int limitNum) {
-        append("limitnum", limitNum);
+        put("limitnum", limitNum);
 
         return this;
     }
@@ -44,7 +44,7 @@ public class GetClientsProductsPayload extends Payload {
      * @param clientID  The client id to obtain the details for.
      */
     public GetClientsProductsPayload withClientID(int clientID) {
-        append("clientid", clientID);
+        put("clientid", clientID);
 
         return this;
     }
@@ -54,7 +54,7 @@ public class GetClientsProductsPayload extends Payload {
      * @param serviceID The specific service id to obtain the details for
      */
     public GetClientsProductsPayload withServiceID(int serviceID) {
-        append("serviceid", serviceID);
+        put("serviceid", serviceID);
 
         return this;
     }
@@ -64,7 +64,7 @@ public class GetClientsProductsPayload extends Payload {
      * @param pID  The specific product id to obtain the details for
      */
     public GetClientsProductsPayload withPID(int pID) {
-        append("pid", pID);
+        put("pid", pID);
 
         return this;
     }
@@ -74,7 +74,7 @@ public class GetClientsProductsPayload extends Payload {
      * @param domain The specific domain to obtain the service details for
      */
     public GetClientsProductsPayload withDomain(String domain) {
-        append("domain", domain);
+        put("domain", domain);
 
         return this;
     }
@@ -84,7 +84,7 @@ public class GetClientsProductsPayload extends Payload {
      * @param username2  The specific username to obtain the details for
      */
     public GetClientsProductsPayload withUsername2(String username2) {
-        append("username2", username2);
+        put("username2", username2);
 
         return this;
     }

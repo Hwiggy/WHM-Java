@@ -18,6 +18,6 @@ public class GetConfigurationValuePayload extends Payload {
      */
     public GetConfigurationValuePayload(String setting) {
         super ("GetConfigurationValue");
-        append("setting", setting);
+        put("setting", setting);
     }
 }

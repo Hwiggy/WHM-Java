@@ -18,7 +18,7 @@ public class ValidateLoginPayload extends Payload {
      */
     public ValidateLoginPayload(String email, String password) {
         super("ValidateLogin");
-        append("email", email);
-        append("password2", password);
+        put("email", email);
+        put("password2", password);
     }
 }

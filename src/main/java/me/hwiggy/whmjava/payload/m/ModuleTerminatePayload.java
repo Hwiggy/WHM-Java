@@ -15,6 +15,6 @@ public class ModuleTerminatePayload extends Payload {
      */
     public ModuleTerminatePayload(int accountID) {
         super("ModuleTerminate");
-        append("accountid", accountID);
+        put("accountid", accountID);
     }
 }

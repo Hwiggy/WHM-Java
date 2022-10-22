@@ -18,6 +18,6 @@ public class DomainRequestEPPPayload extends Payload {
      */
     public DomainRequestEPPPayload(int domainID) {
         super ("DomainRequestEPP");
-        append("domainid", domainID);
+        put("domainid", domainID);
     }
 }

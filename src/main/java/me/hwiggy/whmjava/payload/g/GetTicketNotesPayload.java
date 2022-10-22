@@ -18,6 +18,6 @@ public class GetTicketNotesPayload extends Payload {
      */
     public GetTicketNotesPayload(int ticketid) {
         super ("GetTicketNotes");
-        append("ticketid", ticketid);
+        put("ticketid", ticketid);
     }
 }

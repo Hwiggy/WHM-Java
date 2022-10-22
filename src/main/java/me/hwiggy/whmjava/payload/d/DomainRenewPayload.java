@@ -20,19 +20,19 @@ public class DomainRenewPayload extends Payload {
     }
 
     public DomainRenewPayload withDomainid(int domainid) {
-        append("domainid", domainid);
+        put("domainid", domainid);
 
         return this;
     }
 
     public DomainRenewPayload withDomain(String domain) {
-        append("domain", domain);
+        put("domain", domain);
 
         return this;
     }
 
     public DomainRenewPayload withRegperiod(int regperiod) {
-        append("regperiod", regperiod);
+        put("regperiod", regperiod);
 
         return this;
     }

@@ -16,7 +16,7 @@ public class DeactivateModulePayload extends Payload {
      */
     public DeactivateModulePayload(String moduleType, String moduleName) {
         super("DeactivateModule");
-        append("moduletype", moduleType);
-        append("modulename", moduleName);
+        put("moduletype", moduleType);
+        put("modulename", moduleName);
     }
 }

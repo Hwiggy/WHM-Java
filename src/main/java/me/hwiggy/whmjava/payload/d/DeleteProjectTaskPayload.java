@@ -19,7 +19,7 @@ public class DeleteProjectTaskPayload extends Payload {
      */
     public DeleteProjectTaskPayload(int projectID, int taskID) {
         super ("DeleteProjectTask");
-        append("projectid", projectID);
-        append("taskid", taskID);
+        put("projectid", projectID);
+        put("taskid", taskID);
     }
 }

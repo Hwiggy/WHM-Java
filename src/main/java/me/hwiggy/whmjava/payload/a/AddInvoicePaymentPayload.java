@@ -25,7 +25,7 @@ public class AddInvoicePaymentPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddInvoicePaymentPayload withDate(String date){
-        append("date", date);
+        put("date", date);
         return this;
     }
 
@@ -35,7 +35,7 @@ public class AddInvoicePaymentPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddInvoicePaymentPayload withAmount(float amount){
-        append("amount", amount);
+        put("amount", amount);
         return this;
     }
 
@@ -45,7 +45,7 @@ public class AddInvoicePaymentPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddInvoicePaymentPayload withFees(float fees){
-        append("fees", fees);
+        put("fees", fees);
         return this;
     }
 
@@ -55,7 +55,7 @@ public class AddInvoicePaymentPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddInvoicePaymentPayload withNoEmail(boolean noEmail){
-        append("noemail", noEmail);
+        put("noemail", noEmail);
         return this;
     }
 }

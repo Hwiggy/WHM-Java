@@ -25,7 +25,7 @@ public class GetServersPayload extends Payload {
      * @return
      */
     public GetServersPayload withFetchStatus(boolean fetchStatus) {
-        append("fetchStatus", fetchStatus);
+        put("fetchStatus", fetchStatus);
 
         return this;
     }

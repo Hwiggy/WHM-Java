@@ -15,6 +15,6 @@ public class DeleteContactPayload extends Payload {
      */
     public DeleteContactPayload(int contactID) {
         super("DeleteContact");
-        append("contactid", contactID);
+        put("contactid", contactID);
     }
 }

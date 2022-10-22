@@ -11,7 +11,7 @@ public class UpdateOAuthCredentialPayload extends Payload {
 
     public UpdateOAuthCredentialPayload(int credentialID) {
         super("UpdateOAuthCredential");
-        append("credentialId", credentialID);
+        put("credentialId", credentialID);
     }
 
     /***
@@ -19,7 +19,7 @@ public class UpdateOAuthCredentialPayload extends Payload {
      * @param clientApiIdentifier The OAuth API Client Credential Unique Identifier (Client ID) to be updated. Only required if credentialId is not known/passed.
      */
     public UpdateOAuthCredentialPayload withClientApiIdentifier(String clientApiIdentifier) {
-        append("clientApiIdentifier", clientApiIdentifier);
+        put("clientApiIdentifier", clientApiIdentifier);
         return this;
     }
 
@@ -28,7 +28,7 @@ public class UpdateOAuthCredentialPayload extends Payload {
      * @param name The name to assign
      */
     public UpdateOAuthCredentialPayload withName(String name) {
-        append("name", name);
+        put("name", name);
         return this;
     }
 
@@ -37,7 +37,7 @@ public class UpdateOAuthCredentialPayload extends Payload {
      * @param description The description to assign
      */
     public UpdateOAuthCredentialPayload withDescription(String description) {
-        append("description", description);
+        put("description", description);
         return this;
     }
 
@@ -46,7 +46,7 @@ public class UpdateOAuthCredentialPayload extends Payload {
      * @param grantType The grant type for which the credential set is valid for. Possible values include: authorization_code or single_sign_on
      */
     public UpdateOAuthCredentialPayload withGrantType(String grantType) {
-        append("grantType", grantType);
+        put("grantType", grantType);
         return this;
     }
 
@@ -55,7 +55,7 @@ public class UpdateOAuthCredentialPayload extends Payload {
      * @param scope A space delimited list of the scopes for which the credential set is valid. See CreateOAuthCredential for permitted values
      */
     public UpdateOAuthCredentialPayload withScope(String scope) {
-        append("scope", scope);
+        put("scope", scope);
         return this;
     }
 
@@ -64,7 +64,7 @@ public class UpdateOAuthCredentialPayload extends Payload {
      * @param serviceID The service ID for which the credential relates to
      */
     public UpdateOAuthCredentialPayload withServiceID(int serviceID) {
-        append("serviceId", serviceID);
+        put("serviceId", serviceID);
         return this;
     }
 
@@ -73,7 +73,7 @@ public class UpdateOAuthCredentialPayload extends Payload {
      * @param logoUri The logoUri to assign
      */
     public UpdateOAuthCredentialPayload withLogoUri(String... logoUri) {
-        append("logoUri", logoUri);
+        put("logoUri", logoUri);
         return this;
     }
 
@@ -82,7 +82,7 @@ public class UpdateOAuthCredentialPayload extends Payload {
      * @param redirectUri An array of Authorized Redirect URIs
      */
     public UpdateOAuthCredentialPayload withRedirectUri(String redirectUri) {
-        append("redirectUri", redirectUri);
+        put("redirectUri", redirectUri);
         return this;
     }
 
@@ -91,7 +91,7 @@ public class UpdateOAuthCredentialPayload extends Payload {
      * @param resetSecret Set to true to reset the OAuth API Client Credential Secret
      */
     public UpdateOAuthCredentialPayload withResetSecret(boolean resetSecret) {
-        append("resetSecret", resetSecret);
+        put("resetSecret", resetSecret);
         return this;
     }
 }

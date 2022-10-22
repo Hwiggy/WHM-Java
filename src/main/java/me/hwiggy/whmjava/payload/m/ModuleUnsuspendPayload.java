@@ -15,6 +15,6 @@ public class ModuleUnsuspendPayload extends Payload {
      */
     public ModuleUnsuspendPayload(int accountID) {
         super("ModuleUnsuspend");
-        append("accountid", accountID);
+        put("accountid", accountID);
     }
 }

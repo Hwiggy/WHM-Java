@@ -24,7 +24,7 @@ public class DomainTransferPayload extends Payload {
      * @param domainID The id of the domain to be transferred recommended
      */
     public DomainTransferPayload withDomainID(int domainID) {
-        append("domainid", domainID);
+        put("domainid", domainID);
 
         return this;
     }
@@ -34,7 +34,7 @@ public class DomainTransferPayload extends Payload {
      * @param domain The domain name to be transferred. This or $domainid is required
      */
     public DomainTransferPayload withDomain(String domain) {
-        append("domain", domain);
+        put("domain", domain);
 
         return this;
     }
@@ -44,7 +44,7 @@ public class DomainTransferPayload extends Payload {
      * @param eppcode Provide a new EPP Code for the Transfer Request
      */
     public DomainTransferPayload withEppcode(int eppcode) {
-        append("eppcode", eppcode);
+        put("eppcode", eppcode);
 
         return this;
     }

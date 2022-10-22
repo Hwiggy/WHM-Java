@@ -11,11 +11,11 @@ public class ModuleChangePwPayload extends Payload {
 
     public ModuleChangePwPayload(int accountID) {
         super("ModuleChangePw");
-        append("accountid", accountID);
+        put("accountid", accountID);
     }
 
     public ModuleChangePwPayload withServicePassword(String servicePassword) {
-        append("servicepassword", servicePassword);
+        put("servicepassword", servicePassword);
         return this;
     }
 }

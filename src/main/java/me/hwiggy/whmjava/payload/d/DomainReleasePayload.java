@@ -18,7 +18,7 @@ public class DomainReleasePayload extends Payload {
      */
     public DomainReleasePayload(String newtag) {
         super ("DomainRelease");
-        append("newtag", newtag);
+        put("newtag", newtag);
     }
 
     /***
@@ -26,7 +26,7 @@ public class DomainReleasePayload extends Payload {
      * @param domainID The id of the domain to be released recommended
      */
     public DomainReleasePayload withDomainID(int domainID) {
-        append("domainid", domainID);
+        put("domainid", domainID);
 
         return this;
     }
@@ -36,7 +36,7 @@ public class DomainReleasePayload extends Payload {
      * @param domain The domain name to be released. This or $domainid is required
      */
     public DomainReleasePayload withDomain(String domain) {
-        append("domain", domain);
+        put("domain", domain);
 
         return this;
     }

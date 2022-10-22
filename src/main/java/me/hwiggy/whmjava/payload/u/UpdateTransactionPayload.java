@@ -15,7 +15,7 @@ public class UpdateTransactionPayload extends Payload {
      */
     public UpdateTransactionPayload(int transactionID) {
         super("UpdateTransaction");
-        append("transactionid", transactionID);
+        put("transactionid", transactionID);
     }
 
     /***
@@ -23,7 +23,7 @@ public class UpdateTransactionPayload extends Payload {
      * @param refundID The unique id of the transaction that this transaction refunds
      */
     public UpdateTransactionPayload withRefundID(int refundID) {
-        append("refundid", refundID);
+        put("refundid", refundID);
         return this;
     }
 
@@ -32,7 +32,7 @@ public class UpdateTransactionPayload extends Payload {
      * @param userID The ID of the user to apply the transaction to
      */
     public UpdateTransactionPayload withUserID(int userID) {
-        append("userid", userID);
+        put("userid", userID);
         return this;
     }
 
@@ -41,7 +41,7 @@ public class UpdateTransactionPayload extends Payload {
      * @param invoiceID The ID of the invoice the transaction is for
      */
     public UpdateTransactionPayload withInvoiceID(int invoiceID) {
-        append("invoiceid", invoiceID);
+        put("invoiceid", invoiceID);
         return this;
     }
 
@@ -50,7 +50,7 @@ public class UpdateTransactionPayload extends Payload {
      * @param transID The unique transaction id for this payment
      */
     public UpdateTransactionPayload withTransID(int transID) {
-        append("transid", transID);
+        put("transid", transID);
         return this;
     }
 
@@ -59,7 +59,7 @@ public class UpdateTransactionPayload extends Payload {
      * @param date The date of the transaction Y-m-d
      */
     public UpdateTransactionPayload withDate(String date) {
-        append("date", date);
+        put("date", date);
         return this;
     }
 
@@ -68,7 +68,7 @@ public class UpdateTransactionPayload extends Payload {
      * @param gateway The gateway of the transaction in system format
      */
     public UpdateTransactionPayload withGateway(String gateway) {
-        append("gateway", gateway);
+        put("gateway", gateway);
         return this;
     }
 
@@ -77,7 +77,7 @@ public class UpdateTransactionPayload extends Payload {
      * @param currency The gateway of the transaction in system format
      */
     public UpdateTransactionPayload withCurrency(int currency) {
-        append("currency", currency);
+        put("currency", currency);
         return this;
     }
 
@@ -86,7 +86,7 @@ public class UpdateTransactionPayload extends Payload {
      * @param description The description of the transaction
      */
     public UpdateTransactionPayload withDescription(String description) {
-        append("description", description);
+        put("description", description);
         return this;
     }
 
@@ -95,7 +95,7 @@ public class UpdateTransactionPayload extends Payload {
      * @param amountIn The amount received by the payment
      */
     public UpdateTransactionPayload withAmountIn(float amountIn) {
-        append("amountin", amountIn);
+        put("amountin", amountIn);
         return this;
     }
 
@@ -104,7 +104,7 @@ public class UpdateTransactionPayload extends Payload {
      * @param fees The amount of fee charged on the transaction by the merchant - This can be negative
      */
     public UpdateTransactionPayload withFees(float fees) {
-        append("fees", fees);
+        put("fees", fees);
         return this;
     }
 
@@ -113,7 +113,7 @@ public class UpdateTransactionPayload extends Payload {
      * @param amountOut The amount paid out by the payment
      */
     public UpdateTransactionPayload withAmountOut(float amountOut) {
-        append("amountout", amountOut);
+        put("amountout", amountOut);
         return this;
     }
 
@@ -122,7 +122,7 @@ public class UpdateTransactionPayload extends Payload {
      * @param rate The exchange rate for the payment based on the default currency
      */
     public UpdateTransactionPayload withRate(int rate) {
-        append("rate", rate);
+        put("rate", rate);
         return this;
     }
 
@@ -131,7 +131,7 @@ public class UpdateTransactionPayload extends Payload {
      * @param credit Should the payment be applied to credit on the client account. Invoice ID must not be provided.
      */
     public UpdateTransactionPayload withCredit(boolean credit) {
-        append("credit", credit);
+        put("credit", credit);
         return this;
     }
 }

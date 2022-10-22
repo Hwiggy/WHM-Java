@@ -16,8 +16,8 @@ public class AddClientNotePayload extends Payload {
      */
     public AddClientNotePayload(int userID, String note) {
         super("AddClientNote");
-        append("userid", userID);
-        append("notes", note);
+        put("userid", userID);
+        put("notes", note);
     }
 
     /***
@@ -26,7 +26,7 @@ public class AddClientNotePayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddClientNotePayload withSticky(boolean sticky){
-        append("sticky", sticky);
+        put("sticky", sticky);
         return this;
     }
 }

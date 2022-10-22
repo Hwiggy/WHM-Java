@@ -24,7 +24,7 @@ public class GetClientsDomainsPayload extends Payload {
      * @param limitStart The offset for the returned log data (default: 0)
      */
     public GetClientsDomainsPayload withLimitStart(int limitStart) {
-        append("limitstart", limitStart);
+        put("limitstart", limitStart);
 
         return this;
     }
@@ -34,7 +34,7 @@ public class GetClientsDomainsPayload extends Payload {
      * @param limitNum The number of records to return (default: 25)
      */
     public GetClientsDomainsPayload withLimitNum(int limitNum) {
-        append("limitnum", limitNum);
+        put("limitnum", limitNum);
 
         return this;
     }
@@ -44,7 +44,7 @@ public class GetClientsDomainsPayload extends Payload {
      * @param clientID The client id to obtain the details for.
      */
     public GetClientsDomainsPayload withClientID(int clientID) {
-        append("clientid", clientID);
+        put("clientid", clientID);
 
         return this;
     }
@@ -54,7 +54,7 @@ public class GetClientsDomainsPayload extends Payload {
      * @param domainID The specific domain id to obtain the details for
      */
     public GetClientsDomainsPayload withDomainID(int domainID) {
-        append("domainid", domainID);
+        put("domainid", domainID);
 
         return this;
     }
@@ -64,7 +64,7 @@ public class GetClientsDomainsPayload extends Payload {
      * @param domain The specific domain to obtain the details for
      */
     public GetClientsDomainsPayload withDomain(String domain) {
-        append("domain", domain);
+        put("domain", domain);
 
         return this;
     }

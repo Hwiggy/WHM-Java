@@ -15,6 +15,6 @@ public class ModuleCreatePayload extends Payload {
      */
     public ModuleCreatePayload(int accountID) {
         super("ModuleCreate");
-        append("accountid", accountID);
+        put("accountid", accountID);
     }
 }

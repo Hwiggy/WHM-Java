@@ -16,7 +16,7 @@ public class UpdateProjectTaskPayload extends Payload {
      */
     public UpdateProjectTaskPayload(int taskID) {
         super("UpdateProjectTask");
-        append("taskid", taskID);
+        put("taskid", taskID);
     }
 
     /***
@@ -24,7 +24,7 @@ public class UpdateProjectTaskPayload extends Payload {
      * @param projectID Change the project a task is assigned to
      */
     public UpdateProjectTaskPayload withProjectID(int projectID) {
-        append("projectid", projectID);
+        put("projectid", projectID);
         return this;
     }
 
@@ -33,7 +33,7 @@ public class UpdateProjectTaskPayload extends Payload {
      * @param dueDate The duedate for the task. Format YYYY-mm-dd
      */
     public UpdateProjectTaskPayload withDueDate(String dueDate) {
-        append("duedate", dueDate);
+        put("duedate", dueDate);
         return this;
     }
 
@@ -42,7 +42,7 @@ public class UpdateProjectTaskPayload extends Payload {
      * @param adminID The admin id to associate the task with
      */
     public UpdateProjectTaskPayload withAdminID(int adminID) {
-        append("adminid", adminID);
+        put("adminid", adminID);
         return this;
     }
 
@@ -51,7 +51,7 @@ public class UpdateProjectTaskPayload extends Payload {
      * @param task The task title
      */
     public UpdateProjectTaskPayload withTask(String task) {
-        append("task", task);
+        put("task", task);
         return this;
     }
 
@@ -60,7 +60,7 @@ public class UpdateProjectTaskPayload extends Payload {
      * @param notes The notes for the task
      */
     public UpdateProjectTaskPayload withNotes(String notes) {
-        append("notes", notes);
+        put("notes", notes);
         return this;
     }
 
@@ -69,7 +69,7 @@ public class UpdateProjectTaskPayload extends Payload {
      * @param completed Has the task been completed
      */
     public UpdateProjectTaskPayload withCompleted(boolean completed) {
-        append("completed", completed);
+        put("completed", completed);
         return this;
     }
 }

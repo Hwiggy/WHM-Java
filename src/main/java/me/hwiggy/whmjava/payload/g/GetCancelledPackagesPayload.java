@@ -13,12 +13,12 @@ public class GetCancelledPackagesPayload extends Payload {
     }
 
     public GetCancelledPackagesPayload withLimitStart(int limitStart) {
-        append("limitstart", limitStart);
+        put("limitstart", limitStart);
         return this;
     }
 
     public GetCancelledPackagesPayload withLimitNum(int limitNum) {
-        append("limitnum", limitNum);
+        put("limitnum", limitNum);
         return this;
     }
 }

@@ -18,6 +18,6 @@ public class EncryptPasswordPayload extends Payload {
      */
     public EncryptPasswordPayload(String password2) {
         super ("EncryptPassword");
-        append("password2", password2);
+        put("password2", password2);
     }
 }

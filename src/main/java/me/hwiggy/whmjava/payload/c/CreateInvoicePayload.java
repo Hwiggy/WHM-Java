@@ -15,7 +15,7 @@ public class CreateInvoicePayload extends Payload {
      */
     public CreateInvoicePayload(int userID) {
         super("CreateInvoice");
-        append("userid", userID);
+        put("userid", userID);
     }
 
     /***
@@ -24,7 +24,7 @@ public class CreateInvoicePayload extends Payload {
      * @return This Payload, for chaining
      */
     public CreateInvoicePayload withStatus(String status){
-        append("status", status);
+        put("status", status);
         return this;
     }
 
@@ -34,7 +34,7 @@ public class CreateInvoicePayload extends Payload {
      * @return This Payload, for chaining
      */
     public CreateInvoicePayload withDraft(boolean draft){
-        append("draft", draft);
+        put("draft", draft);
         return this;
     }
 
@@ -44,7 +44,7 @@ public class CreateInvoicePayload extends Payload {
      * @return This Payload, for chaining
      */
     public CreateInvoicePayload withSendInvoice(boolean sendInvoice){
-        append("sendinvoice", sendInvoice);
+        put("sendinvoice", sendInvoice);
         return this;
     }
 
@@ -54,7 +54,7 @@ public class CreateInvoicePayload extends Payload {
      * @return This Payload, for chaining
      */
     public CreateInvoicePayload withPaymentMethod(String paymentMethod){
-        append("paymentmethod", paymentMethod);
+        put("paymentmethod", paymentMethod);
         return this;
     }
 
@@ -64,7 +64,7 @@ public class CreateInvoicePayload extends Payload {
      * @return This Payload, for chaining
      */
     public CreateInvoicePayload withTaxRate(float taxRate){
-        append("taxrate", taxRate);
+        put("taxrate", taxRate);
         return this;
     }
 
@@ -74,7 +74,7 @@ public class CreateInvoicePayload extends Payload {
      * @return This Payload, for chaining
      */
     public CreateInvoicePayload withTaxRateTwo(float taxRateTwo){
-        append("taxrate2", taxRateTwo);
+        put("taxrate2", taxRateTwo);
         return this;
     }
 
@@ -84,7 +84,7 @@ public class CreateInvoicePayload extends Payload {
      * @return This Payload, for chaining
      */
     public CreateInvoicePayload withDate(String date){
-        append("date", date);
+        put("date", date);
         return this;
     }
 
@@ -94,7 +94,7 @@ public class CreateInvoicePayload extends Payload {
      * @return This Payload, for chaining
      */
     public CreateInvoicePayload withDueDate(String dueDate){
-        append("duedate", dueDate);
+        put("duedate", dueDate);
         return this;
     }
 
@@ -104,7 +104,7 @@ public class CreateInvoicePayload extends Payload {
      * @return This Payload, for chaining
      */
     public CreateInvoicePayload withNotes(String notes){
-        append("notes", notes);
+        put("notes", notes);
         return this;
     }
 
@@ -116,7 +116,7 @@ public class CreateInvoicePayload extends Payload {
     public CreateInvoicePayload withItemDescriptions(String... itemDescriptions){
         int ct = 1;
         for (String desc : itemDescriptions){
-            append("itemdescription" + ct, desc);
+            put("itemdescription" + ct, desc);
             ct++;
         }
         return this;
@@ -130,7 +130,7 @@ public class CreateInvoicePayload extends Payload {
     public CreateInvoicePayload withItemAmounts(float... itemAmounts){
         int ct = 1;
         for (float amount : itemAmounts){
-            append("itemamount" + ct, amount);
+            put("itemamount" + ct, amount);
             ct++;
         }
         return this;
@@ -144,7 +144,7 @@ public class CreateInvoicePayload extends Payload {
     public CreateInvoicePayload withitemTaxed(boolean... itemTaxed){
         int ct = 1;
         for (boolean taxed : itemTaxed){
-            append("itemtaxed" + ct, taxed);
+            put("itemtaxed" + ct, taxed);
             ct++;
         }
         return this;
@@ -156,7 +156,7 @@ public class CreateInvoicePayload extends Payload {
      * @return This Payload, for chaining
      */
     public CreateInvoicePayload withAutoApplyCredit(boolean autoApplyCredit){
-        append("autoapplycredit", autoApplyCredit);
+        put("autoapplycredit", autoApplyCredit);
         return this;
     }
 }

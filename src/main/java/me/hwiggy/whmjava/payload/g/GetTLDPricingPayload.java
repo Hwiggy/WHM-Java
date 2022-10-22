@@ -12,7 +12,7 @@ public class GetTLDPricingPayload extends Payload {
      * @param currencyID The currency ID to fetch pricing for
      */
     public GetTLDPricingPayload withCurrencyID(int currencyID) {
-        append("currencyid", currencyID);
+        put("currencyid", currencyID);
         return this;
     }
 
@@ -21,7 +21,7 @@ public class GetTLDPricingPayload extends Payload {
      * @param clientID The id of the client to fetch pricing for. Pass one or the other. clientid being passed will override currencyid
      */
     public GetTLDPricingPayload withClientID(int clientID) {
-        append("clientid", clientID);
+        put("clientid", clientID);
         return this;
     }
 }

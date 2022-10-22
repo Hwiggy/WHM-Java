@@ -15,7 +15,7 @@ public class AddCancelRequestPayload extends Payload {
      */
     public AddCancelRequestPayload(int serviceID) {
         super("AddCancelRequest");
-        append("serviceid", serviceID);
+        put("serviceid", serviceID);
     }
 
     /***
@@ -24,7 +24,7 @@ public class AddCancelRequestPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddCancelRequestPayload withType(String type){
-        append("type", type);
+        put("type", type);
         return this;
     }
 
@@ -34,7 +34,7 @@ public class AddCancelRequestPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddCancelRequestPayload withReason(String reason){
-        append("reason", reason);
+        put("reason", reason);
         return this;
     }
 }

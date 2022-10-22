@@ -16,8 +16,8 @@ public class CreateProjectPayload extends Payload {
      */
     public CreateProjectPayload(String title, int adminID) {
         super("CreateProject");
-        append("title", title);
-        append("adminid", adminID);
+        put("title", title);
+        put("adminid", adminID);
     }
 
     /***
@@ -26,7 +26,7 @@ public class CreateProjectPayload extends Payload {
      * @return This Payload, for chaining
      */
     public CreateProjectPayload withUserID(int userID){
-        append("userid", userID);
+        put("userid", userID);
         return this;
     }
 
@@ -36,7 +36,7 @@ public class CreateProjectPayload extends Payload {
      * @return This Payload, for chaining
      */
     public CreateProjectPayload withStatus(String status){
-        append("status", status);
+        put("status", status);
         return this;
     }
 
@@ -46,7 +46,7 @@ public class CreateProjectPayload extends Payload {
      * @return This Payload, for chaining
      */
     public CreateProjectPayload withCreated(String created){
-        append("created", created);
+        put("created", created);
         return this;
     }
 
@@ -56,7 +56,7 @@ public class CreateProjectPayload extends Payload {
      * @return This Payload, for chaining
      */
     public CreateProjectPayload withDueDate(String dueDate){
-        append("duedate", dueDate);
+        put("duedate", dueDate);
         return this;
     }
 
@@ -66,7 +66,7 @@ public class CreateProjectPayload extends Payload {
      * @return This Payload, for chaining
      */
     public CreateProjectPayload withCompleted(boolean completed){
-        append("completed", completed);
+        put("completed", completed);
         return this;
     }
 
@@ -76,7 +76,7 @@ public class CreateProjectPayload extends Payload {
      * @return This Payload, for chaining
      */
     public CreateProjectPayload withTicketIDs(String ticketIDs){
-        append("ticketids", ticketIDs);
+        put("ticketids", ticketIDs);
         return this;
     }
 
@@ -86,7 +86,7 @@ public class CreateProjectPayload extends Payload {
      * @return This Payload, for chaining
      */
     public CreateProjectPayload withInvoiceIDs(String invoiceIDs){
-        append("invoiceids", invoiceIDs);
+        put("invoiceids", invoiceIDs);
         return this;
     }
 }

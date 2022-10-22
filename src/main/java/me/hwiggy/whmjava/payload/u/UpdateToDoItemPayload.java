@@ -19,7 +19,7 @@ public class UpdateToDoItemPayload extends Payload {
      * @param itemID The id of the To-Do item to be updated.
      */
     public UpdateToDoItemPayload withItemID(int itemID) {
-        append("itemid", itemID);
+        put("itemid", itemID);
         return this;
     }
 
@@ -28,7 +28,7 @@ public class UpdateToDoItemPayload extends Payload {
      * @param adminID The admin id performing the update.
      */
     public UpdateToDoItemPayload withAdminID(int adminID) {
-        append("adminid", adminID);
+        put("adminid", adminID);
         return this;
     }
 
@@ -37,7 +37,7 @@ public class UpdateToDoItemPayload extends Payload {
      * @param status The status of the to-do item.
      */
     public UpdateToDoItemPayload withStatus(String status) {
-        append("status", status);
+        put("status", status);
         return this;
     }
 }

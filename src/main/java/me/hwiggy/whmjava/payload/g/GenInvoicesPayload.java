@@ -16,7 +16,7 @@ public class GenInvoicesPayload extends Payload {
      * @param noEmails    Stop any invoice created emails being sent	Optional
      */
     public GenInvoicesPayload withNoEmails(boolean noEmails) {
-        append("noemails", noEmails);
+        put("noemails", noEmails);
         return this;
     }
 
@@ -24,7 +24,7 @@ public class GenInvoicesPayload extends Payload {
      * @param clientID    Pass to generate invoices only for a single client id	Optional
      */
     public GenInvoicesPayload withClientID(int clientID) {
-        append("clientid", clientID);
+        put("clientid", clientID);
         return this;
     }
 
@@ -32,7 +32,7 @@ public class GenInvoicesPayload extends Payload {
      * @param serviceIDs    An array of service ids to generate invoices for	Optional
      */
     public GenInvoicesPayload withServiceIDs(int... serviceIDs) {
-        append("serviceids", serviceIDs);
+        put("serviceids", serviceIDs);
         return this;
     }
 
@@ -40,7 +40,7 @@ public class GenInvoicesPayload extends Payload {
      * @param domainIDs    An array of domain ids to generate invoices for	Optional
      */
     public GenInvoicesPayload withDomainids(int... domainIDs) {
-        append("domainids", domainIDs);
+        put("domainids", domainIDs);
         return this;
     }
 
@@ -48,7 +48,7 @@ public class GenInvoicesPayload extends Payload {
      * @param addonIDs    An array of addon ids to generate invoices for	Optional
      */
     public GenInvoicesPayload withAddonIDs(int... addonIDs) {
-        append("addonids", addonIDs);
+        put("addonids", addonIDs);
         return this;
     }
 

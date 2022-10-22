@@ -24,7 +24,7 @@ public class GetClientPasswordPayload extends Payload {
      * @param userID The userid to obtain the password for
      */
     public GetClientPasswordPayload withUserid(int userID) {
-        append("userid", userID);
+        put("userid", userID);
 
         return this;
     }
@@ -34,7 +34,7 @@ public class GetClientPasswordPayload extends Payload {
      * @param email The email address to obtain the password for
      */
     public GetClientPasswordPayload withEmail(String email) {
-        append("email", email);
+        put("email", email);
 
         return this;
     }

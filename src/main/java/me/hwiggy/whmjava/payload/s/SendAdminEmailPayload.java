@@ -17,7 +17,7 @@ public class SendAdminEmailPayload extends Payload {
      * @param messageName    The name of the admin email template to send	
      */
     public SendAdminEmailPayload withMessageName(String messageName) {
-        append("messagename", messageName);
+        put("messagename", messageName);
         return this;
     }
 
@@ -25,7 +25,7 @@ public class SendAdminEmailPayload extends Payload {
      * @param customMessage    The HTML message body to send for a custom email	
      */
     public SendAdminEmailPayload withCustomMessage(String customMessage) {
-        append("custommessage", customMessage);
+        put("custommessage", customMessage);
         return this;
     }
 
@@ -33,7 +33,7 @@ public class SendAdminEmailPayload extends Payload {
      * @param customSubject    The subject to send for a custom email	
      */
     public SendAdminEmailPayload withCustomSubject(String customSubject) {
-        append("customsubject", customSubject);
+        put("customsubject", customSubject);
         return this;
     }
 
@@ -41,7 +41,7 @@ public class SendAdminEmailPayload extends Payload {
      * @param type    Which type of admin notification will be send (‘system’, ‘account’, ‘support’)	
      */
     public SendAdminEmailPayload withType(String type) {
-        append("type", type);
+        put("type", type);
         return this;
     }
 
@@ -49,7 +49,7 @@ public class SendAdminEmailPayload extends Payload {
      * @param deptID    The ID of the department the notification is for if ‘support’ $type	
      */
     public SendAdminEmailPayload withDeptID(int deptID) {
-        append("deptid", deptID);
+        put("deptid", deptID);
         return this;
     }
 
@@ -57,7 +57,7 @@ public class SendAdminEmailPayload extends Payload {
      * @param mergeFields    The merge fields to be used in the email template	
      */
     public SendAdminEmailPayload withMergeFields(JSONObject mergeFields) {
-        append("mergefields", mergeFields);
+        put("mergefields", mergeFields);
         return this;
     }
 }

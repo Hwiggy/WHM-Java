@@ -10,14 +10,14 @@ public class GetEmailsPayload extends Payload {
      */
     public GetEmailsPayload(int clientID) {
         super("GetEmails");
-        append("clientid", clientID);
+        put("clientid", clientID);
     }
 
     /***
      * @param limitStart    The offset for the returned log data (default: 0)	Optional
      */
     public GetEmailsPayload withLimitStart(int limitStart) {
-        append("limitstart", limitStart);
+        put("limitstart", limitStart);
         return this;
     }
 
@@ -25,7 +25,7 @@ public class GetEmailsPayload extends Payload {
      * @param limitNum    The number of records to return (default: 25)	Optional
      */
     public GetEmailsPayload withLimitNum(int limitNum) {
-        append("limitnum", limitNum);
+        put("limitnum", limitNum);
         return this;
     }
 
@@ -33,7 +33,7 @@ public class GetEmailsPayload extends Payload {
      * @param date    The date to retrieve emails for.	Optional
      */
     public GetEmailsPayload withDate(String date) {
-        append("date", date);
+        put("date", date);
         return this;
     }
 
@@ -41,7 +41,7 @@ public class GetEmailsPayload extends Payload {
      * @param subject    The subject to retrieve emails for - uses approximate string matching.	Optional
      */
     public GetEmailsPayload withSubject(String subject) {
-        append("subject", subject);
+        put("subject", subject);
         return this;
     }
 

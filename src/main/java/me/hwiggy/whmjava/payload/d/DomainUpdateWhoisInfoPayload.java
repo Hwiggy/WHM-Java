@@ -19,7 +19,7 @@ public class DomainUpdateWhoisInfoPayload extends Payload {
      */
     public DomainUpdateWhoisInfoPayload(int domainID, String xml) {
         super ("DomainUpdateWhoisInfo");
-        append("domainid", domainID);
-        append("xml", xml);
+        put("domainid", domainID);
+        put("xml", xml);
     }
 }

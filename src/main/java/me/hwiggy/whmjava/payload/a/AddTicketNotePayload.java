@@ -17,8 +17,8 @@ public class AddTicketNotePayload extends Payload {
      */
     public AddTicketNotePayload(String message, String ticketNum) {
         super("AddTicketNote");
-        append("message", message);
-        append("ticketnum", ticketNum);
+        put("message", message);
+        put("ticketnum", ticketNum);
     }
 
     /***
@@ -28,8 +28,8 @@ public class AddTicketNotePayload extends Payload {
      */
     public AddTicketNotePayload(String message, int ticketID){
         super("AddTicketNote");
-        append("message", message);
-        append("ticketid", ticketID);
+        put("message", message);
+        put("ticketid", ticketID);
     }
 
     /***
@@ -38,7 +38,7 @@ public class AddTicketNotePayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddTicketNotePayload withMarkdown(boolean markdown){
-        append("markdown", markdown);
+        put("markdown", markdown);
         return this;
     }
 
@@ -48,7 +48,7 @@ public class AddTicketNotePayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddTicketNotePayload withAttachments(JSONObject attachments){
-        append("attachments", attachments);
+        put("attachments", attachments);
         return this;
     }
 }

@@ -16,8 +16,8 @@ public class ApplyCreditPayload extends Payload {
      */
     public ApplyCreditPayload(int invoiceID, float amount) {
         super("ApplyCredit");
-        append("invoiceid", invoiceID);
-        append("amount", amount);
+        put("invoiceid", invoiceID);
+        put("amount", amount);
     }
 
     /***
@@ -26,7 +26,7 @@ public class ApplyCreditPayload extends Payload {
      * @return This Payload, for chaining
      */
     public ApplyCreditPayload withNoEmail(boolean noEmail){
-        append("noemail", noEmail);
+        put("noemail", noEmail);
         return this;
     }
 }

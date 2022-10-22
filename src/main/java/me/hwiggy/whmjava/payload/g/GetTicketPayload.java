@@ -25,7 +25,7 @@ public class GetTicketPayload extends Payload {
      * @param ticketnum Obtain the ticket for the specific Client Ticket Number
      */
     public GetTicketPayload withTicketnum(String ticketnum) {
-        append("ticketnum", ticketnum);
+        put("ticketnum", ticketnum);
 
         return this;
     }
@@ -35,7 +35,7 @@ public class GetTicketPayload extends Payload {
      * @param ticketid Obtain the ticket for the specific ticket id (Either $ticketnum or $ticketid is required)
      */
     public GetTicketPayload withTicketid(int ticketid) {
-        append("ticketid", ticketid);
+        put("ticketid", ticketid);
 
         return this;
     }
@@ -45,7 +45,7 @@ public class GetTicketPayload extends Payload {
      * @param repliessort ASC or DESC. Which order to organise the ticket replies
      */
     public GetTicketPayload withRepliessort(String repliessort) {
-        append("repliessort", repliessort);
+        put("repliessort", repliessort);
 
         return this;
     }

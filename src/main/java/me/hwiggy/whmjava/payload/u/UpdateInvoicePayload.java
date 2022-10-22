@@ -16,7 +16,7 @@ public class UpdateInvoicePayload extends Payload {
 
     public UpdateInvoicePayload(int invoiceID) {
         super("UpdateInvoice");
-        append("invoiceid", invoiceID);
+        put("invoiceid", invoiceID);
     }
 
     /***
@@ -24,7 +24,7 @@ public class UpdateInvoicePayload extends Payload {
      * @param status The status of the invoice being
      */
     public UpdateInvoicePayload withStatus(String status) {
-        append("status", status);
+        put("status", status);
         return this;
     }
 
@@ -33,7 +33,7 @@ public class UpdateInvoicePayload extends Payload {
      * @param paymentMethod The payment method of the invoice in system format
      */
     public UpdateInvoicePayload withPaymentMethod(String paymentMethod) {
-        append("paymentmethod", paymentMethod);
+        put("paymentmethod", paymentMethod);
         return this;
     }
 
@@ -42,7 +42,7 @@ public class UpdateInvoicePayload extends Payload {
      * @param taxRate The first level tax rate to apply to the invoice to override the system default
      */
     public UpdateInvoicePayload withTaxRate(float taxRate) {
-        append("taxrate", taxRate);
+        put("taxrate", taxRate);
         return this;
     }
 
@@ -51,7 +51,7 @@ public class UpdateInvoicePayload extends Payload {
      * @param taxrate2 The second level tax rate to apply to the invoice to override the system default
      */
     public UpdateInvoicePayload withTaxRate2(float taxrate2) {
-        append("taxrate2", taxrate2);
+        put("taxrate2", taxrate2);
         return this;
     }
 
@@ -60,7 +60,7 @@ public class UpdateInvoicePayload extends Payload {
      * @param subTotal Update the subtotal of the invoice
      */
     public UpdateInvoicePayload withSubTotal(float subTotal) {
-        append("subtotal", subTotal);
+        put("subtotal", subTotal);
         return this;
     }
 
@@ -69,7 +69,7 @@ public class UpdateInvoicePayload extends Payload {
      * @param total Update the total of the invoice
      */
     public UpdateInvoicePayload withTotal(float total) {
-        append("total", total);
+        put("total", total);
         return this;
     }
 
@@ -78,7 +78,7 @@ public class UpdateInvoicePayload extends Payload {
      * @param credit Update the credit applied to the invoice
      */
     public UpdateInvoicePayload withCredit(float credit) {
-        append("credit", credit);
+        put("credit", credit);
         return this;
     }
 
@@ -87,7 +87,7 @@ public class UpdateInvoicePayload extends Payload {
      * @param date The date that the invoice should show as created YYYY-mm-dd
      */
     public UpdateInvoicePayload withDate(String date) {
-        append("date", date);
+        put("date", date);
         return this;
     }
 
@@ -96,7 +96,7 @@ public class UpdateInvoicePayload extends Payload {
      * @param duedate The due date of the invoice YYYY-mm-dd
      */
     public UpdateInvoicePayload withDueDate(String duedate) {
-        append("duedate", duedate);
+        put("duedate", duedate);
         return this;
     }
 
@@ -105,7 +105,7 @@ public class UpdateInvoicePayload extends Payload {
      * @param datepaid The date paid of the invoice YYYY-mm-dd
      */
     public UpdateInvoicePayload withDatePaid(String datepaid) {
-        append("datepaid", datepaid);
+        put("datepaid", datepaid);
         return this;
     }
 
@@ -114,7 +114,7 @@ public class UpdateInvoicePayload extends Payload {
      * @param notes The notes to appear on the invoice
      */
     public UpdateInvoicePayload withNotes(String notes) {
-        append("notes", notes);
+        put("notes", notes);
         return this;
     }
 
@@ -123,7 +123,7 @@ public class UpdateInvoicePayload extends Payload {
      * @param itemdescription An array of lineItemId => Description of items to change
      */
     public UpdateInvoicePayload withItemDescription(String... itemdescription) {
-        append("itemdescription", itemdescription);
+        put("itemdescription", itemdescription);
         return this;
     }
 
@@ -132,7 +132,7 @@ public class UpdateInvoicePayload extends Payload {
      * @param itemamount An array of lineItemId => amount of items to change
      */
     public UpdateInvoicePayload withItemAmount(float... itemamount) {
-        append("itemamount", itemamount);
+        put("itemamount", itemamount);
         return this;
     }
 
@@ -141,7 +141,7 @@ public class UpdateInvoicePayload extends Payload {
      * @param itemtaxed An array of lineItemId => taxed of items to change
      */
     public UpdateInvoicePayload withItemTaxed(boolean... itemtaxed) {
-        append("itemtaxed", itemtaxed);
+        put("itemtaxed", itemtaxed);
         return this;
     }
 
@@ -150,7 +150,7 @@ public class UpdateInvoicePayload extends Payload {
      * @param newItemDescription The line items description
      */
     public UpdateInvoicePayload withNewItemDescription(String... newItemDescription) {
-        append("newitemdescription", newItemDescription);
+        put("newitemdescription", newItemDescription);
         return this;
     }
 
@@ -159,7 +159,7 @@ public class UpdateInvoicePayload extends Payload {
      * @param newitemamount The line items amount
      */
     public UpdateInvoicePayload withNewItemTotal(float... newitemamount) {
-        append("newitemamount", newitemamount);
+        put("newitemamount", newitemamount);
         return this;
     }
 
@@ -168,7 +168,7 @@ public class UpdateInvoicePayload extends Payload {
      * @param newitemtaxed The line items is taxed value
      */
     public UpdateInvoicePayload withNewItemTxed(boolean... newitemtaxed) {
-        append("newitemtaxed", newitemtaxed);
+        put("newitemtaxed", newitemtaxed);
         return this;
     }
 
@@ -177,7 +177,7 @@ public class UpdateInvoicePayload extends Payload {
      * @param deletelineids An array of line item ids to remove from the invoice
      */
     public UpdateInvoicePayload withDeleteLineIDs(int... deletelineids) {
-        append("deletelineids", deletelineids);
+        put("deletelineids", deletelineids);
         return this;
     }
 
@@ -186,7 +186,7 @@ public class UpdateInvoicePayload extends Payload {
      * @param publish An array of line item ids to remove from the invoice
      */
     public UpdateInvoicePayload withPublish(boolean publish) {
-        append("publish", publish);
+        put("publish", publish);
         return this;
     }
 
@@ -195,7 +195,7 @@ public class UpdateInvoicePayload extends Payload {
      * @param publishAndSendEmails Publish and email the invoice
      */
     public UpdateInvoicePayload withPublishAndSendEmails(boolean publishAndSendEmails) {
-        append("publishandsendemail", publishAndSendEmails);
+        put("publishandsendemail", publishAndSendEmails);
         return this;
     }
 }

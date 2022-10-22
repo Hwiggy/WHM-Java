@@ -18,6 +18,6 @@ public class DomainWhoisPayload extends Payload {
      */
     public DomainWhoisPayload(String domain) {
         super ("DomainWhois");
-        append("domain", domain);
+        put("domain", domain);
     }
 }

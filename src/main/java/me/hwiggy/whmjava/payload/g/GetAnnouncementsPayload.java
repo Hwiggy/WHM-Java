@@ -17,7 +17,7 @@ public class GetAnnouncementsPayload extends Payload {
      * @param limitStart The offset for the returned announcement data (default: 0)
      */
     public GetAnnouncementsPayload withLimitStart(String limitStart) {
-        append("limitstart", limitStart);
+        put("limitstart", limitStart);
         return this;
     }
 
@@ -26,7 +26,7 @@ public class GetAnnouncementsPayload extends Payload {
      * @param limitNum The number of records to return (default: 25)
      */
     public GetAnnouncementsPayload withLimitNum(String limitNum) {
-        append("limitnum", limitNum);
+        put("limitnum", limitNum);
         return this;
     }
 }

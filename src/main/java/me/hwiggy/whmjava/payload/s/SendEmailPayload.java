@@ -18,7 +18,7 @@ public class SendEmailPayload extends Payload {
      * @param messageName    The name of the client email template to send	
      */
     public SendEmailPayload withMessageName(String messageName) {
-        append("messagename", messageName);
+        put("messagename", messageName);
         return this;
     }
 
@@ -26,7 +26,7 @@ public class SendEmailPayload extends Payload {
      * @param id    The related id for the type of email template. Eg this should be the client id for a general type email	
      */
     public SendEmailPayload withID(int id) {
-        append("id", id);
+        put("id", id);
         return this;
     }
 
@@ -34,7 +34,7 @@ public class SendEmailPayload extends Payload {
      * @param customType    The type of custom email template to send (‘general’, ‘product’, ‘domain’, ‘invoice’, ‘support’, ‘affiliate’)	
      */
     public SendEmailPayload withCustomType(String customType) {
-        append("customtype", customType);
+        put("customtype", customType);
         return this;
     }
 
@@ -42,7 +42,7 @@ public class SendEmailPayload extends Payload {
      * @param customMessage    The HTML message body to send for a custom email	
      */
     public SendEmailPayload withCustomMessage(String customMessage) {
-        append("custommessage", customMessage);
+        put("custommessage", customMessage);
         return this;
     }
 
@@ -50,7 +50,7 @@ public class SendEmailPayload extends Payload {
      * @param customSubject    The subject to send for a custom email	
      */
     public SendEmailPayload withCustomSubject(String customSubject) {
-        append("customsubject", customSubject);
+        put("customsubject", customSubject);
         return this;
     }
 
@@ -58,7 +58,7 @@ public class SendEmailPayload extends Payload {
      * @param customVars    The custom variables to provide to the email template. Can be used for existing and custom emails.	
      */
     public SendEmailPayload withCustomVars(JSONObject customVars) {
-        append("customvars", customVars);
+        put("customvars", customVars);
         return this;
     }
 }

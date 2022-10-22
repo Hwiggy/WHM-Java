@@ -15,7 +15,7 @@ public class AddContactPayload extends Payload {
      */
     public AddContactPayload(int clientID) {
         super("AddContact");
-        append("clientid", clientID);
+        put("clientid", clientID);
     }
 
     /***
@@ -24,7 +24,7 @@ public class AddContactPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddContactPayload withFirstName(String firstName){
-        append("firstname", firstName);
+        put("firstname", firstName);
         return this;
     }
 
@@ -34,7 +34,7 @@ public class AddContactPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddContactPayload withLastName(String lastName){
-        append("lastname", lastName);
+        put("lastname", lastName);
         return this;
     }
 
@@ -44,7 +44,7 @@ public class AddContactPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddContactPayload withCompanyName(String companyName){
-        append("companyname", companyName);
+        put("companyname", companyName);
         return this;
     }
 
@@ -54,7 +54,7 @@ public class AddContactPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddContactPayload withEmail(String email){
-        append("email", email);
+        put("email", email);
         return this;
     }
 
@@ -64,7 +64,7 @@ public class AddContactPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddContactPayload withAddressOne(String addressOne){
-        append("address1", addressOne);
+        put("address1", addressOne);
         return this;
     }
 
@@ -74,7 +74,7 @@ public class AddContactPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddContactPayload withAddressTwo(String addressTwo){
-        append("address2", addressTwo);
+        put("address2", addressTwo);
         return this;
     }
 
@@ -84,7 +84,7 @@ public class AddContactPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddContactPayload withCity(String city){
-        append("city", city);
+        put("city", city);
         return this;
     }
 
@@ -94,7 +94,7 @@ public class AddContactPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddContactPayload withState(String state){
-        append("state", state);
+        put("state", state);
         return this;
     }
 
@@ -104,7 +104,7 @@ public class AddContactPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddContactPayload withPostCode(String postCode){
-        append("postcode", postCode);
+        put("postcode", postCode);
         return this;
     }
 
@@ -114,7 +114,7 @@ public class AddContactPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddContactPayload withCountry(String country){
-        append("country", country);
+        put("country", country);
         return this;
     }
 
@@ -124,7 +124,7 @@ public class AddContactPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddContactPayload withPhoneNumber(String phoneNumber){
-        append("phonenumber", phoneNumber);
+        put("phonenumber", phoneNumber);
         return this;
     }
 
@@ -134,7 +134,7 @@ public class AddContactPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddContactPayload withPassword(String password){
-        append("password2", password);
+        put("password2", password);
         return this;
     }
 
@@ -144,7 +144,7 @@ public class AddContactPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddContactPayload withGeneralEmails(boolean generalEmails){
-        append("generalemails", generalEmails);
+        put("generalemails", generalEmails);
         return this;
     }
 
@@ -154,7 +154,7 @@ public class AddContactPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddContactPayload withProductEmails(boolean productEmails){
-        append("productemials", productEmails);
+        put("productemials", productEmails);
         return this;
     }
 
@@ -164,7 +164,7 @@ public class AddContactPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddContactPayload withDomainEmails(boolean domainEmails){
-        append("domainemails", domainEmails);
+        put("domainemails", domainEmails);
         return this;
     }
 
@@ -174,7 +174,7 @@ public class AddContactPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddContactPayload withInvoiceEmails(boolean invoiceEmails){
-        append("invoiceemails", invoiceEmails);
+        put("invoiceemails", invoiceEmails);
         return this;
     }
 
@@ -184,7 +184,7 @@ public class AddContactPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddContactPayload withSupportEmails(boolean supportEmails){
-        append("supportemails", supportEmails);
+        put("supportemails", supportEmails);
         return this;
     }
 
@@ -194,7 +194,7 @@ public class AddContactPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddContactPayload withPermissions(String permissions){
-        append("permissions", permissions);
+        put("permissions", permissions);
         return this;
     }
 }

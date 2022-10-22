@@ -15,7 +15,7 @@ public class AcceptOrderPayload extends Payload {
      */
     public AcceptOrderPayload(int orderID) {
         super("AcceptOrder");
-        append("orderid", orderID);
+        put("orderid", orderID);
     }
 
     /***
@@ -24,7 +24,7 @@ public class AcceptOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AcceptOrderPayload withServerID(int serverID){
-        append("serverid", serverID);
+        put("serverid", serverID);
         return this;
     }
 
@@ -34,7 +34,7 @@ public class AcceptOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AcceptOrderPayload withServiceUsername(String serviceUsername){
-        append("serviceusername", serviceUsername);
+        put("serviceusername", serviceUsername);
         return this;
     }
 
@@ -44,7 +44,7 @@ public class AcceptOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AcceptOrderPayload withServicePassword(String servicePassword){
-        append("servicepassword", servicePassword);
+        put("servicepassword", servicePassword);
         return this;
     }
 
@@ -54,7 +54,7 @@ public class AcceptOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AcceptOrderPayload withRegistrar(String registrar){
-        append("registrar", registrar);
+        put("registrar", registrar);
         return this;
     }
 
@@ -64,7 +64,7 @@ public class AcceptOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AcceptOrderPayload withSendRegistrar(boolean sendRegistrar){
-        append("sendregistrar", sendRegistrar);
+        put("sendregistrar", sendRegistrar);
         return this;
     }
 
@@ -74,7 +74,7 @@ public class AcceptOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AcceptOrderPayload withAutoSetup(boolean autoSetup){
-        append("autosetup", autoSetup);
+        put("autosetup", autoSetup);
         return this;
     }
 
@@ -84,7 +84,7 @@ public class AcceptOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AcceptOrderPayload withSendEmail(boolean sendEmail){
-        append("sendemail", sendEmail);
+        put("sendemail", sendEmail);
         return this;
     }
 }

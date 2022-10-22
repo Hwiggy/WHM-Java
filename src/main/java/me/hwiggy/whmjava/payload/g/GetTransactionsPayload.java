@@ -24,7 +24,7 @@ public class GetTransactionsPayload extends Payload {
      * @param invoiceID Obtain transactions for a specific invoice id
      */
     public GetTransactionsPayload withInvoiceID(int invoiceID) {
-        append("invoiceid", invoiceID);
+        put("invoiceid", invoiceID);
 
         return this;
     }
@@ -34,7 +34,7 @@ public class GetTransactionsPayload extends Payload {
      * @param clientID Find transactions for a specific client id
      */
     public GetTransactionsPayload withClientID(int clientID) {
-        append("clientid", clientID);
+        put("clientid", clientID);
 
         return this;
     }
@@ -44,7 +44,7 @@ public class GetTransactionsPayload extends Payload {
      * @param transID Find transactions for a specific transaction id
      */
     public GetTransactionsPayload withTransID(String transID) {
-        append("transid", transID);
+        put("transid", transID);
 
         return this;
     }

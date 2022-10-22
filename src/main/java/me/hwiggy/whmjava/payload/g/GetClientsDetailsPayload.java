@@ -24,7 +24,7 @@ public class GetClientsDetailsPayload extends Payload {
      * @param clientID The client id to obtain the details for. $clientid or $email is required
      */
     public GetClientsDetailsPayload withClientID(int clientID) {
-        append("clientid", clientID);
+        put("clientid", clientID);
 
         return this;
     }
@@ -34,7 +34,7 @@ public class GetClientsDetailsPayload extends Payload {
      * @param email The email address of the client to search for
      */
     public GetClientsDetailsPayload withEmail(String email) {
-        append("email", email);
+        put("email", email);
 
         return this;
     }
@@ -44,7 +44,7 @@ public class GetClientsDetailsPayload extends Payload {
      * @param stats Also return additional client statistics.
      */
     public GetClientsDetailsPayload withStats(boolean stats) {
-        append("stats", stats);
+        put("stats", stats);
 
         return this;
     }

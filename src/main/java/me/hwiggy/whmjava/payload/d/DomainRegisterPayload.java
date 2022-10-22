@@ -25,7 +25,7 @@ public class DomainRegisterPayload extends Payload {
      * @param domainid The id of the domain to register recommended
      */
     public DomainRegisterPayload withDomainid(int domainid) {
-        append("domainid", domainid);
+        put("domainid", domainid);
 
         return this;
     }
@@ -35,7 +35,7 @@ public class DomainRegisterPayload extends Payload {
      * @param domain The domain name to be registered. This or $domainid is required
      */
     public DomainRegisterPayload withDomain(String domain) {
-        append("domain", domain);
+        put("domain", domain);
 
         return this;
     }

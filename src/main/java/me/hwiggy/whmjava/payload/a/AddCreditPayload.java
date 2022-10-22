@@ -17,8 +17,8 @@ public class AddCreditPayload extends Payload {
      */
     public AddCreditPayload(int clientID, String description, float amount) {
         super("AddCredit");
-        append("clientid", clientID);
-        append("description", description);
-        append("float", amount);
+        put("clientid", clientID);
+        put("description", description);
+        put("float", amount);
     }
 }

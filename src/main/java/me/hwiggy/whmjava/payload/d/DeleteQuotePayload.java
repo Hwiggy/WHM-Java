@@ -18,6 +18,6 @@ public class DeleteQuotePayload extends Payload {
      */
     public DeleteQuotePayload(int quoteID) {
         super ("DeleteQuote");
-        append("quoteid", quoteID);
+        put("quoteid", quoteID);
     }
 }

@@ -18,6 +18,6 @@ public class GetProjectPayload extends Payload {
      */
     public GetProjectPayload(int projectid) {
         super ("GetProject");
-        append("projectid", projectid);
+        put("projectid", projectid);
     }
 }

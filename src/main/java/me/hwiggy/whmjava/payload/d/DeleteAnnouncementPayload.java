@@ -15,6 +15,6 @@ public class DeleteAnnouncementPayload extends Payload {
      */
     public DeleteAnnouncementPayload(int announcementID) {
         super("DeleteAnnouncement");
-        append("announcementid", announcementID);
+        put("announcementid", announcementID);
     }
 }

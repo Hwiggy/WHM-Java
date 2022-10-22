@@ -24,7 +24,7 @@ public class GetSupportDepartmentsPayload extends Payload {
      * @param ignore_dept_assignments Pass as true to not adhere to the departments the API user is a member of.
      */
     public GetSupportDepartmentsPayload withIgnore_dept_assignments(boolean ignore_dept_assignments) {
-        append("ignore_dept_assignments", ignore_dept_assignments);
+        put("ignore_dept_assignments", ignore_dept_assignments);
 
         return this;
     }

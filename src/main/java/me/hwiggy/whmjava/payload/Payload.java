@@ -6,7 +6,7 @@ public abstract class Payload extends JSONObject{
 
     public Payload(String action){
         super();
-        append("action", action);
+        put("action", action);
     }
 
 }

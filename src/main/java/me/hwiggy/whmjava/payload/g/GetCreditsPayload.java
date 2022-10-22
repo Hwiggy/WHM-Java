@@ -18,6 +18,6 @@ public class GetCreditsPayload extends Payload {
      */
     public GetCreditsPayload(int clientid) {
         super ("GetCredits");
-        append("clientid", clientid);
+        put("clientid", clientid);
     }
 }

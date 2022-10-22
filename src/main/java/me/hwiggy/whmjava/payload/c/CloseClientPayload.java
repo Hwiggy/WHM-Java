@@ -15,6 +15,6 @@ public class CloseClientPayload extends Payload {
      */
     public CloseClientPayload(int clientID) {
         super("CloseClient");
-        append("clientid", clientID);
+        put("clientid", clientID);
     }
 }

@@ -24,7 +24,7 @@ public class GetSupportStatusesPayload extends Payload {
      * @param deptid Obtain counts for a specific department id
      */
     public GetSupportStatusesPayload withDeptid(int deptid) {
-        append("deptid", deptid);
+        put("deptid", deptid);
 
         return this;
     }

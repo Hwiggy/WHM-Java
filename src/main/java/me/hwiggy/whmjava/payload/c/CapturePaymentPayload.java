@@ -15,7 +15,7 @@ public class CapturePaymentPayload extends Payload {
      */
     public CapturePaymentPayload(int invoiceID) {
         super("CapturePayment");
-        append("invoiceid", invoiceID);
+        put("invoiceid", invoiceID);
     }
 
     /***
@@ -24,7 +24,7 @@ public class CapturePaymentPayload extends Payload {
      * @return This Payload, for chaining
      */
     public CapturePaymentPayload withCVV(String CVV){
-        append("cvv", CVV);
+        put("cvv", CVV);
         return this;
     }
 }

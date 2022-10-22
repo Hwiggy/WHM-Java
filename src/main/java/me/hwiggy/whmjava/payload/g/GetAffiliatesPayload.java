@@ -16,7 +16,7 @@ public class GetAffiliatesPayload extends Payload {
      * @param limitStart    The offset for the returned affiliate data (default: 0)	Optional
      */
     public GetAffiliatesPayload withLimitStart(int limitStart) {
-        append("limitstart", limitStart);
+        put("limitstart", limitStart);
         return this;
     }
 
@@ -24,7 +24,7 @@ public class GetAffiliatesPayload extends Payload {
      * @param limitNum    The number of records to return (default: 25)	Optional
      */
     public GetAffiliatesPayload withLimitNum(int limitNum) {
-        append("limitnum", limitNum);
+        put("limitnum", limitNum);
         return this;
     }
 
@@ -32,7 +32,7 @@ public class GetAffiliatesPayload extends Payload {
      * @param userID    Obtain affiliate data for a specific client account	Optional
      */
     public GetAffiliatesPayload withUserID(int userID) {
-        append("userid", userID);
+        put("userid", userID);
         return this;
     }
 
@@ -40,7 +40,7 @@ public class GetAffiliatesPayload extends Payload {
      * @param visitors    Provide affiliates that match a specific visitor count	Optional
      */
     public GetAffiliatesPayload withVisitors(int visitors) {
-        append("visitors", visitors);
+        put("visitors", visitors);
         return this;
     }
 
@@ -48,7 +48,7 @@ public class GetAffiliatesPayload extends Payload {
      * @param payType    Provide affiliates matching the paytype provided. One of “, ‘percentage’, ‘fixedamount’	Optional
      */
     public GetAffiliatesPayload withPayYype(String payType) {
-        append("paytype", payType);
+        put("paytype", payType);
         return this;
     }
 
@@ -56,7 +56,7 @@ public class GetAffiliatesPayload extends Payload {
      * @param payAmount    Provide affiliates matching a specific overridden payout amount	Optional
      */
     public GetAffiliatesPayload withPayAmount(float payAmount) {
-        append("payamount", payAmount);
+        put("payamount", payAmount);
         return this;
     }
 
@@ -64,7 +64,7 @@ public class GetAffiliatesPayload extends Payload {
      * @param oneTime    Provide affiliates configured to receive one time affiliates	Optional
      */
     public GetAffiliatesPayload withOneTime(int oneTime) {
-        append("onetime", oneTime);
+        put("onetime", oneTime);
         return this;
     }
 
@@ -72,7 +72,7 @@ public class GetAffiliatesPayload extends Payload {
      * @param balance    Provide affiliates that have this balance	Optional
      */
     public GetAffiliatesPayload withBalance(float balance) {
-        append("balance", balance);
+        put("balance", balance);
         return this;
     }
 
@@ -80,7 +80,7 @@ public class GetAffiliatesPayload extends Payload {
      * @param withDrawn    Provide affiliates that have withdrawn this amount	Optional
      */
     public GetAffiliatesPayload withWithDrawn(float withDrawn) {
-        append("withdrawn", withDrawn);
+        put("withdrawn", withDrawn);
         return this;
     }
 }

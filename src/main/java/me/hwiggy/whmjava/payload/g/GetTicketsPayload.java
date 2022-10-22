@@ -25,7 +25,7 @@ public class GetTicketsPayload extends Payload {
      * @param limitStart The offset for the returned quote data (default: 0)
      */
     public GetTicketsPayload withLimitStart(int limitStart) {
-        append("limitstart", limitStart);
+        put("limitstart", limitStart);
 
         return this;
     }
@@ -35,7 +35,7 @@ public class GetTicketsPayload extends Payload {
      * @param limitNum The number of records to return (default: 25)
      */
     public GetTicketsPayload withLimitNum(int limitNum) {
-        append("limitnum", limitNum);
+        put("limitnum", limitNum);
 
         return this;
     }
@@ -45,7 +45,7 @@ public class GetTicketsPayload extends Payload {
      * @param deptId Obtain tickets in a specific department
      */
     public GetTicketsPayload withDeptId(int deptId) {
-        append("deptid", deptId);
+        put("deptid", deptId);
 
         return this;
     }
@@ -55,7 +55,7 @@ public class GetTicketsPayload extends Payload {
      * @param clientid Find tickets for a specific client id
      */
     public GetTicketsPayload withClientid(int clientid) {
-        append("clientid", clientid);
+        put("clientid", clientid);
 
         return this;
     }
@@ -65,7 +65,7 @@ public class GetTicketsPayload extends Payload {
      * @param email Find tickets for a specific non-client email address
      */
     public GetTicketsPayload withEmail(String email) {
-        append("email", email);
+        put("email", email);
 
         return this;
     }
@@ -75,7 +75,7 @@ public class GetTicketsPayload extends Payload {
      * @param status Find tickets matching a specific status. Any configured status plus: Awaiting Reply, All Active Tickets, My Flagged Tickets
      */
     public GetTicketsPayload withStatus(String status) {
-        append("status", status);
+        put("status", status);
 
         return this;
     }
@@ -85,7 +85,7 @@ public class GetTicketsPayload extends Payload {
      * @param subject Find tickets containing a specific subject - uses approximate string matching.
      */
     public GetTicketsPayload withSubject(String subject) {
-        append("subject", subject);
+        put("subject", subject);
 
         return this;
     }
@@ -95,7 +95,7 @@ public class GetTicketsPayload extends Payload {
      * @param ignore_dept_assignments Pass as true to not adhere to the departments the API user is a member of.
      */
     public GetTicketsPayload withIgnore_dept_assignments(boolean ignore_dept_assignments) {
-        append("ignore_dept_assignments", ignore_dept_assignments);
+        put("ignore_dept_assignments", ignore_dept_assignments);
 
         return this;
     }

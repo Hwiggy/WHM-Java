@@ -18,7 +18,7 @@ public class EndTaskTimerPayload extends Payload {
      */
     public EndTaskTimerPayload(int timerID) {
         super ("EndTaskTimer");
-        append("timerid", timerID);
+        put("timerid", timerID);
     }
 
     /***
@@ -26,7 +26,7 @@ public class EndTaskTimerPayload extends Payload {
      * @param projectID The id of the project for the task timer
      */
     public EndTaskTimerPayload withProjectID(int projectID) {
-        append("projectid", projectID);
+        put("projectid", projectID);
 
         return this;
     }
@@ -36,7 +36,7 @@ public class EndTaskTimerPayload extends Payload {
      * @param adminID The admin id to associate the timer with
      */
     public EndTaskTimerPayload withAdminID(int adminID) {
-        append("adminid", adminID);
+        put("adminid", adminID);
 
         return this;
     }
@@ -46,7 +46,7 @@ public class EndTaskTimerPayload extends Payload {
      * @param end_time The end time as a unix time stamp. Defaults to time() if not provided
      */
     public EndTaskTimerPayload withEnd_time(int end_time) {
-        append("end_time", end_time);
+        put("end_time", end_time);
 
         return this;
     }

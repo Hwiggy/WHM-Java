@@ -17,9 +17,9 @@ public class AddAnnouncementPayload extends Payload {
      */
     AddAnnouncementPayload(String date, String title, String announcement) {
         super("AddAnnouncement");
-        append("date", date);
-        append("title", title);
-        append("announcement", announcement);
+        put("date", date);
+        put("title", title);
+        put("announcement", announcement);
     }
 
     /***
@@ -28,7 +28,7 @@ public class AddAnnouncementPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddAnnouncementPayload withPublished(boolean published){
-        append("published", published);
+        put("published", published);
         return this;
     }
 }

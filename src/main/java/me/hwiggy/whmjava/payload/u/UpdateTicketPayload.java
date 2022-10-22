@@ -15,7 +15,7 @@ public class UpdateTicketPayload extends Payload {
      */
     public UpdateTicketPayload(int ticketID) {
         super("UpdateTicket");
-        append("ticketid", ticketID);
+        put("ticketid", ticketID);
     }
 
     /***
@@ -23,7 +23,7 @@ public class UpdateTicketPayload extends Payload {
      * @param deptID The department id of the ticket
      */
     public UpdateTicketPayload withDeptID(int deptID) {
-        append("deptid", deptID);
+        put("deptid", deptID);
         return this;
     }
 
@@ -32,7 +32,7 @@ public class UpdateTicketPayload extends Payload {
      * @param status The status of the ticket
      */
     public UpdateTicketPayload withStatus(String status) {
-        append("status", status);
+        put("status", status);
         return this;
     }
 
@@ -41,7 +41,7 @@ public class UpdateTicketPayload extends Payload {
      * @param subject The subject of the ticket
      */
     public UpdateTicketPayload withSubject(String subject) {
-        append("subject", subject);
+        put("subject", subject);
         return this;
     }
 
@@ -50,7 +50,7 @@ public class UpdateTicketPayload extends Payload {
      * @param userid If applicable, the Client ID to update the ticket for.
      */
     public UpdateTicketPayload withUserID(int userid) {
-        append("userid", userid);
+        put("userid", userid);
         return this;
     }
 
@@ -59,7 +59,7 @@ public class UpdateTicketPayload extends Payload {
      * @param name The name of the person opening the ticket (if not a client)
      */
     public UpdateTicketPayload withName(String name) {
-        append("name", name);
+        put("name", name);
         return this;
     }
 
@@ -68,7 +68,7 @@ public class UpdateTicketPayload extends Payload {
      * @param email The email address of the person opening the ticket (if not a client)
      */
     public UpdateTicketPayload withEmail(String email) {
-        append("email", email);
+        put("email", email);
         return this;
     }
 
@@ -77,7 +77,7 @@ public class UpdateTicketPayload extends Payload {
      * @param cc The cc email addresses for the ticket
      */
     public UpdateTicketPayload withCC(String cc) {
-        append("cc", cc);
+        put("cc", cc);
         return this;
     }
 
@@ -86,7 +86,7 @@ public class UpdateTicketPayload extends Payload {
      * @param priority The priority of the ticket (‘Low’, ‘Medium’, ‘High’)
      */
     public UpdateTicketPayload withPriority(String priority) {
-        append("priority", priority);
+        put("priority", priority);
         return this;
     }
 
@@ -95,7 +95,7 @@ public class UpdateTicketPayload extends Payload {
      * @param flag The id of the admin to flag the ticket to
      */
     public UpdateTicketPayload withFlag(int flag) {
-        append("flag", flag);
+        put("flag", flag);
         return this;
     }
 
@@ -104,7 +104,7 @@ public class UpdateTicketPayload extends Payload {
      * @param removeFlag Remove the flag from the ticket
      */
     public UpdateTicketPayload withRemoveFlag(boolean removeFlag) {
-        append("removeFlag", removeFlag);
+        put("removeFlag", removeFlag);
         return this;
     }
 
@@ -113,7 +113,7 @@ public class UpdateTicketPayload extends Payload {
      * @param useMarkdown Should markdown be used on the ticket output
      */
     public UpdateTicketPayload withUseMarkdown(boolean useMarkdown) {
-        append("useMarkdown", useMarkdown);
+        put("useMarkdown", useMarkdown);
         return this;
     }
 
@@ -122,7 +122,7 @@ public class UpdateTicketPayload extends Payload {
      * @param customfields Base64 encoded serialized array of custom field values
      */
     public UpdateTicketPayload withCustomfields(String customfields) {
-        append("customfields", customfields);
+        put("customfields", customfields);
         return this;
     }
 }

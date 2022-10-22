@@ -18,6 +18,6 @@ public class GetInvoicePayload extends Payload {
      */
     public GetInvoicePayload(int invoiceID) {
         super ("GetInvoice");
-        append("invoiceid", invoiceID);
+        put("invoiceid", invoiceID);
     }
 }

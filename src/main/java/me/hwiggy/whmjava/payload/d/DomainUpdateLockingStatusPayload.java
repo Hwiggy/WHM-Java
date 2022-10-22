@@ -18,7 +18,7 @@ public class DomainUpdateLockingStatusPayload extends Payload {
      */
     public DomainUpdateLockingStatusPayload(int domainID) {
         super ("DomainUpdateLockingStatus");
-        append("domainid", domainID);
+        put("domainid", domainID);
     }
 
     /***
@@ -26,7 +26,7 @@ public class DomainUpdateLockingStatusPayload extends Payload {
      * @param lockAtatus Should the domain lock be turned on
      */
     public DomainUpdateLockingStatusPayload withLockStatus(boolean lockAtatus) {
-        append("lockstatus", lockAtatus);
+        put("lockstatus", lockAtatus);
 
         return this;
     }

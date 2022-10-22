@@ -16,7 +16,7 @@ public class ModuleCustomPayload extends Payload {
      */
     public ModuleCustomPayload(int accountID, String func_name) {
         super("ModuleCustom");
-        append("accountid", accountID);
-        append("func_name", func_name);
+        put("accountid", accountID);
+        put("func_name", func_name);
     }
 }

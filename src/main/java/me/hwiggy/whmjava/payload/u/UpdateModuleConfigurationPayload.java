@@ -17,8 +17,8 @@ public class UpdateModuleConfigurationPayload extends Payload {
      */
     public UpdateModuleConfigurationPayload(String moduleType, String moduleName) {
         super("UpdateModuleConfiguration");
-        append("moduleType", moduleType);
-        append("moduleName", moduleName);
+        put("moduleType", moduleType);
+        put("moduleName", moduleName);
     }
 
     /***
@@ -26,7 +26,7 @@ public class UpdateModuleConfigurationPayload extends Payload {
      * @param parameters An array of configuration parameters to set for the given module. Use GetModuleConfigurationParameters to obtain a list of fields for a given module.
      */
     public UpdateModuleConfigurationPayload withParameters(JSONObject parameters) {
-        append("parameters", parameters);
+        put("parameters", parameters);
         return this;
     }
 }

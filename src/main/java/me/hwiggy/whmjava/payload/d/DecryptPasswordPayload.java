@@ -15,6 +15,6 @@ public class DecryptPasswordPayload extends Payload {
      */
     public DecryptPasswordPayload(String password) {
         super("DecryptPassword");
-        append("password2", password);
+        put("password2", password);
     }
 }

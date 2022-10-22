@@ -15,7 +15,7 @@ public class AddTransactionPayload extends Payload {
      */
     public AddTransactionPayload(String paymentMethod) {
         super("AddTransaciton");
-        append("paymentmethod", paymentMethod);
+        put("paymentmethod", paymentMethod);
     }
 
     /***
@@ -24,7 +24,7 @@ public class AddTransactionPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddTransactionPayload withUserID(int userID){
-        append("userid", userID);
+        put("userid", userID);
         return this;
     }
 
@@ -34,7 +34,7 @@ public class AddTransactionPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddTransactionPayload withInvoiceID(int invoiceID){
-        append("invoiceid", invoiceID);
+        put("invoiceid", invoiceID);
         return this;
     }
 
@@ -44,7 +44,7 @@ public class AddTransactionPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddTransactionPayload withTransID(String transID){
-        append("transid", transID);
+        put("transid", transID);
         return this;
     }
 
@@ -54,7 +54,7 @@ public class AddTransactionPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddTransactionPayload withDate(String date){
-        append("date", date);
+        put("date", date);
         return this;
     }
 
@@ -64,7 +64,7 @@ public class AddTransactionPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddTransactionPayload withCurrencyID(int currencyID){
-        append("currencyid", currencyID);
+        put("currencyid", currencyID);
         return this;
     }
 
@@ -74,7 +74,7 @@ public class AddTransactionPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddTransactionPayload withDescription(String description){
-        append("description", description);
+        put("description", description);
         return this;
     }
 
@@ -84,7 +84,7 @@ public class AddTransactionPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddTransactionPayload withAmountIn(float amountIn){
-        append("amountin", amountIn);
+        put("amountin", amountIn);
         return this;
     }
 
@@ -94,7 +94,7 @@ public class AddTransactionPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddTransactionPayload withFees(float fees){
-        append("fees", fees);
+        put("fees", fees);
         return this;
     }
 
@@ -104,7 +104,7 @@ public class AddTransactionPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddTransactionPayload withAmountOut(float amountOut){
-        append("amountout", amountOut);
+        put("amountout", amountOut);
         return this;
     }
 
@@ -114,7 +114,7 @@ public class AddTransactionPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddTransactionPayload withRate(float rate){
-        append("rate", rate);
+        put("rate", rate);
         return this;
     }
 
@@ -124,7 +124,7 @@ public class AddTransactionPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddTransactionPayload withCredit(boolean credit){
-        append("credit", credit);
+        put("credit", credit);
         return this;
     }
 }

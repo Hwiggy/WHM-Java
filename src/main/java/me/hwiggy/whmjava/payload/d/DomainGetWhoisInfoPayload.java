@@ -18,6 +18,6 @@ public class DomainGetWhoisInfoPayload extends Payload {
      */
     public DomainGetWhoisInfoPayload(int domainID) {
         super ("DomainGetWhoisInfo");
-        append("domainid", domainID);
+        put("domainid", domainID);
     }
 }

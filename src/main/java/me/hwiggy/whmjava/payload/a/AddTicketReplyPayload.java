@@ -17,8 +17,8 @@ public class AddTicketReplyPayload extends Payload {
      */
     public AddTicketReplyPayload(int ticketID, String message) {
         super("AddTicketReply");
-        append("ticketid", ticketID);
-        append("message", message);
+        put("ticketid", ticketID);
+        put("message", message);
     }
 
     /***
@@ -27,7 +27,7 @@ public class AddTicketReplyPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddTicketReplyPayload withMarkdown(boolean markdown) {
-        append("markdown", markdown);
+        put("markdown", markdown);
         return this;
     }
 
@@ -37,7 +37,7 @@ public class AddTicketReplyPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddTicketReplyPayload withUserID(int userID) {
-        append("userid", userID);
+        put("userid", userID);
         return this;
     }
 
@@ -47,7 +47,7 @@ public class AddTicketReplyPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddTicketReplyPayload withContactID(int contactID) {
-        append("contactid", contactID);
+        put("contactid", contactID);
         return this;
     }
 
@@ -57,7 +57,7 @@ public class AddTicketReplyPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddTicketReplyPayload withAdminUsername(String adminUsername) {
-        append("adminusername", adminUsername);
+        put("adminusername", adminUsername);
         return this;
     }
 
@@ -67,7 +67,7 @@ public class AddTicketReplyPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddTicketReplyPayload withName(String name) {
-        append("name", name);
+        put("name", name);
         return this;
     }
 
@@ -77,7 +77,7 @@ public class AddTicketReplyPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddTicketReplyPayload withEmail(String email) {
-        append("email", email);
+        put("email", email);
         return this;
     }
 
@@ -87,7 +87,7 @@ public class AddTicketReplyPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddTicketReplyPayload withStatus(String status) {
-        append("status", status);
+        put("status", status);
         return this;
     }
 
@@ -97,7 +97,7 @@ public class AddTicketReplyPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddTicketReplyPayload withNoEmail(boolean noEmail) {
-        append("noemail", noEmail);
+        put("noemail", noEmail);
         return this;
     }
 
@@ -107,7 +107,7 @@ public class AddTicketReplyPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddTicketReplyPayload withCustomFields(String customFields) {
-        append("customfields", customFields);
+        put("customfields", customFields);
         return this;
     }
 
@@ -117,7 +117,7 @@ public class AddTicketReplyPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddTicketReplyPayload withAttachments(JSONObject attachments) {
-        append("attachments", attachments);
+        put("attachments", attachments);
         return this;
     }
 }

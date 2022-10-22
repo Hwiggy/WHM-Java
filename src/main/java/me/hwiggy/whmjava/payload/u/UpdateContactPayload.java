@@ -19,7 +19,7 @@ public class UpdateContactPayload extends Payload {
      * @param subaccount Is the contact a subaccount
      */
     public UpdateContactPayload withSubAcount(boolean subaccount) {
-        append("subaccount", subaccount);
+        put("subaccount", subaccount);
         return this;
     }
 
@@ -28,7 +28,7 @@ public class UpdateContactPayload extends Payload {
      * @param firstName The first name of the client the quote is for if no $userid
      */
     public UpdateContactPayload withFirstName(String firstName) {
-        append("firstname", firstName);
+        put("firstname", firstName);
         return this;
     }
 
@@ -37,7 +37,7 @@ public class UpdateContactPayload extends Payload {
      * @param lastName The last name of the client the quote is for if no $userid
      */
     public UpdateContactPayload withLastName(String lastName) {
-        append("lastname", lastName);
+        put("lastname", lastName);
         return this;
     }
 
@@ -46,7 +46,7 @@ public class UpdateContactPayload extends Payload {
      * @param companyName The company of the client the quote is for if no $userid
      */
     public UpdateContactPayload withCompanyName(String companyName) {
-        append("companyname", companyName);
+        put("companyname", companyName);
         return this;
     }
 
@@ -55,7 +55,7 @@ public class UpdateContactPayload extends Payload {
      * @param email The email address of the client the quote is for if no $userid
      */
     public UpdateContactPayload withEmail(String email) {
-        append("email", email);
+        put("email", email);
         return this;
     }
 
@@ -64,7 +64,7 @@ public class UpdateContactPayload extends Payload {
      * @param address1 The address1 of the client the quote is for if no $userid
      */
     public UpdateContactPayload withAddress1(String address1) {
-        append("address1", address1);
+        put("address1", address1);
         return this;
     }
 
@@ -73,7 +73,7 @@ public class UpdateContactPayload extends Payload {
      * @param address2 The address2 of the client the quote is for if no $userid
      */
     public UpdateContactPayload withAddress2(String address2) {
-        append("address2", address2);
+        put("address2", address2);
         return this;
     }
 
@@ -82,7 +82,7 @@ public class UpdateContactPayload extends Payload {
      * @param city The city of the client the quote is for if no $userid
      */
     public UpdateContactPayload withCity(String city) {
-        append("city", city);
+        put("city", city);
         return this;
     }
 
@@ -91,7 +91,7 @@ public class UpdateContactPayload extends Payload {
      * @param state The state of the client the quote is for if no $userid
      */
     public UpdateContactPayload withState(String state) {
-        append("state", state);
+        put("state", state);
         return this;
     }
 
@@ -100,7 +100,7 @@ public class UpdateContactPayload extends Payload {
      * @param country The country of the client the quote is for if no $userid
      */
     public UpdateContactPayload withCountry(String country) {
-        append("country", country);
+        put("country", country);
         return this;
     }
 
@@ -109,7 +109,7 @@ public class UpdateContactPayload extends Payload {
      * @param phoneNumber The phone number of the client (no country code) the quote is for if no $userid. Local format eg 4035551234
      */
     public UpdateContactPayload withPhoneNumber(String phoneNumber) {
-        append("phonenumber", phoneNumber);
+        put("phonenumber", phoneNumber);
         return this;
     }
 
@@ -118,7 +118,7 @@ public class UpdateContactPayload extends Payload {
      * @param password2 (sub-account only)
      */
     public UpdateContactPayload withPassword2(String password2) {
-        append("password2", password2);
+        put("password2", password2);
         return this;
     }
 
@@ -127,7 +127,7 @@ public class UpdateContactPayload extends Payload {
      * @param generalEmails Should the contact receive general emails
      */
     public UpdateContactPayload withGeneralEmails(boolean generalEmails) {
-        append("generalemails", generalEmails);
+        put("generalemails", generalEmails);
         return this;
     }
 
@@ -136,7 +136,7 @@ public class UpdateContactPayload extends Payload {
      * @param productEmails Should the contact receive product emails
      */
     public UpdateContactPayload withProductEmails(boolean productEmails) {
-        append("productemails", productEmails);
+        put("productemails", productEmails);
         return this;
     }
 
@@ -145,7 +145,7 @@ public class UpdateContactPayload extends Payload {
      * @param domainemails Should the contact receive domain emails
      */
     public UpdateContactPayload withDomainEmails(boolean domainemails) {
-        append("domainemails", domainemails);
+        put("domainemails", domainemails);
         return this;
     }
 
@@ -154,7 +154,7 @@ public class UpdateContactPayload extends Payload {
      * @param invoiceemails Should the contact receive invoice emails
      */
     public UpdateContactPayload withInvoiceEmails(boolean invoiceemails) {
-        append("invoiceemails", invoiceemails);
+        put("invoiceemails", invoiceemails);
         return this;
     }
 
@@ -163,7 +163,7 @@ public class UpdateContactPayload extends Payload {
      * @param supportemails Should the contact receive support emails
      */
     public UpdateContactPayload withSupportEmails(boolean supportemails) {
-        append("supportemails", supportemails);
+        put("supportemails", supportemails);
         return this;
     }
 
@@ -172,7 +172,7 @@ public class UpdateContactPayload extends Payload {
      * @param permissions A comma separated list of sub-account permissions. eg manageproducts,managedomains
      */
     public UpdateContactPayload withPermissions(String permissions) {
-        append("permissions",permissions);
+        put("permissions",permissions);
         return this;
     }
 }

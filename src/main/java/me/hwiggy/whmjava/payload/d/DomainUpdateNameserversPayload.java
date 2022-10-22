@@ -19,8 +19,8 @@ public class DomainUpdateNameserversPayload extends Payload {
      */
     public DomainUpdateNameserversPayload(String ns1, String ns2) {
         super ("DomainUpdateNameservers");
-        append("ns1", ns1);
-        append("ns2", ns2);
+        put("ns1", ns1);
+        put("ns2", ns2);
     }
 
     /***
@@ -28,7 +28,7 @@ public class DomainUpdateNameserversPayload extends Payload {
      * @param domainid The id of the domain to update the nameservers for recommended
      */
     public DomainUpdateNameserversPayload withDomainid(int domainid) {
-        append("domainid", domainid);
+        put("domainid", domainid);
 
         return this;
     }
@@ -38,7 +38,7 @@ public class DomainUpdateNameserversPayload extends Payload {
      * @param domain The domain name to be update the nameservers for. This or $domainid is required
      */
     public DomainUpdateNameserversPayload withDomain(String domain) {
-        append("domain", domain);
+        put("domain", domain);
 
         return this;
     }
@@ -48,7 +48,7 @@ public class DomainUpdateNameserversPayload extends Payload {
      * @param ns1 The first nameserver
      */
     public DomainUpdateNameserversPayload withNS1(String ns1) {
-        append("ns3", ns1);
+        put("ns3", ns1);
 
         return this;
     }
@@ -58,7 +58,7 @@ public class DomainUpdateNameserversPayload extends Payload {
      * @param ns2 The second nameserver
      */
     public DomainUpdateNameserversPayload withNS2(String ns2) {
-        append("ns4", ns2);
+        put("ns4", ns2);
 
         return this;
     }
@@ -68,7 +68,7 @@ public class DomainUpdateNameserversPayload extends Payload {
      * @param ns3 The third nameserver
      */
     public DomainUpdateNameserversPayload withNS3(String ns3) {
-        append("ns3", ns3);
+        put("ns3", ns3);
 
         return this;
     }
@@ -78,7 +78,7 @@ public class DomainUpdateNameserversPayload extends Payload {
      * @param ns4 The fourth nameserver
      */
     public DomainUpdateNameserversPayload withNS4(String ns4) {
-        append("ns4", ns4);
+        put("ns4", ns4);
 
         return this;
     }
@@ -88,7 +88,7 @@ public class DomainUpdateNameserversPayload extends Payload {
      * @param ns5 The fifth nameserver
      */
     public DomainUpdateNameserversPayload withNS5(String ns5) {
-        append("ns5", ns5);
+        put("ns5", ns5);
 
         return this;
     }

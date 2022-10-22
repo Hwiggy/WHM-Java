@@ -16,8 +16,8 @@ public class ActivateModulePayload extends Payload {
      */
     ActivateModulePayload(String moduleType, String moduleName) {
         super("ActivateModule");
-        append("moduleType", moduleType);
-        append("moduleName", moduleName);
+        put("moduleType", moduleType);
+        put("moduleName", moduleName);
     }
 
     /***
@@ -26,7 +26,7 @@ public class ActivateModulePayload extends Payload {
      * @return This Payload, for chaining
      */
     public ActivateModulePayload withParameters(JSONObject parameters){
-        append("parameters", parameters);
+        put("parameters", parameters);
         return this;
     }
 }

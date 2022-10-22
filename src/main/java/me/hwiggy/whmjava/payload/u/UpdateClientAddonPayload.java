@@ -15,14 +15,14 @@ public class UpdateClientAddonPayload extends Payload {
      */
     public UpdateClientAddonPayload(int id ) {
         super("UpdateClientAddon");
-        append("id", id);
+        put("id", id);
     }
 
     /***
      * @param status
      */
     public UpdateClientAddonPayload withstatus(String status) {
-        append("status", status);
+        put("status", status);
         return this;
     }
 
@@ -30,7 +30,7 @@ public class UpdateClientAddonPayload extends Payload {
      * @param terminationDate
      */
     public UpdateClientAddonPayload withterminationDate(String terminationDate) {
-        append("terminationDate", terminationDate);
+        put("terminationDate", terminationDate);
         return this;
     }
 
@@ -38,7 +38,7 @@ public class UpdateClientAddonPayload extends Payload {
      * @param addonID
      */
     public UpdateClientAddonPayload withaddonID(int addonID) {
-        append("addonid", addonID);
+        put("addonid", addonID);
         return this;
     }
 
@@ -46,15 +46,15 @@ public class UpdateClientAddonPayload extends Payload {
      * @param name
      */
     public UpdateClientAddonPayload witName(String name) {
-        append("name", name);
+        put("name", name);
         return this;
     }
 
     /***
-     * @param setupfee
+     * @param setupFee
      */
     public UpdateClientAddonPayload withSetupFee(float setupFee) {
-        append("setupfee", setupFee);
+        put("setupfee", setupFee);
         return this;
     }
 
@@ -62,7 +62,7 @@ public class UpdateClientAddonPayload extends Payload {
      * @param recurring
      */
     public UpdateClientAddonPayload withRecurring(float recurring) {
-        append("recurring", recurring);
+        put("recurring", recurring);
         return this;
     }
 
@@ -70,7 +70,7 @@ public class UpdateClientAddonPayload extends Payload {
      * @param billingCycle
      */
     public UpdateClientAddonPayload withBillingCycle(String billingCycle) {
-        append("billingcycle", billingCycle);
+        put("billingcycle", billingCycle);
         return this;
     }
 
@@ -78,7 +78,7 @@ public class UpdateClientAddonPayload extends Payload {
      * @param nextDueDate
      */
     public UpdateClientAddonPayload withNextDueDate(String nextDueDate) {
-        append("nextduedate", nextDueDate);
+        put("nextduedate", nextDueDate);
         return this;
     }
 
@@ -86,7 +86,7 @@ public class UpdateClientAddonPayload extends Payload {
      * @param nextInvoiceDate
      */
     public UpdateClientAddonPayload withNextInvoiceDate(String nextInvoiceDate) {
-        append("nextinvoicedate", nextInvoiceDate);
+        put("nextinvoicedate", nextInvoiceDate);
         return this;
     }
 
@@ -95,7 +95,7 @@ public class UpdateClientAddonPayload extends Payload {
      * @param notes
      */
     public UpdateClientAddonPayload withNotes(String notes) {
-        append("notes", notes);
+        put("notes", notes);
         return this;
     }
 

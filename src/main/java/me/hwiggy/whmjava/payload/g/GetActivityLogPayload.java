@@ -16,7 +16,7 @@ public class GetActivityLogPayload extends Payload {
      * @param limitStart    The offset for the returned log data (default: 0)
      */
     public GetActivityLogPayload withLimitstart(int limitStart) {
-        append("limitstart", limitStart);
+        put("limitstart", limitStart);
         return this;
     }
 
@@ -24,7 +24,7 @@ public class GetActivityLogPayload extends Payload {
      * @param limitNum    The number of records to return (default: 25)
      */
     public GetActivityLogPayload withLimitNum(int limitNum) {
-        append("limitnum", limitNum);
+        put("limitnum", limitNum);
         return this;
     }
 
@@ -32,7 +32,7 @@ public class GetActivityLogPayload extends Payload {
      * @param userID    The ID of the user to obtain the log for
      */
     public GetActivityLogPayload withUserID(int userID) {
-        append("userid", userID);
+        put("userid", userID);
         return this;
     }
 
@@ -40,7 +40,7 @@ public class GetActivityLogPayload extends Payload {
      * @param date    The date of the activity log to retrieve in localised format (eg 01/01/2016)	
      */
     public GetActivityLogPayload withDate(String date) {
-        append("date", date);
+        put("date", date);
         return this;
     }
 
@@ -48,7 +48,7 @@ public class GetActivityLogPayload extends Payload {
      * @param user    The name of the user to retrieve the log entries for	
      */
     public GetActivityLogPayload withUser(String user) {
-        append("user", user);
+        put("user", user);
         return this;
     }
 
@@ -56,15 +56,15 @@ public class GetActivityLogPayload extends Payload {
      * @param description    Search the log for a specific string	
      */
     public GetActivityLogPayload withDescription(String description) {
-        append("description", description);
+        put("description", description);
         return this;
     }
 
     /***
      * @param ipaddress    The IP Address to search the activity log for	
      */
-    public GetActivityLogPayload withIPAddress(String IPaddress) {
-        append("ipaddress", IPaddress);
+    public GetActivityLogPayload withIPAddress(String ipaddress) {
+        put("ipaddress", ipaddress);
         return this;
     }
 }

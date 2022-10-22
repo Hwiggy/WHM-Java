@@ -17,9 +17,9 @@ public class AddBillableItemPayload extends Payload {
      */
     public AddBillableItemPayload(int clientID, String description, float amount) {
         super("AddBillableItem");
-        append("clientid", clientID);
-        append("description", description);
-        append("amount", amount);
+        put("clientid", clientID);
+        put("description", description);
+        put("amount", amount);
     }
 
     /***
@@ -28,7 +28,7 @@ public class AddBillableItemPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddBillableItemPayload withInvoiceAction(String invoiceAction){
-        append("invoiceaction", invoiceAction);
+        put("invoiceaction", invoiceAction);
         return this;
     }
 
@@ -38,7 +38,7 @@ public class AddBillableItemPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddBillableItemPayload withRecur(int recur){
-        append("recur", recur);
+        put("recur", recur);
         return this;
     }
 
@@ -48,7 +48,7 @@ public class AddBillableItemPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddBillableItemPayload withRecurCycle(String recurCycle){
-        append("recurcycle", recurCycle);
+        put("recurcycle", recurCycle);
         return this;
     }
 
@@ -58,7 +58,7 @@ public class AddBillableItemPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddBillableItemPayload withRecurFor(int recurFor){
-        append("recurfor", recurFor);
+        put("recurfor", recurFor);
         return this;
     }
 
@@ -68,7 +68,7 @@ public class AddBillableItemPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddBillableItemPayload withDueDate(String dueDate){
-        append("duedate", dueDate);
+        put("duedate", dueDate);
         return this;
     }
 
@@ -78,7 +78,7 @@ public class AddBillableItemPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddBillableItemPayload withHours(float hours){
-        append("hours", hours);
+        put("hours", hours);
         return this;
     }
 }

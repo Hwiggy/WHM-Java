@@ -18,6 +18,6 @@ public class DeleteTicketPayload extends Payload {
      */
     public DeleteTicketPayload(int ticketID) {
         super ("DeleteTicket");
-        append("ticketid", ticketID);
+        put("ticketid", ticketID);
     }
 }

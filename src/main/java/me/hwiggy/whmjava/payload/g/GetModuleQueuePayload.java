@@ -24,7 +24,7 @@ public class GetModuleQueuePayload extends Payload {
      * @param serviceType The type of service to load (‘domain’, ‘service’ or “))
      */
     public GetModuleQueuePayload withServiceType(String serviceType) {
-        append("serviceType", serviceType);
+        put("serviceType", serviceType);
 
         return this;
     }
@@ -34,7 +34,7 @@ public class GetModuleQueuePayload extends Payload {
      * @param moduleName The module name to obtain the queue for in system format. eg cpanel
      */
     public GetModuleQueuePayload withModuleName(String moduleName) {
-        append("moduleName", moduleName);
+        put("moduleName", moduleName);
 
         return this;
     }
@@ -44,7 +44,7 @@ public class GetModuleQueuePayload extends Payload {
      * @param moduleAction The module action to obtain the queue for. eg CreateAccount, SuspendAccount
      */
     public GetModuleQueuePayload withModuleAction(String moduleAction) {
-        append("moduleAction", moduleAction);
+        put("moduleAction", moduleAction);
 
         return this;
     }
@@ -54,7 +54,7 @@ public class GetModuleQueuePayload extends Payload {
      * @param since The date/time since to obtain the items. Format Y-m-d Can include H:i:s
      */
     public GetModuleQueuePayload withSince(String since) {
-        append("since", since);
+        put("since", since);
 
         return this;
     }

@@ -24,7 +24,7 @@ public class GetProductsPayload extends Payload {
      * @param pID Obtain a specific product id configuration. Can be a list of ids comma separated
      */
     public GetProductsPayload withPid(int pID) {
-        append("pid", pID);
+        put("pid", pID);
 
         return this;
     }
@@ -34,7 +34,7 @@ public class GetProductsPayload extends Payload {
      * @param gID Retrieve products in a specific group id
      */
     public GetProductsPayload withGid(int gID) {
-        append("gid", gID);
+        put("gid", gID);
 
         return this;
     }
@@ -44,7 +44,7 @@ public class GetProductsPayload extends Payload {
      * @param module Retrieve products utilising a specific module
      */
     public GetProductsPayload withModule(String module) {
-        append("module", module);
+        put("module", module);
 
         return this;
     }

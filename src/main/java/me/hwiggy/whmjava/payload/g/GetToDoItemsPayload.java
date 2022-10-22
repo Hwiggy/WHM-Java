@@ -25,7 +25,7 @@ public class GetToDoItemsPayload extends Payload {
      * @param limitStart The offset for the returned log data (default: 0)
      */
     public GetToDoItemsPayload withLimitstart(int limitStart) {
-        append("limitstart", limitStart);
+        put("limitstart", limitStart);
 
         return this;
     }
@@ -35,7 +35,7 @@ public class GetToDoItemsPayload extends Payload {
      * @param limitNum The number of records to return (default: 25)
      */
     public GetToDoItemsPayload withLimitNum(int limitNum) {
-        append("limitnum", limitNum);
+        put("limitnum", limitNum);
 
         return this;
     }
@@ -45,7 +45,7 @@ public class GetToDoItemsPayload extends Payload {
      * @param status Status to filter for. Possible values include: Incomplete, New, Pending, In Progress, Completed
      */
     public GetToDoItemsPayload withStatus(String status) {
-        append("status", status);
+        put("status", status);
 
         return this;
     }

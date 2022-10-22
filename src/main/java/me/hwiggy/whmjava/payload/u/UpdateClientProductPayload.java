@@ -18,7 +18,7 @@ public class UpdateClientProductPayload extends Payload {
      */
     public UpdateClientProductPayload(int serviceID) {
         super("UpdateClientProduct");
-        append("serviceid", serviceID);
+        put("serviceid", serviceID);
     }
 
 
@@ -27,7 +27,7 @@ public class UpdateClientProductPayload extends Payload {
      * @param PID  The package id to associate with the service
      */
     public UpdateClientProductPayload withPID(int PID) {
-        append("pid", PID);
+        put("pid", PID);
         return this;
     }
 
@@ -36,7 +36,7 @@ public class UpdateClientProductPayload extends Payload {
      * @param serverID  The server id to associate with the service
      */
     public UpdateClientProductPayload withServerID(int serverID) {
-        append("serverid", serverID);
+        put("serverid", serverID);
         return this;
     }
 
@@ -45,7 +45,7 @@ public class UpdateClientProductPayload extends Payload {
      * @param nextDueDate  The next due date of the service (Y-m-d)
      */
     public UpdateClientProductPayload withNextDueDate(String nextDueDate) {
-        append("nextduedate", nextDueDate);
+        put("nextduedate", nextDueDate);
         return this;
     }
 
@@ -54,7 +54,7 @@ public class UpdateClientProductPayload extends Payload {
      * @param terminationDate  Update the termination date of the service (Y-m-d)
      */
     public UpdateClientProductPayload withTerminationDate(String terminationDate) {
-        append("terminationDate", terminationDate);
+        put("terminationDate", terminationDate);
         return this;
     }
 
@@ -63,7 +63,7 @@ public class UpdateClientProductPayload extends Payload {
      * @param completedDate  Update the completed date of the service (Y-m-d)
      */
     public UpdateClientProductPayload withCompletedDate(String completedDate) {
-        append("completedDate", completedDate);
+        put("completedDate", completedDate);
         return this;
     }
 
@@ -72,7 +72,7 @@ public class UpdateClientProductPayload extends Payload {
      * @param domain The domain name to be changed to
      */
     public UpdateClientProductPayload withDomain(String domain) {
-        append("domain", domain);
+        put("domain", domain);
         return this;
     }
 
@@ -81,7 +81,7 @@ public class UpdateClientProductPayload extends Payload {
      * @param firstPaymentAmount The first payment amount on the service
      */
     public UpdateClientProductPayload withFirstPaymentAmount(float firstPaymentAmount) {
-        append("firstpaymentamount", firstPaymentAmount);
+        put("firstpaymentamount", firstPaymentAmount);
         return this;
     }
 
@@ -90,7 +90,7 @@ public class UpdateClientProductPayload extends Payload {
      * @param reccuringAmount The recurring amount for automatic renewal invoices
      */
     public UpdateClientProductPayload withReccuringAmount(float reccuringAmount) {
-        append("recurringamount",reccuringAmount);
+        put("recurringamount",reccuringAmount);
         return this;
     }
 
@@ -99,7 +99,7 @@ public class UpdateClientProductPayload extends Payload {
      * @param paymentMethod The payment method to associate in system format (eg paypal)
      */
     public UpdateClientProductPayload withPaymentMethod(String paymentMethod) {
-        append("paymentmethod", paymentMethod);
+        put("paymentmethod", paymentMethod);
         return this;
     }
 
@@ -108,7 +108,7 @@ public class UpdateClientProductPayload extends Payload {
      * @param subscriptionid The subscription ID to associate with the service
      */
     public UpdateClientProductPayload withSubscriptionID(String subscriptionid) {
-        append("subscriptionid", subscriptionid);
+        put("subscriptionid", subscriptionid);
         return this;
     }
 
@@ -117,7 +117,7 @@ public class UpdateClientProductPayload extends Payload {
      * @param status The status to change the service to
      */
     public UpdateClientProductPayload withStatus(String status) {
-        append("status", status);
+        put("status", status);
         return this;
     }
 
@@ -126,7 +126,7 @@ public class UpdateClientProductPayload extends Payload {
      * @param notes The admin notes for the service
      */
     public UpdateClientProductPayload withNotes(String notes) {
-        append("notes", notes);
+        put("notes", notes);
         return this;
     }
 
@@ -135,7 +135,7 @@ public class UpdateClientProductPayload extends Payload {
      * @param serviceUsername The service username
      */
     public UpdateClientProductPayload withServiceUsername(String serviceUsername) {
-        append("serviceusername", serviceUsername);
+        put("serviceusername", serviceUsername);
         return this;
     }
 
@@ -144,7 +144,7 @@ public class UpdateClientProductPayload extends Payload {
      * @param servicePassword The service password
      */
     public UpdateClientProductPayload withServicePassword(String servicePassword) {
-        append("servicepassword", servicePassword);
+        put("servicepassword", servicePassword);
         return this;
     }
 
@@ -153,7 +153,7 @@ public class UpdateClientProductPayload extends Payload {
      * @param overrideAutoSuspend Should override auto suspend be provided (‘on’ or ‘off’)
      */
     public UpdateClientProductPayload withOverrideAutoSuspend(String overrideAutoSuspend) {
-        append("overideautosuspend", overrideAutoSuspend);
+        put("overideautosuspend", overrideAutoSuspend);
         return this;
     }
 
@@ -162,7 +162,7 @@ public class UpdateClientProductPayload extends Payload {
      * @param overidesuspenduntil Update the Override Suspend date of the service (Y-m-d)
      */
     public UpdateClientProductPayload withOveridesSuspendUntil(String overidesuspenduntil) {
-        append("overidesuspenduntil", overidesuspenduntil);
+        put("overidesuspenduntil", overidesuspenduntil);
         return this;
     }
 
@@ -171,7 +171,7 @@ public class UpdateClientProductPayload extends Payload {
      * @param ns1 (VPS/Dedicated servers only)
      */
     public UpdateClientProductPayload withNS1(String ns1) {
-        append("ns1", ns1);
+        put("ns1", ns1);
         return this;
     }
 
@@ -180,7 +180,7 @@ public class UpdateClientProductPayload extends Payload {
      * @param ns2 (VPS/Dedicated servers only)
      */
     public UpdateClientProductPayload withNS2(String ns2) {
-        append("ns2", ns2);
+        put("ns2", ns2);
         return this;
     }
 
@@ -189,7 +189,7 @@ public class UpdateClientProductPayload extends Payload {
      * @param dedicatedip The dedicated IP.
      */
     public UpdateClientProductPayload withDedicatedIP(String dedicatedip) {
-        append("dedicatedip", dedicatedip);
+        put("dedicatedip", dedicatedip);
         return this;
     }
 
@@ -198,7 +198,7 @@ public class UpdateClientProductPayload extends Payload {
      * @param assignedips (VPS/Dedicated servers only)
      */
     public UpdateClientProductPayload withAssighnedIP(String assignedips) {
-        append("assignedips", assignedips);
+        put("assignedips", assignedips);
         return this;
     }
 
@@ -207,7 +207,7 @@ public class UpdateClientProductPayload extends Payload {
      * @param diskUsage The disk usage in bytes
      */
     public UpdateClientProductPayload withDiskUsage(int diskUsage) {
-        append("diskusage", diskUsage);
+        put("diskusage", diskUsage);
         return this;
     }
 
@@ -216,7 +216,7 @@ public class UpdateClientProductPayload extends Payload {
      * @param diskLimit The disk limit in bytes
      */
     public UpdateClientProductPayload withDiskLimit(int diskLimit) {
-        append("disklimit", diskLimit);
+        put("disklimit", diskLimit);
         return this;
     }
 
@@ -225,7 +225,7 @@ public class UpdateClientProductPayload extends Payload {
      * @param bwUsage The bandwidth usage in bytes
      */
     public UpdateClientProductPayload withBWUsage(int bwUsage) {
-        append("bwusage", bwUsage);
+        put("bwusage", bwUsage);
         return this;
     }
 
@@ -234,7 +234,7 @@ public class UpdateClientProductPayload extends Payload {
      * @param bwLimit The bandwidth limit in bytes
      */
     public UpdateClientProductPayload withBWLimit(int bwLimit) {
-        append("bwlimit", bwLimit);
+        put("bwlimit", bwLimit);
         return this;
     }
 
@@ -243,7 +243,7 @@ public class UpdateClientProductPayload extends Payload {
      * @param suspendReason The suspend Reason
      */
     public UpdateClientProductPayload withSuspendReason(String suspendReason) {
-        append("suspendreason", suspendReason);
+        put("suspendreason", suspendReason);
         return this;
     }
 
@@ -252,7 +252,7 @@ public class UpdateClientProductPayload extends Payload {
      * @param promoID The promotion Id to associate
      */
     public UpdateClientProductPayload withPromoID(int promoID) {
-        append("promoid", promoID);
+        put("promoid", promoID);
         return this;
     }
 
@@ -261,7 +261,7 @@ public class UpdateClientProductPayload extends Payload {
      * @param unset An array of items to unset. Can be one of: ‘domain’, ‘serviceusername’, ‘servicepassword’, ‘subscriptionid’, ‘ns1’, ‘ns2’, ‘dedicatedip’, ‘assignedips’, ‘notes’, ‘suspendreason’
      */
     public UpdateClientProductPayload withUnset(JSONObject unset) {
-        append("unset", unset);
+        put("unset", unset);
         return this;
     }
 
@@ -270,7 +270,7 @@ public class UpdateClientProductPayload extends Payload {
      * @param autoRecalc Should the recurring amount of the service be automatically recalculated (this will ignore any passed $recurringamount)
      */
     public UpdateClientProductPayload withAutoRecalc(boolean autoRecalc) {
-        append("autorecalc", autoRecalc);
+        put("autorecalc", autoRecalc);
         return this;
     }
 
@@ -279,7 +279,7 @@ public class UpdateClientProductPayload extends Payload {
      * @param customfields Base64 encoded serialized array of custom field values - base64_encode(serialize(array(“1”=>“Yahoo”)));
      */
     public UpdateClientProductPayload withCustomFields(String customfields) {
-        append("customfields", customfields);
+        put("customfields", customfields);
         return this;
     }
 
@@ -288,7 +288,7 @@ public class UpdateClientProductPayload extends Payload {
      * @param configoptions Base64 encoded serialized array of configurable option field values - base64_encode(serialize(array(configoptionid => dropdownoptionid, XXX => array(‘optionid’ => YYY, ‘qty’ => ZZZ)))) - XXX is the ID of the configurable option - YYY is the optionid found in tblhostingconfigoption.optionid - ZZZ is the quantity you want to use for that option
      */
     public UpdateClientProductPayload withConfigOptions(String configoptions) {
-        append("configoptions", configoptions);
+        put("configoptions", configoptions);
         return this;
     }
 }

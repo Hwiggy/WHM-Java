@@ -17,8 +17,8 @@ public class AddBannedIPPayload extends Payload {
      */
     AddBannedIPPayload(String ip, String reason, int days) {
         super("AddBannedIp");
-        append("ip", ip);
-        append("reason", reason);
-        append("days", days);
+        put("ip", ip);
+        put("reason", reason);
+        put("days", days);
     }
 }

@@ -24,7 +24,7 @@ public class GetPromotionsPayload extends Payload {
      * @param code Retrieve a specific promotion code. Do not pass to retrieve all
      */
     public GetPromotionsPayload withCode(String code) {
-        append("code", code);
+        put("code", code);
 
         return this;
     }

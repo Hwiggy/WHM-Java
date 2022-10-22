@@ -15,6 +15,6 @@ public class AcceptQuotePayload extends Payload {
      */
     AcceptQuotePayload(int quoteID) {
         super("AcceptQuote");
-        append("quoteid", quoteID);
+        put("quoteid", quoteID);
     }
 }

@@ -17,8 +17,8 @@ public class AddProductPayload extends Payload {
      */
     public AddProductPayload(String name, int gID) {
         super("AddProduct");
-        append("name", name);
-        append("gid", gID);
+        put("name", name);
+        put("gid", gID);
     }
 
     /***
@@ -27,7 +27,7 @@ public class AddProductPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddProductPayload withType(String type){
-        append("type", type);
+        put("type", type);
         return this;
     }
 
@@ -37,7 +37,7 @@ public class AddProductPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddProductPayload witStockControl(boolean stockControl){
-        append("stockcontrol", stockControl);
+        put("stockcontrol", stockControl);
         return this;
     }
 
@@ -47,7 +47,7 @@ public class AddProductPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddProductPayload withQty(int qty){
-        append("qty", qty);
+        put("qty", qty);
         return this;
     }
 
@@ -57,7 +57,7 @@ public class AddProductPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddProductPayload withPayType(String payType){
-        append("paytype", payType);
+        put("paytype", payType);
         return this;
     }
 
@@ -67,7 +67,7 @@ public class AddProductPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddProductPayload withHidden(boolean hidden){
-        append("hidden", hidden);
+        put("hidden", hidden);
         return this;
     }
 
@@ -77,7 +77,7 @@ public class AddProductPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddProductPayload withShowDomainOptions(boolean showDomainOptions){
-        append("showdomainoptions", showDomainOptions);
+        put("showdomainoptions", showDomainOptions);
         return this;
     }
 
@@ -87,7 +87,7 @@ public class AddProductPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddProductPayload withTax(boolean tax){
-        append("tax", tax);
+        put("tax", tax);
         return this;
     }
 
@@ -97,7 +97,7 @@ public class AddProductPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddProductPayload withIsFeatured(boolean isFeatured){
-        append("isFeatured", isFeatured);
+        put("isFeatured", isFeatured);
         return this;
     }
 
@@ -107,7 +107,7 @@ public class AddProductPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddProductPayload withProrataBilling(boolean prorataBilling){
-        append("proratabilling", prorataBilling);
+        put("proratabilling", prorataBilling);
         return this;
     }
 
@@ -117,7 +117,7 @@ public class AddProductPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddProductPayload withDescription(String description){
-        append("description", description);
+        put("description", description);
         return this;
     }
 
@@ -127,7 +127,7 @@ public class AddProductPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddProductPayload withWelcomeEmail(int welcomeEmail){
-        append("welcomeemail", welcomeEmail);
+        put("welcomeemail", welcomeEmail);
         return this;
     }
 
@@ -137,7 +137,7 @@ public class AddProductPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddProductPayload withProrataDate(int prorataDate){
-        append("proratadate", prorataDate);
+        put("proratadate", prorataDate);
         return this;
     }
 
@@ -147,7 +147,7 @@ public class AddProductPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddProductPayload withProrataChargeNextMonth(int prorataChargeNextMonth){
-        append("proratachargenextmonth", prorataChargeNextMonth);
+        put("proratachargenextmonth", prorataChargeNextMonth);
         return this;
     }
 
@@ -157,7 +157,7 @@ public class AddProductPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddProductPayload withSubdomain(String subdomain){
-        append("subdomain", subdomain);
+        put("subdomain", subdomain);
         return this;
     }
 
@@ -167,7 +167,7 @@ public class AddProductPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddProductPayload withAutoSetup(String autoSetup){
-        append("autosetup", autoSetup);
+        put("autosetup", autoSetup);
         return this;
     }
 
@@ -177,7 +177,7 @@ public class AddProductPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddProductPayload withModule(String module){
-        append("module", module);
+        put("module", module);
         return this;
     }
 
@@ -187,7 +187,7 @@ public class AddProductPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddProductPayload withServerGroupID(int serverGroupID){
-        append("servergroupid", serverGroupID);
+        put("servergroupid", serverGroupID);
         return this;
     }
 
@@ -197,7 +197,7 @@ public class AddProductPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddProductPayload withConfigOptionOne(Object configOptionOne){
-        append("configoption1", configOptionOne);
+        put("configoption1", configOptionOne);
         return this;
     }
 
@@ -207,7 +207,7 @@ public class AddProductPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddProductPayload withConfigOptionTwo(Object configOptionTwo){
-        append("configoption2", configOptionTwo);
+        put("configoption2", configOptionTwo);
         return this;
     }
 
@@ -217,7 +217,7 @@ public class AddProductPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddProductPayload withConfigOptionThree(Object configOptionThree){
-        append("configoption3", configOptionThree);
+        put("configoption3", configOptionThree);
         return this;
     }
 
@@ -227,7 +227,7 @@ public class AddProductPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddProductPayload withConfigOptionFour(Object configOptionFour){
-        append("configoption4", configOptionFour);
+        put("configoption4", configOptionFour);
         return this;
     }
 
@@ -237,7 +237,7 @@ public class AddProductPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddProductPayload withConfigOptionFive(Object configOptionFive){
-        append("configoption5", configOptionFive);
+        put("configoption5", configOptionFive);
         return this;
     }
 
@@ -247,7 +247,7 @@ public class AddProductPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddProductPayload withConfigOptionSix(Object configOptionSix){
-        append("configoption6", configOptionSix);
+        put("configoption6", configOptionSix);
         return this;
     }
 
@@ -257,7 +257,7 @@ public class AddProductPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddProductPayload withOrder(int order){
-        append("order", order);
+        put("order", order);
         return this;
     }
 
@@ -267,7 +267,7 @@ public class AddProductPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddProductPayload withPricing(JSONObject pricing){
-        append("pricing", pricing);
+        put("pricing", pricing);
         return this;
     }
 }

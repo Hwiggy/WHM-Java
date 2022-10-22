@@ -19,7 +19,7 @@ public class GetModuleConfigurationParametersPayload extends Payload {
      */
     public GetModuleConfigurationParametersPayload(String moduleType, String moduleName) {
         super ("GetModuleConfigurationParameters");
-        append("moduleType", moduleType);
-        append("moduleName", moduleName);
+        put("moduleType", moduleType);
+        put("moduleName", moduleName);
     }
 }

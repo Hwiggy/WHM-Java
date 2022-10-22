@@ -24,7 +24,7 @@ public class GetQuotesPayload extends Payload {
      * @param limitStart The offset for the returned quote data (default: 0)
      */
     public GetQuotesPayload withLimitstart(int limitStart) {
-        append("limitstart", limitStart);
+        put("limitstart", limitStart);
 
         return this;
     }
@@ -34,7 +34,7 @@ public class GetQuotesPayload extends Payload {
      * @param limitNum The number of records to return (default: 25)
      */
     public GetQuotesPayload withLimitnum(int limitNum) {
-        append("limitnum", limitNum);
+        put("limitnum", limitNum);
 
         return this;
     }
@@ -44,7 +44,7 @@ public class GetQuotesPayload extends Payload {
      * @param quoteID Obtain a specific quote id
      */
     public GetQuotesPayload withQuoteid(int quoteID) {
-        append("quoteid", quoteID);
+        put("quoteid", quoteID);
 
         return this;
     }
@@ -54,7 +54,7 @@ public class GetQuotesPayload extends Payload {
      * @param userID Find quotes for a specific client id
      */
     public GetQuotesPayload withUserid(int userID) {
-        append("userid", userID);
+        put("userid", userID);
 
         return this;
     }
@@ -64,7 +64,7 @@ public class GetQuotesPayload extends Payload {
      * @param subject Find quotes for a specific subject
      */
     public GetQuotesPayload withSubject(String subject) {
-        append("subject", subject);
+        put("subject", subject);
 
         return this;
     }
@@ -74,7 +74,7 @@ public class GetQuotesPayload extends Payload {
      * @param stage quotes for a specific stage (‘Draft’,‘Delivered’,‘On Hold’,‘Accepted’,‘Lost’,‘Dead’)
      */
     public GetQuotesPayload withStage(String stage) {
-        append("stage", stage);
+        put("stage", stage);
 
         return this;
     }
@@ -84,7 +84,7 @@ public class GetQuotesPayload extends Payload {
      * @param dateCreated Find quotes for a specific created date. Format: Y-m-d
      */
     public GetQuotesPayload withDateCreated(String /* Carbon */ dateCreated) {
-        append("datecreated", dateCreated);
+        put("datecreated", dateCreated);
 
         return this;
     }
@@ -94,7 +94,7 @@ public class GetQuotesPayload extends Payload {
      * @param lastModified Find quotes for a specific last modified date. Format: Y-m-d
      */
     public GetQuotesPayload withLastModified(String /* Carbon */ lastModified) {
-        append("lastmodified", lastModified);
+        put("lastmodified", lastModified);
 
         return this;
     }
@@ -104,7 +104,7 @@ public class GetQuotesPayload extends Payload {
      * @param validUntil Find quotes for a specific valid until date. Format: Y-m-d
      */
     public GetQuotesPayload withValidUntil(String /* Carbon */ validUntil) {
-        append("validuntil", validUntil);
+        put("validuntil", validUntil);
 
         return this;
     }

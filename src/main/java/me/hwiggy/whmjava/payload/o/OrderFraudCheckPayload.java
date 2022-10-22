@@ -15,7 +15,7 @@ public class OrderFraudCheckPayload extends Payload {
      */
     public OrderFraudCheckPayload(int orderID) {
         super("OrderFraudCheck");
-        append("orderid", orderID);
+        put("orderid", orderID);
     }
 
     /***
@@ -23,7 +23,7 @@ public class OrderFraudCheckPayload extends Payload {
      * @param IPAddress To override the IP address on the fraud check
      */
     public OrderFraudCheckPayload withIPAddress(String IPAddress) {
-        append("ipaddress", IPAddress);
+        put("ipaddress", IPAddress);
         return this;
     }
 }

@@ -15,6 +15,6 @@ public class AffiliateActivatePayload extends Payload {
      */
     public AffiliateActivatePayload(int userID) {
         super("AffiliateActivate");
-        append("userid", userID);
+        put("userid", userID);
     }
 }

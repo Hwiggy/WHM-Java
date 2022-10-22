@@ -15,6 +15,6 @@ public class PendingOrderPayload extends Payload {
      */
     public PendingOrderPayload(int orderID) {
         super("PendingOrder");
-        append("orderid", orderID);
+        put("orderid", orderID);
     }
 }

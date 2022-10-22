@@ -16,7 +16,7 @@ public class SetConfigurationValuePayload extends Payload {
      */
     public SetConfigurationValuePayload(String setting, String value) {
         super("SetConfigurationValue");
-        append("setting", setting);
-        append("value", value);
+        put("setting", setting);
+        put("value", value);
     }
 }

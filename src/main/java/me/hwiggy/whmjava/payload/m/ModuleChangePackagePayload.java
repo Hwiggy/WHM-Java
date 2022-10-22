@@ -15,6 +15,6 @@ public class ModuleChangePackagePayload extends Payload {
      */
     public ModuleChangePackagePayload(int accountID) {
         super("ModuleChangePackage");
-        append("accountid",accountID);
+        put("accountid",accountID);
     }
 }

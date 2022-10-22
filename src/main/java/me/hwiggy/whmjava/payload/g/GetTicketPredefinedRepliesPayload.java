@@ -18,7 +18,7 @@ public class GetTicketPredefinedRepliesPayload extends Payload {
      * @param catID Obtain predefined replies for a specific category id
      */
     public GetTicketPredefinedRepliesPayload withCatID(int catID) {
-        append("catid", catID);
+        put("catid", catID);
         return this;
     }
 }

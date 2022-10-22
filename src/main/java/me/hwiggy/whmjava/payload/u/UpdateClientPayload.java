@@ -20,7 +20,7 @@ public class UpdateClientPayload extends Payload {
      * @param clientID The id of the client to update
      */
     public UpdateClientPayload withClientID(String clientID) {
-        append("clientid", clientID);
+        put("clientid", clientID);
         return this;
     }
 
@@ -29,7 +29,7 @@ public class UpdateClientPayload extends Payload {
      * @param clientEmail The email address of the client to update. Either $clientid or $clientemail is required
      */
     public UpdateClientPayload withClientEmail(String clientEmail) {
-        append("clientemail", clientEmail);
+        put("clientemail", clientEmail);
         return this;
     }
 
@@ -38,7 +38,7 @@ public class UpdateClientPayload extends Payload {
      * @param firstName The first name of the client the quote is for if no $userid
      */
     public UpdateClientPayload withFirstName(String firstName) {
-        append("firstname", firstName);
+        put("firstname", firstName);
         return this;
     }
 
@@ -47,7 +47,7 @@ public class UpdateClientPayload extends Payload {
      * @param lastName The last name of the client the quote is for if no $userid
      */
     public UpdateClientPayload withLastName(String lastName) {
-        append("lastname", lastName);
+        put("lastname", lastName);
         return this;
     }
 
@@ -56,7 +56,7 @@ public class UpdateClientPayload extends Payload {
      * @param companyName The company of the client the quote is for if no $userid
      */
     public UpdateClientPayload withCompanyName(String companyName) {
-        append("companyname", companyName);
+        put("companyname", companyName);
         return this;
     }
 
@@ -65,7 +65,7 @@ public class UpdateClientPayload extends Payload {
      * @param email The email address of the client the quote is for if no $userid
      */
     public UpdateClientPayload withEmail(String email) {
-        append("email", email);
+        put("email", email);
         return this;
     }
 
@@ -74,7 +74,7 @@ public class UpdateClientPayload extends Payload {
      * @param address1 The address1 of the client the quote is for if no $userid
      */
     public UpdateClientPayload withAddress1(String address1) {
-        append("address1", address1);
+        put("address1", address1);
         return this;
     }
 
@@ -83,7 +83,7 @@ public class UpdateClientPayload extends Payload {
      * @param address2 The address2 of the client the quote is for if no $userid
      */
     public UpdateClientPayload withAddress2(String address2) {
-        append("address2", address2);
+        put("address2", address2);
         return this;
     }
 
@@ -92,7 +92,7 @@ public class UpdateClientPayload extends Payload {
      * @param city The city of the client the quote is for if no $userid
      */
     public UpdateClientPayload withCity(String city) {
-        append("city", city);
+        put("city", city);
         return this;
     }
 
@@ -101,7 +101,7 @@ public class UpdateClientPayload extends Payload {
      * @param state The state of the client the quote is for if no $userid
      */
     public UpdateClientPayload withState(String state) {
-        append("state", state);
+        put("state", state);
         return this;
     }
 
@@ -110,7 +110,7 @@ public class UpdateClientPayload extends Payload {
      * @param country The country of the client the quote is for if no $userid
      */
     public UpdateClientPayload withCountry(String country) {
-        append("country", country);
+        put("country", country);
         return this;
     }
 
@@ -119,7 +119,7 @@ public class UpdateClientPayload extends Payload {
      * @param phoneNumber The phone number of the client (no country code) the quote is for if no $userid. Local format eg 4035551234
      */
     public UpdateClientPayload withPhoneNumber(String phoneNumber) {
-        append("phonenumber", phoneNumber);
+        put("phonenumber", phoneNumber);
         return this;
     }
 
@@ -128,7 +128,7 @@ public class UpdateClientPayload extends Payload {
      * @param password2 (sub-account only)
      */
     public UpdateClientPayload withPassword2(String password2) {
-        append("password2", password2);
+        put("password2", password2);
         return this;
     }
 
@@ -137,7 +137,7 @@ public class UpdateClientPayload extends Payload {
      * @param securityqid Security Question ID from tbladminsecurityquestions
      */
     public UpdateClientPayload withSecurityQID(int securityqid) {
-        append("securityqid", securityqid);
+        put("securityqid", securityqid);
         return this;
     }
 
@@ -146,7 +146,7 @@ public class UpdateClientPayload extends Payload {
      * @param securityqans Security Question Answer
      */
     public UpdateClientPayload withSecurityAns(String securityqans) {
-        append("securityqans", securityqans);
+        put("securityqans", securityqans);
         return this;
     }
 
@@ -155,7 +155,7 @@ public class UpdateClientPayload extends Payload {
      * @param cardtype Credit card type. Provide full name: Visa, Mastercard, American Express, etc…
      */
     public UpdateClientPayload withCardType(String cardtype) {
-        append("cardtype", cardtype);
+        put("cardtype", cardtype);
         return this;
     }
 
@@ -164,7 +164,7 @@ public class UpdateClientPayload extends Payload {
      * @param cardnum Credit card number
      */
     public UpdateClientPayload withCardNum(String cardnum) {
-        append("cardnum", cardnum);
+        put("cardnum", cardnum);
         return this;
     }
 
@@ -173,7 +173,7 @@ public class UpdateClientPayload extends Payload {
      * @param expdate Format: MMYY
      */
     public UpdateClientPayload withExpDate(String expdate) {
-        append("expdate", expdate);
+        put("expdate", expdate);
         return this;
     }
 
@@ -182,7 +182,7 @@ public class UpdateClientPayload extends Payload {
      * @param startdate Format: MMYY (if applicable)
      */
     public UpdateClientPayload withStartDate(String startdate) {
-        append("startdate", startdate);
+        put("startdate", startdate);
         return this;
     }
 
@@ -191,7 +191,7 @@ public class UpdateClientPayload extends Payload {
      * @param issuenumber Credit card issue number (if applicable)
      */
     public UpdateClientPayload withIssueDate(String issuenumber) {
-        append("issuenumber", issuenumber);
+        put("issuenumber", issuenumber);
         return this;
     }
 
@@ -200,7 +200,7 @@ public class UpdateClientPayload extends Payload {
      * @param bankcode Client Bank Account Code (if applicable)
      */
     public UpdateClientPayload withBankCode(String bankcode) {
-        append("bankcode", bankcode);
+        put("bankcode", bankcode);
         return this;
     }
 
@@ -209,7 +209,7 @@ public class UpdateClientPayload extends Payload {
      * @param bankacct Client bank Account number (if applicable)
      */
     public UpdateClientPayload withBankAcct(String bankacct) {
-        append("bankacct", bankacct);
+        put("bankacct", bankacct);
         return this;
     }
 
@@ -218,7 +218,7 @@ public class UpdateClientPayload extends Payload {
      * @param cvv Credit card CVV number (will not be stored)
      */
     public UpdateClientPayload withCCV(String cvv) {
-        append("cvv", cvv);
+        put("cvv", cvv);
         return this;
     }
 
@@ -227,7 +227,7 @@ public class UpdateClientPayload extends Payload {
      * @param currency Currency ID from tblcurrencies
      */
     public UpdateClientPayload withCurrency(int currency) {
-        append("currency", currency);
+        put("currency", currency);
         return this;
     }
 
@@ -236,7 +236,7 @@ public class UpdateClientPayload extends Payload {
      * @param groupid Client Group ID from tblclientgroups
      */
     public UpdateClientPayload withGroupID(int groupid) {
-        append("groupid", groupid);
+        put("groupid", groupid);
         return this;
     }
 
@@ -245,7 +245,7 @@ public class UpdateClientPayload extends Payload {
      * @param customfields Base64 encoded serialized array of custom field values
      */
     public UpdateClientPayload withCustomFields(String customfields) {
-        append("customfields", customfields);
+        put("customfields", customfields);
         return this;
     }
 
@@ -254,7 +254,7 @@ public class UpdateClientPayload extends Payload {
      * @param language Default language setting. Provide full name: ‘english’, ‘french’, etc…
      */
     public UpdateClientPayload withLanguage(String language) {
-        append("language",language);
+        put("language",language);
         return this;
     }
 
@@ -263,7 +263,7 @@ public class UpdateClientPayload extends Payload {
      * @param clientip IP address of the user
      */
     public UpdateClientPayload withClientIP(String clientip) {
-        append("clientip", clientip);
+        put("clientip", clientip);
         return this;
     }
 
@@ -272,7 +272,7 @@ public class UpdateClientPayload extends Payload {
      * @param notes Admin only notes
      */
     public UpdateClientPayload withNotes(String notes) {
-        append("notes", notes);
+        put("notes", notes);
         return this;
     }
 
@@ -281,7 +281,7 @@ public class UpdateClientPayload extends Payload {
      * @param status Status, e.g. “Active”
      */
     public UpdateClientPayload withStatus(String status) {
-        append("status", status);
+        put("status", status);
         return this;
     }
 
@@ -290,7 +290,7 @@ public class UpdateClientPayload extends Payload {
      * @param paymentmethod The default payment method
      */
     public UpdateClientPayload withPaymentMethod(String paymentmethod) {
-        append("paymentmethod",paymentmethod);
+        put("paymentmethod",paymentmethod);
         return this;
     }
 
@@ -299,7 +299,7 @@ public class UpdateClientPayload extends Payload {
      * @param marketingoptin Set true to opt client in to marketing emails
      */
     public UpdateClientPayload withMarketingOptIn(String marketingoptin) {
-        append("marketingoptin", marketingoptin);
+        put("marketingoptin", marketingoptin);
         return this;
     }
 
@@ -308,7 +308,7 @@ public class UpdateClientPayload extends Payload {
      * @param clearcreditcard Pass as true to clear the stored CC details	
      */
     public UpdateClientPayload withClearCreditCard(String clearcreditcard) {
-        append("clearcreditcard", clearcreditcard);
+        put("clearcreditcard", clearcreditcard);
         return this;
     }
 
@@ -317,7 +317,7 @@ public class UpdateClientPayload extends Payload {
      * @param skipvalidation Pass as true to ignore required fields validation	
      */
     public UpdateClientPayload withSkipValidation(String skipvalidation) {
-        append("skipvalidation", skipvalidation);
+        put("skipvalidation", skipvalidation);
         return this;
     }
 }

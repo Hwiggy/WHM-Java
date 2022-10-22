@@ -16,7 +16,7 @@ public class UpdateQuotePayload extends Payload {
      */
     public UpdateQuotePayload(int quoteID) {
         super("UpdateQuote");
-        append("quoteid", quoteID);
+        put("quoteid", quoteID);
     }
 
     /***
@@ -24,7 +24,7 @@ public class UpdateQuotePayload extends Payload {
      * @param subject The subject of the quote
      */
     public UpdateQuotePayload withSubject(String subject) {
-        append("subject", subject);
+        put("subject", subject);
         return this;
     }
 
@@ -33,7 +33,7 @@ public class UpdateQuotePayload extends Payload {
      * @param stage The current stage of the quote (‘Draft’,‘Delivered’,‘On Hold’,‘Accepted’,‘Lost’,‘Dead’)
      */
     public UpdateQuotePayload withStage(String stage) {
-        append("stage", stage);
+        put("stage", stage);
         return this;
     }
 
@@ -42,7 +42,7 @@ public class UpdateQuotePayload extends Payload {
      * @param validUntil The date the quote is valid until in localised format (eg DD/MM/YYYY)
      */
     public UpdateQuotePayload withValidUntil(String validUntil) {
-        append("validuntil", validUntil);
+        put("validuntil", validUntil);
         return this;
     }
 
@@ -51,7 +51,7 @@ public class UpdateQuotePayload extends Payload {
      * @param dateCreated The date the quote was created in localised format (eg DD/MM/YYYY)
      */
     public UpdateQuotePayload withDateCreated(String dateCreated) {
-        append("datecreated", dateCreated);
+        put("datecreated", dateCreated);
         return this;
     }
 
@@ -60,7 +60,7 @@ public class UpdateQuotePayload extends Payload {
      * @param lineItems A base64 encoded serialized array containing the following keys:
      */
     public UpdateQuotePayload withLineItems(JSONObject lineItems) {
-        append("lineitems", lineItems);
+        put("lineitems", lineItems);
         return this;
     }
 
@@ -69,7 +69,7 @@ public class UpdateQuotePayload extends Payload {
      * @param lineItems_x__id_ For $lineitems. The id of an existing line item. Omit for new lines
      */
     public UpdateQuotePayload withLineItems_x__id_(int lineItems_x__id_) {
-        append("lineitems[x][id]", lineItems_x__id_);
+        put("lineitems[x][id]", lineItems_x__id_);
         return this;
     }
 
@@ -78,7 +78,7 @@ public class UpdateQuotePayload extends Payload {
      * @param lineItems_x__desc_ For $lineitems. The description of the line item
      */
     public UpdateQuotePayload withLineItems_x__desc_(String lineItems_x__desc_) {
-        append("lineitems[x][desc]", lineItems_x__desc_);
+        put("lineitems[x][desc]", lineItems_x__desc_);
         return this;
     }
 
@@ -87,7 +87,7 @@ public class UpdateQuotePayload extends Payload {
      * @param lineItems_x__qty_ For $lineitems. The quantity of the line item being quoted for
      */
     public UpdateQuotePayload withLineItems_x__qty_(int lineItems_x__qty_) {
-        append("lineitems[x][qty]", lineItems_x__qty_);
+        put("lineitems[x][qty]", lineItems_x__qty_);
         return this;
     }
 
@@ -96,7 +96,7 @@ public class UpdateQuotePayload extends Payload {
      * @param lineItems_x__up_ For $lineitems. The Unit Price of the line item
      */
     public UpdateQuotePayload withLineItems_x__up_(float lineItems_x__up_) {
-        append("lineitems[x][up]", lineItems_x__up_);
+        put("lineitems[x][up]", lineItems_x__up_);
         return this;
     }
 
@@ -105,7 +105,7 @@ public class UpdateQuotePayload extends Payload {
      * @param lineitems_x__discount_ For $lineitems. The amount of discount to provide on the line items
      */
     public UpdateQuotePayload withLineItems_x__discount_(float lineitems_x__discount_) {
-        append("lineitems[x][discount]", lineitems_x__discount_);
+        put("lineitems[x][discount]", lineitems_x__discount_);
         return this;
     }
 
@@ -114,7 +114,7 @@ public class UpdateQuotePayload extends Payload {
      * @param lineItems_x__taxable_ For $lineitems. Is the line item taxable
      */
     public UpdateQuotePayload withLineItems_x__taxable_	(boolean lineItems_x__taxable_) {
-        append("lineitems[x][taxable]", lineItems_x__taxable_);
+        put("lineitems[x][taxable]", lineItems_x__taxable_);
         return this;
     }
 
@@ -123,7 +123,7 @@ public class UpdateQuotePayload extends Payload {
      * @param userID If the quote is for an exising client, the client ID the quote is for
      */
     public UpdateQuotePayload withUserID(int userID) {
-        append("userid", userID);
+        put("userid", userID);
         return this;
     }
 
@@ -132,7 +132,7 @@ public class UpdateQuotePayload extends Payload {
      * @param firstName The first name of the client the quote is for if no $userid
      */
     public UpdateQuotePayload withFirstName(String firstName) {
-        append("firstname", firstName);
+        put("firstname", firstName);
         return this;
     }
 
@@ -141,7 +141,7 @@ public class UpdateQuotePayload extends Payload {
      * @param lastName The last name of the client the quote is for if no $userid
      */
     public UpdateQuotePayload withLastName(String lastName) {
-        append("lastname", lastName);
+        put("lastname", lastName);
         return this;
     }
 
@@ -150,7 +150,7 @@ public class UpdateQuotePayload extends Payload {
      * @param companyName The company of the client the quote is for if no $userid
      */
     public UpdateQuotePayload withCompanyName(String companyName) {
-        append("companyname", companyName);
+        put("companyname", companyName);
         return this;
     }
 
@@ -159,7 +159,7 @@ public class UpdateQuotePayload extends Payload {
      * @param email The email address of the client the quote is for if no $userid
      */
     public UpdateQuotePayload withEmail(String email) {
-        append("email", email);
+        put("email", email);
         return this;
     }
 
@@ -168,7 +168,7 @@ public class UpdateQuotePayload extends Payload {
      * @param address1 The address1 of the client the quote is for if no $userid
      */
     public UpdateQuotePayload withAddress1(String address1) {
-        append("address1", address1);
+        put("address1", address1);
         return this;
     }
 
@@ -177,7 +177,7 @@ public class UpdateQuotePayload extends Payload {
      * @param address2 The address2 of the client the quote is for if no $userid
      */
     public UpdateQuotePayload withAddress2(String address2) {
-        append("address2", address2);
+        put("address2", address2);
         return this;
     }
 
@@ -186,7 +186,7 @@ public class UpdateQuotePayload extends Payload {
      * @param city The city of the client the quote is for if no $userid
      */
     public UpdateQuotePayload withCity(String city) {
-        append("city", city);
+        put("city", city);
         return this;
     }
 
@@ -195,7 +195,7 @@ public class UpdateQuotePayload extends Payload {
      * @param state The state of the client the quote is for if no $userid
      */
     public UpdateQuotePayload withState(String state) {
-        append("state", state);
+        put("state", state);
         return this;
     }
 
@@ -204,7 +204,7 @@ public class UpdateQuotePayload extends Payload {
      * @param country The country of the client the quote is for if no $userid
      */
     public UpdateQuotePayload withCountry(String country) {
-        append("country", country);
+        put("country", country);
         return this;
     }
 
@@ -213,7 +213,7 @@ public class UpdateQuotePayload extends Payload {
      * @param phoneNumber The phone number of the client (no country code) the quote is for if no $userid. Local format eg 4035551234
      */
     public UpdateQuotePayload withPhoneNumber(String phoneNumber) {
-        append("phonenumber", phoneNumber);
+        put("phonenumber", phoneNumber);
         return this;
     }
 
@@ -222,7 +222,7 @@ public class UpdateQuotePayload extends Payload {
      * @param currency The id of the currency for the quote is for if no $userid
      */
     public UpdateQuotePayload withCurrency(int currency) {
-        append("currency", currency);
+        put("currency", currency);
         return this;
     }
 
@@ -231,7 +231,7 @@ public class UpdateQuotePayload extends Payload {
      * @param proposal The proposal text displayed to the end user
      */
     public UpdateQuotePayload withProposal(String proposal) {
-        append("proposal", proposal);
+        put("proposal", proposal);
         return this;
     }
 
@@ -240,7 +240,7 @@ public class UpdateQuotePayload extends Payload {
      * @param customErnotes The notes on the quote displayed to the end user
      */
     public UpdateQuotePayload withCustomErnotes(String customErnotes) {
-        append("customernotes", customErnotes);
+        put("customernotes", customErnotes);
         return this;
     }
 
@@ -249,7 +249,7 @@ public class UpdateQuotePayload extends Payload {
      * @param adminNotes The notes on the quote displayed to the staff only
      */
     public UpdateQuotePayload withAdminNotes(String adminNotes) {
-        append("adminnotes", adminNotes);
+        put("adminnotes", adminNotes);
         return this;
     }
 }

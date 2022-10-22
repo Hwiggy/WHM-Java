@@ -16,8 +16,8 @@ public class AddProjectMessagePayload extends Payload {
      */
     public AddProjectMessagePayload(int projectID, String message) {
         super("AddProjectMessage");
-        append("projectid", projectID);
-        append("message", message);
+        put("projectid", projectID);
+        put("message", message);
     }
 
     /***
@@ -26,7 +26,7 @@ public class AddProjectMessagePayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddProjectMessagePayload withAdminID(int adminID){
-        append("adminid", adminID);
+        put("adminid", adminID);
         return this;
     }
 }

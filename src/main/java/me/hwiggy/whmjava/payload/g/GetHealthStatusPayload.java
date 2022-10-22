@@ -24,7 +24,7 @@ public class GetHealthStatusPayload extends Payload {
      * @param fetchStatus Pass as true to attempt to fetch server status values.
      */
     public GetHealthStatusPayload withFetchStatus(boolean fetchStatus) {
-        append("fetchStatus", fetchStatus);
+        put("fetchStatus", fetchStatus);
 
         return this;
     }

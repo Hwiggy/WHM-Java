@@ -16,8 +16,8 @@ public class AddProjectTaskPayload extends Payload {
      */
     public AddProjectTaskPayload(int projectID, String dueDate) {
         super("AddProjectTask");
-        append("projectid", projectID);
-        append("duedate", dueDate);
+        put("projectid", projectID);
+        put("duedate", dueDate);
     }
 
     /***
@@ -26,7 +26,7 @@ public class AddProjectTaskPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddProjectTaskPayload withAdminID(int adminID){
-        append("adminid",adminID);
+        put("adminid",adminID);
         return this;
     }
 
@@ -36,7 +36,7 @@ public class AddProjectTaskPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddProjectTaskPayload withTask(String task){
-        append("task", task);
+        put("task", task);
         return this;
     }
 
@@ -46,7 +46,7 @@ public class AddProjectTaskPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddProjectTaskPayload withNotes(String notes){
-        append("notes", notes);
+        put("notes", notes);
         return this;
     }
 
@@ -56,7 +56,7 @@ public class AddProjectTaskPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddProjectTaskPayload withCompleted(boolean completed){
-        append("completed", completed);
+        put("completed", completed);
         return this;
     }
 
@@ -66,7 +66,7 @@ public class AddProjectTaskPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddProjectTaskPayload withBilled(boolean billed){
-        append("billed", billed);
+        put("billed", billed);
         return this;
     }
 }

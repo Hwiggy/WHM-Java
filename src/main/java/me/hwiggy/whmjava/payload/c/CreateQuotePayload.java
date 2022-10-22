@@ -18,9 +18,9 @@ public class CreateQuotePayload extends Payload {
      */
     public CreateQuotePayload(String subject, String stage, String validUntil) {
         super("CreateQuote");
-        append("subject", subject);
-        append("stage", stage);
-        append("validuntil", validUntil);
+        put("subject", subject);
+        put("stage", stage);
+        put("validuntil", validUntil);
     }
 
     /***
@@ -29,7 +29,7 @@ public class CreateQuotePayload extends Payload {
      * @return This Payload, for chaining
      */
     public CreateQuotePayload withDateCreated(String dateCreated){
-        append("datecreated", dateCreated);
+        put("datecreated", dateCreated);
         return this;
     }
 
@@ -44,7 +44,7 @@ public class CreateQuotePayload extends Payload {
      * @return This Payload, for chaining
      */
     public CreateQuotePayload withLineItems(JSONObject lineItems){
-        append("lineitems", lineItems);
+        put("lineitems", lineItems);
         return this;
     }
 
@@ -54,7 +54,7 @@ public class CreateQuotePayload extends Payload {
      * @return This Payload, for chaining
      */
     public CreateQuotePayload withUserID(int userID){
-        append("userid", userID);
+        put("userid", userID);
         return this;
     }
 
@@ -64,7 +64,7 @@ public class CreateQuotePayload extends Payload {
      * @return This Payload, for chaining
      */
     public CreateQuotePayload withFirstName(String firstName){
-        append("firstname", firstName);
+        put("firstname", firstName);
         return this;
     }
 
@@ -74,7 +74,7 @@ public class CreateQuotePayload extends Payload {
      * @return This Payload, for chaining
      */
     public CreateQuotePayload withLastName(String lastName){
-        append("lastname", lastName);
+        put("lastname", lastName);
         return this;
     }
 
@@ -84,7 +84,7 @@ public class CreateQuotePayload extends Payload {
      * @return This Payload, for chaining
      */
     public CreateQuotePayload withCompanyName(String companyName){
-        append("companyname", companyName);
+        put("companyname", companyName);
         return this;
     }
 
@@ -94,7 +94,7 @@ public class CreateQuotePayload extends Payload {
      * @return This Payload, for chaining
      */
     public CreateQuotePayload withEmail(String email){
-        append("email", email);
+        put("email", email);
         return this;
     }
 
@@ -104,7 +104,7 @@ public class CreateQuotePayload extends Payload {
      * @return This Payload, for chaining
      */
     public CreateQuotePayload withAddressOne(String addressOne){
-        append("address1", addressOne);
+        put("address1", addressOne);
         return this;
     }
 
@@ -114,7 +114,7 @@ public class CreateQuotePayload extends Payload {
      * @return This Payload, for chaining
      */
     public CreateQuotePayload withAddressTwo(String addressTwo){
-        append("address2", addressTwo);
+        put("address2", addressTwo);
         return this;
     }
 
@@ -124,7 +124,7 @@ public class CreateQuotePayload extends Payload {
      * @return This Payload, for chaining
      */
     public CreateQuotePayload withCity(String city){
-        append("city", city);
+        put("city", city);
         return this;
     }
 
@@ -134,7 +134,7 @@ public class CreateQuotePayload extends Payload {
      * @return This Payload, for chaining
      */
     public CreateQuotePayload withState(String state){
-        append("state", state);
+        put("state", state);
         return this;
     }
 
@@ -144,7 +144,7 @@ public class CreateQuotePayload extends Payload {
      * @return This Payload, for chaining
      */
     public CreateQuotePayload withCountry(String country){
-        append("country", country);
+        put("country", country);
         return this;
     }
 
@@ -154,7 +154,7 @@ public class CreateQuotePayload extends Payload {
      * @return This Payload, for chaining
      */
     public CreateQuotePayload withPhoneNumber(String phoneNumber){
-        append("phonenumber", phoneNumber);
+        put("phonenumber", phoneNumber);
         return this;
     }
 
@@ -164,7 +164,7 @@ public class CreateQuotePayload extends Payload {
      * @return This Payload, for chaining
      */
     public CreateQuotePayload withCurrency(int currency){
-        append("currency", currency);
+        put("currency", currency);
         return this;
     }
 
@@ -174,7 +174,7 @@ public class CreateQuotePayload extends Payload {
      * @return This Payload, for chaining
      */
     public CreateQuotePayload withProposal(String proposal){
-        append("proposal", proposal);
+        put("proposal", proposal);
         return this;
     }
 
@@ -184,7 +184,7 @@ public class CreateQuotePayload extends Payload {
      * @return This Payload, for chaining
      */
     public CreateQuotePayload withCustomerNotes(String customerNotes){
-        append("customernotes", customerNotes);
+        put("customernotes", customerNotes);
         return this;
     }
 
@@ -194,7 +194,7 @@ public class CreateQuotePayload extends Payload {
      * @return This Payload, for chaining
      */
     public CreateQuotePayload withAdminNotes(String adminNotes){
-        append("adminnotes", adminNotes);
+        put("adminnotes", adminNotes);
         return this;
     }
 }

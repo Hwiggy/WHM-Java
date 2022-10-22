@@ -10,15 +10,15 @@ import me.hwiggy.whmjava.payload.Payload;
 public class StartTaskTimerPayload extends Payload {
     public StartTaskTimerPayload(int timerID, int projectID) {
         super("StartTaskTimer");
-        append("projectid", projectID);
-        append("timerid", timerID);
+        put("projectid", projectID);
+        put("timerid", timerID);
     }
 
     /***
      * @param adminID    The admin ID to associate the timer with	
      */
     public StartTaskTimerPayload withAdminID(int adminID) {
-        append("adminid", adminID);
+        put("adminid", adminID);
         return this;
     }
 
@@ -26,7 +26,7 @@ public class StartTaskTimerPayload extends Payload {
      * @param start_time    The start time as a unix time stamp. Defaults to time() if not provIDed	
      */
     public StartTaskTimerPayload withStart_time(int start_time) {
-        append("start_time", start_time);
+        put("start_time", start_time);
         return this;
     }
 
@@ -34,7 +34,7 @@ public class StartTaskTimerPayload extends Payload {
      * @param end_time    The start time as a unix time stamp.	
      */
     public StartTaskTimerPayload withEnd_time(int end_time) {
-        append("end_time", end_time);
+        put("end_time", end_time);
         return this;
     }
 }

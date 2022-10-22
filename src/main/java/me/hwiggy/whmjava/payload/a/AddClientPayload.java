@@ -35,16 +35,16 @@ public class AddClientPayload extends Payload {
             String password
     ) {
         super("AddClient");
-        append("firstname", firstName);
-        append("lastname", lastName);
-        append("email", email);
-        append("address1", address);
-        append("city", city);
-        append("state", state);
-        append("postcode", postCode);
-        append("country", country);
-        append("phonenumber", phoneNumber);
-        append("password2", password);
+        put("firstname", firstName);
+        put("lastname", lastName);
+        put("email", email);
+        put("address1", address);
+        put("city", city);
+        put("state", state);
+        put("postcode", postCode);
+        put("country", country);
+        put("phonenumber", phoneNumber);
+        put("password2", password);
     }
 
     /***
@@ -53,7 +53,7 @@ public class AddClientPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddClientPayload withCompanyName(String companyName){
-        append("companyname", companyName);
+        put("companyname", companyName);
         return this;
     }
 
@@ -63,7 +63,7 @@ public class AddClientPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddClientPayload withAddressTwo(String addressTwo){
-        append("address2", addressTwo);
+        put("address2", addressTwo);
         return this;
     }
 
@@ -73,7 +73,7 @@ public class AddClientPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddClientPayload withSecurityQID(int securityQID){
-        append("securityqid", securityQID);
+        put("securityqid", securityQID);
         return this;
     }
 
@@ -83,7 +83,7 @@ public class AddClientPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddClientPayload withSecurityQAns(String securityQAns){
-        append("securityqans", securityQAns);
+        put("securityqans", securityQAns);
         return this;
     }
 
@@ -93,7 +93,7 @@ public class AddClientPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddClientPayload withCardType(String cardType){
-        append("cardtype", cardType);
+        put("cardtype", cardType);
         return this;
     }
 
@@ -103,7 +103,7 @@ public class AddClientPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddClientPayload withCardNum(String cardNum){
-        append("cardnum", cardNum);
+        put("cardnum", cardNum);
         return this;
     }
 
@@ -113,7 +113,7 @@ public class AddClientPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddClientPayload withExpDate(String expDate){
-        append("expdate", expDate);
+        put("expdate", expDate);
         return this;
     }
 
@@ -123,7 +123,7 @@ public class AddClientPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddClientPayload withStartDate(String startDate){
-        append("startdate", startDate);
+        put("startdate", startDate);
         return this;
     }
 
@@ -133,7 +133,7 @@ public class AddClientPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddClientPayload withIssueNumber(String issueNumber){
-        append("issuenumber", issueNumber);
+        put("issuenumber", issueNumber);
         return this;
     }
 
@@ -143,7 +143,7 @@ public class AddClientPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddClientPayload withCVV(String CVV){
-        append("cvv", CVV);
+        put("cvv", CVV);
         return this;
     }
 
@@ -153,7 +153,7 @@ public class AddClientPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddClientPayload withCurrency(int currency){
-        append("currency", currency);
+        put("currency", currency);
         return this;
     }
 
@@ -163,7 +163,7 @@ public class AddClientPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddClientPayload withGroupID(int groupID){
-        append("groupid", groupID);
+        put("groupid", groupID);
         return this;
     }
 
@@ -173,7 +173,7 @@ public class AddClientPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddClientPayload withCustomFields(String customFields){
-        append("customfields", customFields);
+        put("customfields", customFields);
         return this;
     }
 
@@ -183,7 +183,7 @@ public class AddClientPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddClientPayload withLanguage(String language){
-        append("language", language);
+        put("language", language);
         return this;
     }
 
@@ -193,7 +193,7 @@ public class AddClientPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddClientPayload withClientIP(String clientIP){
-        append("clientip", clientIP);
+        put("clientip", clientIP);
         return this;
     }
 
@@ -203,7 +203,7 @@ public class AddClientPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddClientPayload withNotes(String notes){
-        append("notes", notes);
+        put("notes", notes);
         return this;
     }
 
@@ -213,7 +213,7 @@ public class AddClientPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddClientPayload withMarketingOptIn(boolean marketingOptIn){
-        append("marketingoptin", marketingOptIn);
+        put("marketingoptin", marketingOptIn);
         return this;
     }
 
@@ -223,7 +223,7 @@ public class AddClientPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddClientPayload withNoEmail(boolean noEmail){
-        append("noemail", noEmail);
+        put("noemail", noEmail);
         return this;
     }
 
@@ -233,7 +233,7 @@ public class AddClientPayload extends Payload {
      * @return This Payload, for chaining
      */
     public AddClientPayload withSkipValidation(boolean skipValidation){
-        append("skipvalidation", skipValidation);
+        put("skipvalidation", skipValidation);
         return this;
     }
 }

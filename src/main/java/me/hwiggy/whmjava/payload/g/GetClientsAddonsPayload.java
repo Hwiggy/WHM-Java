@@ -24,7 +24,7 @@ public class GetClientsAddonsPayload extends Payload {
      * @param serviceID The service id(s) to obtain the client product addons for. Single number or comma separated list
      */
     public GetClientsAddonsPayload withServiceID(int serviceID) {
-        append("serviceid", serviceID);
+        put("serviceid", serviceID);
 
         return this;
     }
@@ -34,7 +34,7 @@ public class GetClientsAddonsPayload extends Payload {
      * @param clientID The client to obtain the client product addons for
      */
     public GetClientsAddonsPayload withClientid(int clientID) {
-        append("clientid", clientID);
+        put("clientid", clientID);
 
         return this;
     }
@@ -44,7 +44,7 @@ public class GetClientsAddonsPayload extends Payload {
      * @param addonID The predefined addon id to obtain the client product addons for
      */
     public GetClientsAddonsPayload withAddonid(int addonID) {
-        append("addonid", addonID);
+        put("addonid", addonID);
 
         return this;
     }

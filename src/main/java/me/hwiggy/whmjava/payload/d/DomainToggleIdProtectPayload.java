@@ -18,7 +18,7 @@ public class DomainToggleIdProtectPayload extends Payload {
      */
     public DomainToggleIdProtectPayload(int domainid) {
         super ("DomainToggleIdProtect");
-        append("domainid", domainid);
+        put("domainid", domainid);
     }
 
     /***
@@ -26,7 +26,7 @@ public class DomainToggleIdProtectPayload extends Payload {
      * @param IDprotect Should ID Protection be turned on
      */
     public DomainToggleIdProtectPayload withIDprotect(boolean IDprotect) {
-        append("idprotect", IDprotect);
+        put("idprotect", IDprotect);
 
         return this;
     }

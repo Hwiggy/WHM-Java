@@ -24,7 +24,7 @@ public class GetTicketCountsPayload extends Payload {
      * @param ignoreDepartmentAssignments Pass as true to not adhere to the departments the API user is a member of.
      */
     public GetTicketCountsPayload withIgnoreDepartmentAssignments(boolean ignoreDepartmentAssignments) {
-        append("ignoreDepartmentAssignments", ignoreDepartmentAssignments);
+        put("ignoreDepartmentAssignments", ignoreDepartmentAssignments);
 
         return this;
     }
@@ -34,7 +34,7 @@ public class GetTicketCountsPayload extends Payload {
      * @param includeCountsByStatus Pass as true to not adhere to the departments the API user is a member of.
      */
     public GetTicketCountsPayload withIncludeCountsByStatus(boolean includeCountsByStatus) {
-        append("includeCountsByStatus", includeCountsByStatus);
+        put("includeCountsByStatus", includeCountsByStatus);
 
         return this;
     }

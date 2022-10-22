@@ -15,7 +15,7 @@ public class ModuleSuspendPayload extends Payload {
      */
     public ModuleSuspendPayload(int accountID) {
         super("ModuleSuspend");
-        append("accountid", accountID);
+        put("accountid", accountID);
     }
 
     /***
@@ -23,7 +23,7 @@ public class ModuleSuspendPayload extends Payload {
      * @param suspendReason A reason for the suspension
      */
     public ModuleSuspendPayload withSuspendReason(String suspendReason) {
-        append("suspendreason", suspendReason);
+        put("suspendreason", suspendReason);
         return this;
     }
 }

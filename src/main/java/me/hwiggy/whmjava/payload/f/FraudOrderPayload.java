@@ -18,7 +18,7 @@ public class FraudOrderPayload extends Payload {
      */
     public FraudOrderPayload(int orderid) {
         super ("FraudOrder");
-        append("orderid", orderid);
+        put("orderid", orderid);
     }
 
     /***
@@ -26,7 +26,7 @@ public class FraudOrderPayload extends Payload {
      * @param cancelsub Pass as true to cancel any PayPal Subscription(s) associated with the products & services that belong to the given order.
      */
     public FraudOrderPayload withCancelsub(boolean cancelsub) {
-        append("cancelsub", cancelsub);
+        put("cancelsub", cancelsub);
 
         return this;
     }

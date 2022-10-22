@@ -24,7 +24,7 @@ public class GetContactsPayload extends Payload {
      * @param limitStart The offset for the returned log data (default: 0)
      */
     public GetContactsPayload withLimitStart(int limitStart) {
-        append("limitstart", limitStart);
+        put("limitstart", limitStart);
 
         return this;
     }
@@ -34,7 +34,7 @@ public class GetContactsPayload extends Payload {
      * @param limitNum The number of records to return (default: 25)
      */
     public GetContactsPayload withLimitNum(int limitNum) {
-        append("limitnum", limitNum);
+        put("limitnum", limitNum);
 
         return this;
     }
@@ -44,7 +44,7 @@ public class GetContactsPayload extends Payload {
      * @param userID Find contacts for a specific client id
      */
     public GetContactsPayload withUserID(int userID) {
-        append("userid", userID);
+        put("userid", userID);
 
         return this;
     }
@@ -54,7 +54,7 @@ public class GetContactsPayload extends Payload {
      * @param firstname Find contacts with a specific first name
      */
     public GetContactsPayload withFirstName(String firstname) {
-        append("firstname", firstname);
+        put("firstname", firstname);
 
         return this;
     }
@@ -64,7 +64,7 @@ public class GetContactsPayload extends Payload {
      * @param lastName Find contacts with a specific last name
      */
     public GetContactsPayload withLastName(String lastName) {
-        append("lastname", lastName);
+        put("lastname", lastName);
 
         return this;
     }
@@ -74,7 +74,7 @@ public class GetContactsPayload extends Payload {
      * @param companyName Find contacts with a specific company name
      */
     public GetContactsPayload withCompanyName(String companyName) {
-        append("companyname", companyName);
+        put("companyname", companyName);
 
         return this;
     }
@@ -84,7 +84,7 @@ public class GetContactsPayload extends Payload {
      * @param email Find contacts with a specific email address
      */
     public GetContactsPayload withEmail(String email) {
-        append("email", email);
+        put("email", email);
 
         return this;
     }
@@ -94,7 +94,7 @@ public class GetContactsPayload extends Payload {
      * @param address1 Find contacts with a specific address line 1
      */
     public GetContactsPayload withAddress1(String address1) {
-        append("address1", address1);
+        put("address1", address1);
 
         return this;
     }
@@ -104,7 +104,7 @@ public class GetContactsPayload extends Payload {
      * @param address2 Find contacts with a specific address line 2
      */
     public GetContactsPayload withAddress2(String address2) {
-        append("address2", address2);
+        put("address2", address2);
 
         return this;
     }
@@ -114,7 +114,7 @@ public class GetContactsPayload extends Payload {
      * @param city Find contacts with a specific city
      */
     public GetContactsPayload withCity(String city) {
-        append("city", city);
+        put("city", city);
 
         return this;
     }
@@ -124,7 +124,7 @@ public class GetContactsPayload extends Payload {
      * @param state Find contacts with a specific state
      */
     public GetContactsPayload withState(String state) {
-        append("state", state);
+        put("state", state);
 
         return this;
     }
@@ -134,7 +134,7 @@ public class GetContactsPayload extends Payload {
      * @param postcode Find contacts with a specific post/zip code
      */
     public GetContactsPayload withPostcode(String postcode) {
-        append("postcode", postcode);
+        put("postcode", postcode);
 
         return this;
     }
@@ -144,7 +144,7 @@ public class GetContactsPayload extends Payload {
      * @param country Find contacts with a specific country
      */
     public GetContactsPayload withCountry(String country) {
-        append("country", country);
+        put("country", country);
 
         return this;
     }
@@ -154,7 +154,7 @@ public class GetContactsPayload extends Payload {
      * @param phoneNumber Find contacts with a specific phone number
      */
     public GetContactsPayload withPhonenumber(String phoneNumber) {
-        append("phonenumber", phoneNumber);
+        put("phonenumber", phoneNumber);
 
         return this;
     }
@@ -164,7 +164,7 @@ public class GetContactsPayload extends Payload {
      * @param subAccount Search for sub-accounts
      */
     public GetContactsPayload withSubAccount(boolean subAccount) {
-        append("subaccount", subAccount);
+        put("subaccount", subAccount);
 
         return this;
     }

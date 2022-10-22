@@ -15,6 +15,6 @@ public class UpdateAdminNotesPayload extends Payload {
      */
     public UpdateAdminNotesPayload(String notes) {
         super("UpdateAdminNotes");
-        append("notes", notes);
+        put("notes", notes);
     }
 }

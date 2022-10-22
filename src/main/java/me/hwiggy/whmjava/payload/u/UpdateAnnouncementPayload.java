@@ -15,14 +15,14 @@ public class UpdateAnnouncementPayload extends Payload {
      */
     public UpdateAnnouncementPayload(int announcementID) {
         super("UpdateAnnouncement");
-        append("announcementID", announcementID);
+        put("announcementID", announcementID);
     }
 
     /***
      * @param title
      */
     public UpdateAnnouncementPayload withTitle(String title) {
-        append("title", title);
+        put("title", title);
         return this;
     }
 
@@ -30,7 +30,7 @@ public class UpdateAnnouncementPayload extends Payload {
      * @param announcement
      */
     public UpdateAnnouncementPayload withAnnouncement(String announcement) {
-        append("announcement", announcement);
+        put("announcement", announcement);
         return this;
     }
 
@@ -38,7 +38,7 @@ public class UpdateAnnouncementPayload extends Payload {
      * @param date
      */
     public UpdateAnnouncementPayload withDate(String date) {
-        append("date", date);
+        put("date", date);
         return this;
     }
 
@@ -46,7 +46,7 @@ public class UpdateAnnouncementPayload extends Payload {
      * @param published
      */
     public UpdateAnnouncementPayload withPublished(boolean published) {
-        append("published", published);
+        put("published", published);
         return this;
     }
 }

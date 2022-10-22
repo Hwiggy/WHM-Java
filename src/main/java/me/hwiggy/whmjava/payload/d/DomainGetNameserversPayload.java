@@ -18,6 +18,6 @@ public class DomainGetNameserversPayload extends Payload {
      */
     public DomainGetNameserversPayload(int domainID) {
         super ("DomainGetNameservers");
-        append("domainid", domainID);
+        put("domainid", domainID);
     }
 }

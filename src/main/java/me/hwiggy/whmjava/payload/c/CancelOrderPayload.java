@@ -15,7 +15,7 @@ public class CancelOrderPayload extends Payload {
      */
     public CancelOrderPayload(int orderID) {
         super("CancelOrder");
-        append("orderid", orderID);
+        put("orderid", orderID);
     }
 
     /***
@@ -24,7 +24,7 @@ public class CancelOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public CancelOrderPayload withCancelSub(boolean cancelSub){
-        append("cancelsub", cancelSub);
+        put("cancelsub", cancelSub);
         return this;
     }
 
@@ -34,7 +34,7 @@ public class CancelOrderPayload extends Payload {
      * @return This Payload, for chaining
      */
     public CancelOrderPayload withNoEmail(boolean noEmail){
-        append("noemail", noEmail);
+        put("noemail", noEmail);
         return this;
     }
 }

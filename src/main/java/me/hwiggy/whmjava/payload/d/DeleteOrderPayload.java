@@ -15,6 +15,6 @@ public class DeleteOrderPayload extends Payload {
      */
     public DeleteOrderPayload(int orderID) {
         super("DeleteOrder");
-        append("orderid", orderID);
+        put("orderid", orderID);
     }
 }

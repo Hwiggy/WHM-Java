@@ -8,15 +8,15 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.util.stream.Collectors;
 
 /***
  * This class is the entrypoint for the WHMCS Accessor
  * The URL parameter should point to a site like the following:
- * https://yourdomain.com/whmcs/api.php
- *
+ * "https://yourdomain.com/whmcs/api.php"
  * The default constructor uses the new version of the WHMCS API, which requires an Identifier and a Secret
  * These semantics are defined at the following URL:
- * https://developers.whmcs.com/api/authentication/
+ * <a href="https://developers.whmcs.com/api/authentication/">API Documentation</a>
  */
 public class WHMCS {
     private final HttpClient client = HttpClient.newHttpClient();
@@ -25,7 +25,7 @@ public class WHMCS {
 
     /***
      *
-     * @param oldAuth Whether or not to use Username/Password authentication
+     * @param oldAuth Whether to use Username/Password authentication
      * @param url The URL of your WHMCS API Endpoint
      * @param username The Username to authenticate with
      * @param password The Password to authenticate with
@@ -40,11 +40,11 @@ public class WHMCS {
     /***
      *
      * @param url The URL of your WHMCS API Endpoint
-     * @param identifer The Identifier to authenticate with
+     * @param identifier The Identifier to authenticate with
      * @param secret The Secret to authenticate with
      */
-    public WHMCS(String url, String identifer, String secret){
-        this(false, url, identifer, secret);
+    public WHMCS(String url, String identifier, String secret){
+        this(false, url, identifier, secret);
     }
 
     /***
@@ -56,7 +56,7 @@ public class WHMCS {
      * @throws IllegalArgumentException if the {@code request} argument is not
      *         a request that could have been validly built as specified by {@link
      *         HttpRequest.Builder HttpRequest.Builder}.
-     * @throws SecurityException If a security manager has been installed
+     * @throws SecurityException If a security manager has been installed,
      *          and it denies {@link java.net.URLPermission access} to the
      *          URL in the given request, or proxy if one is configured.
      *          See <a href="#securitychecks">security checks</a> for further
@@ -64,15 +64,21 @@ public class WHMCS {
      */
     public JSONObject submitPayload(Payload payload) throws IOException, InterruptedException {
         if (oldAuth){
-            payload.append("username", identifier).append("password", secret);
+            payload.put("username", identifier).put("password", secret);
         } else {
-            payload.append("identifier", identifier).append("secret", secret);
+            payload.put("identifier", identifier).put("secret", secret);
         }
+        String params = payload.toMap().entrySet().stream()
+                .filter(it -> !it.getValue().toString().isEmpty())
+                .map(it -> it.getKey() + "=" + it.getValue())
+                .collect(Collectors.joining("&"));
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create(url))
+                .uri(URI.create(url + "?" + params))
+                //.uri(URI.create(url))
                 .header("Content-Type", "application/json")
-                .POST(HttpRequest.BodyPublishers.ofString(payload.toString()))
+                .POST(HttpRequest.BodyPublishers.noBody())
                 .build();
+
         HttpResponse<String> httpResponse = client.send(request, HttpResponse.BodyHandlers.ofString());
         String response = httpResponse.body();
         return new JSONObject(response);

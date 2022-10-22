@@ -16,7 +16,7 @@ public class GetInvoicesPayload extends Payload {
      * Retrieve a specific invoice
      */
     public GetInvoicesPayload() {
-        super ("GetInvoicesPayload");
+        super ("GetInvoices");
     }
 
     /***

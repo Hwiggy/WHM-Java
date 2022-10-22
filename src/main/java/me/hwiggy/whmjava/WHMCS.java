@@ -73,7 +73,7 @@ public class WHMCS {
                 .map(it -> it.getKey() + "=" + it.getValue())
                 .collect(Collectors.joining("&"));
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create(url + "?" + params))
+                .uri(URI.create(url + "?" + params + "&responsetype=json"))
                 //.uri(URI.create(url))
                 .header("Content-Type", "application/json")
                 .POST(HttpRequest.BodyPublishers.noBody())
